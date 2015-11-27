@@ -9,11 +9,12 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>GreenKidCreator</RootNamespace>
     <AssemblyName>GreenKidCreator</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <WarningLevel>4</WarningLevel>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -33,6 +34,12 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>green-kid-studio.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="GalaSoft.MvvmLight, Version=5.2.0.37222, Culture=neutral, PublicKeyToken=e7570ab207bcb616, processorArchitecture=MSIL">
@@ -79,12 +86,27 @@
       <DependentUpon>StatusBarView.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow\StatusBarViewModel.cs" />
+    <Compile Include="Panels\AssetPanelView.xaml.cs">
+      <DependentUpon>AssetPanelView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\NodePanelView.xaml.cs">
+      <DependentUpon>NodePanelView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\TransformPanelView.xaml.cs">
+      <DependentUpon>TransformPanelView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Tabs\AssetsTab\AssetsTabView.xaml.cs">
       <DependentUpon>AssetsTabView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Tabs\AssetsTab\AssetsTabViewModel.cs" />
     <Compile Include="Tabs\BasicDataTabViewModel.cs" />
     <Compile Include="Tabs\BasicTabViewModel.cs" />
+    <Compile Include="Tabs\Tree\BasicTreeItemCollectionViewModel.cs" />
+    <Compile Include="Tabs\Tree\BasicTreeItemViewModel.cs" />
+    <Compile Include="Tabs\Tree\BasicTreeView.xaml.cs">
+      <DependentUpon>BasicTreeView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tabs\Tree\BasicTreeViewModel.cs" />
     <Compile Include="Tabs\EntitiesTab\EntitiesTabView.xaml.cs">
       <DependentUpon>EntitiesTabView.xaml</DependentUpon>
     </Compile>
@@ -118,6 +140,18 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Panels\AssetPanelView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Panels\NodePanelView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Panels\TransformPanelView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Styles\CustomStyles.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -139,6 +173,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Tabs\SettingsTab\SettingsTabView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Tabs\Tree\BasicTreeView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -172,7 +210,16 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <SplashScreen Include="green-kid-studio-logo.png" />
+    <Resource Include="green-kid-studio.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Panels\Mesh\" />
+    <Folder Include="Panels\Model\" />
+    <Folder Include="Panels\Technique\" />
+    <Folder Include="Panels\Texture\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
