@@ -1,0 +1,27 @@
+C:\Users\Adrian\Dropbox\Green Kid Studio\Projects\Project Graphics Engine\GreenKidCreator\Green Kid Creator\Green Kid Creator\bin\Debug\Green Kid Creator.exe.config
+C:\Users\Adrian\Dropbox\Green Kid Studio\Projects\Project Graphics Engine\GreenKidCreator\Green Kid Creator\Green Kid Creator\bin\Debug\Green Kid Creator.exe
+C:\Users\Adrian\Dropbox\Green Kid Studio\Projects\Project Graphics Engine\GreenKidCreator\Green Kid Creator\Green Kid Creator\bin\Debug\Green Kid Creator.pdb
+C:\Users\Adrian\Dropbox\Green Kid Studio\Projects\Project Graphics Engine\GreenKidCreator\Green Kid Creator\Green Kid Creator\bin\Debug\GalaSoft.MvvmLight.dll
+C:\Users\Adrian\Dropbox\Green Kid Studio\Projects\Project Graphics Engine\GreenKidCreator\Green Kid Creator\Green Kid Creator\bin\Debug\GalaSoft.MvvmLight.Extras.dll
+C:\Users\Adrian\Dropbox\Green Kid Studio\Projects\Project Graphics Engine\GreenKidCreator\Green Kid Creator\Green Kid Creator\bin\Debug\GalaSoft.MvvmLight.Platform.dll
+C:\Users\Adrian\Dropbox\Green Kid Studio\Projects\Project Graphics Engine\GreenKidCreator\Green Kid Creator\Green Kid Creator\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Users\Adrian\Dropbox\Green Kid Studio\Projects\Project Graphics Engine\GreenKidCreator\Green Kid Creator\Green Kid Creator\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Adrian\Dropbox\Green Kid Studio\Projects\Project Graphics Engine\GreenKidCreator\Green Kid Creator\Green Kid Creator\bin\Debug\GalaSoft.MvvmLight.pdb
+C:\Users\Adrian\Dropbox\Green Kid Studio\Projects\Project Graphics Engine\GreenKidCreator\Green Kid Creator\Green Kid Creator\bin\Debug\GalaSoft.MvvmLight.xml
+C:\Users\Adrian\Dropbox\Green Kid Studio\Projects\Project Graphics Engine\GreenKidCreator\Green Kid Creator\Green Kid Creator\bin\Debug\GalaSoft.MvvmLight.Extras.pdb
+C:\Users\Adrian\Dropbox\Green Kid Studio\Projects\Project Graphics Engine\GreenKidCreator\Green Kid Creator\Green Kid Creator\bin\Debug\GalaSoft.MvvmLight.Extras.xml
+C:\Users\Adrian\Dropbox\Green Kid Studio\Projects\Project Graphics Engine\GreenKidCreator\Green Kid Creator\Green Kid Creator\bin\Debug\GalaSoft.MvvmLight.Platform.pdb
+C:\Users\Adrian\Dropbox\Green Kid Studio\Projects\Project Graphics Engine\GreenKidCreator\Green Kid Creator\Green Kid Creator\bin\Debug\GalaSoft.MvvmLight.Platform.xml
+C:\Users\Adrian\Dropbox\Green Kid Studio\Projects\Project Graphics Engine\GreenKidCreator\Green Kid Creator\Green Kid Creator\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Users\Adrian\Dropbox\Green Kid Studio\Projects\Project Graphics Engine\GreenKidCreator\Green Kid Creator\Green Kid Creator\bin\Debug\Microsoft.Practices.ServiceLocation.xml
+C:\Users\Adrian\Dropbox\Green Kid Studio\Projects\Project Graphics Engine\GreenKidCreator\Green Kid Creator\Green Kid Creator\obj\Debug\Green Kid Creator.csprojResolveAssemblyReference.cache
+C:\Users\Adrian\Dropbox\Green Kid Studio\Projects\Project Graphics Engine\GreenKidCreator\Green Kid Creator\Green Kid Creator\obj\Debug\MainWindow.g.cs
+C:\Users\Adrian\Dropbox\Green Kid Studio\Projects\Project Graphics Engine\GreenKidCreator\Green Kid Creator\Green Kid Creator\obj\Debug\App.g.cs
+C:\Users\Adrian\Dropbox\Green Kid Studio\Projects\Project Graphics Engine\GreenKidCreator\Green Kid Creator\Green Kid Creator\obj\Debug\Green Kid Creator_MarkupCompile.cache
+C:\Users\Adrian\Dropbox\Green Kid Studio\Projects\Project Graphics Engine\GreenKidCreator\Green Kid Creator\Green Kid Creator\obj\Debug\Green Kid Creator_MarkupCompile.lref
+C:\Users\Adrian\Dropbox\Green Kid Studio\Projects\Project Graphics Engine\GreenKidCreator\Green Kid Creator\Green Kid Creator\obj\Debug\MainWindow.baml
+C:\Users\Adrian\Dropbox\Green Kid Studio\Projects\Project Graphics Engine\GreenKidCreator\Green Kid Creator\Green Kid Creator\obj\Debug\Green Kid Creator.g.resources
+C:\Users\Adrian\Dropbox\Green Kid Studio\Projects\Project Graphics Engine\GreenKidCreator\Green Kid Creator\Green Kid Creator\obj\Debug\Green_Kid_Creator.Properties.Resources.resources
+C:\Users\Adrian\Dropbox\Green Kid Studio\Projects\Project Graphics Engine\GreenKidCreator\Green Kid Creator\Green Kid Creator\obj\Debug\Green Kid Creator.csproj.GenerateResource.Cache
+C:\Users\Adrian\Dropbox\Green Kid Studio\Projects\Project Graphics Engine\GreenKidCreator\Green Kid Creator\Green Kid Creator\obj\Debug\Green Kid Creator.exe
+C:\Users\Adrian\Dropbox\Green Kid Studio\Projects\Project Graphics Engine\GreenKidCreator\Green Kid Creator\Green Kid Creator\obj\Debug\Green Kid Creator.pdb
