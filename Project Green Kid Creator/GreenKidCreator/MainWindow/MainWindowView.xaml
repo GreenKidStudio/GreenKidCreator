@@ -1,0 +1,41 @@
+﻿<Window x:Class="GreenKidCreator.MainWindow.MainWindowView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+        Title="Green Kid Creator" MinWidth="1000" MinHeight="700"
+        WindowStartupLocation="CenterScreen" mc:Ignorable="d"
+        
+        DataContext="{ Binding Source={ StaticResource ViewModelLocator }, Path=MainWindow, Mode=OneTime }">
+    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        
+        <TabControl Grid.Column="0">
+            <TabItem Header="Scene">
+                
+            </TabItem>
+
+            <TabItem Header="Entities">
+
+            </TabItem>
+        </TabControl>
+        
+        <TabControl Grid.Column="1">
+            <TabItem Header="Nodes">
+
+            </TabItem>
+
+            <TabItem Header="Assets">
+
+            </TabItem>
+
+            <TabItem Header="Settings">
+
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

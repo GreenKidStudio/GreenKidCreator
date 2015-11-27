@@ -71,24 +71,68 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
-    <ApplicationDefinition Include="App.xaml">
+    <ApplicationDefinition Include="Application\App.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="MainWindow.xaml">
+    <Compile Include="Tabs\AssetsTab\AssetsTabView.xaml.cs">
+      <DependentUpon>AssetsTabView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tabs\AssetsTab\AssetsTabViewModel.cs" />
+    <Compile Include="Tabs\EntitiesTab\EntitiesTabView.xaml.cs">
+      <DependentUpon>EntitiesTabView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tabs\NodesTab\NodesTabView.xaml.cs">
+      <DependentUpon>NodesTabView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tabs\NodesTab\NodeTabViewModel.cs" />
+    <Compile Include="Tabs\SceneTab\SceneTabView.xaml.cs">
+      <DependentUpon>SceneTabView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tabs\SettingsTab\SettingsTabView.xaml.cs">
+      <DependentUpon>SettingsTabView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Tabs\SettingsTab\SettingsTabViewModel.cs" />
+    <Page Include="MainWindow\MainWindowView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Compile Include="App.xaml.cs">
+    <Compile Include="Application\App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
+    <Compile Include="Application\ViewModelLocator.cs" />
+    <Compile Include="MainWindow\MainWindowView.xaml.cs">
+      <DependentUpon>MainWindowView.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Styles\CustomStyles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Tabs\AssetsTab\AssetsTabView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Tabs\EntitiesTab\EntitiesTabView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Tabs\NodesTab\NodesTabView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Tabs\SceneTab\SceneTabView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Tabs\SettingsTab\SettingsTabView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MainWindow\MainWindowViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -116,6 +160,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
