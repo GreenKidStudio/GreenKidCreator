@@ -1,36 +1,31 @@
-Green Kid Creator/Green Kid Creator/bin/Debug/Green Kid Creator.vshost.exe
-*.pdb
-Green Kid Creator/Green Kid Creator/obj/Debug/TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs
-Green Kid Creator/Green Kid Creator/obj/Debug/TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs
-Green Kid Creator/packages/CommonServiceLocator.1.3/CommonServiceLocator.1.3.0.nupkg
-Green Kid Creator/packages/CommonServiceLocator.1.3/lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.XML
-Green Kid Creator/packages/CommonServiceLocator.1.3/lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.dll
-Green Kid Creator/packages/CommonServiceLocator.1.3/CommonServiceLocator.1.3.nupkg
-Green Kid Creator/Green Kid Creator/bin/Debug/GalaSoft.MvvmLight.dll
-Green Kid Creator/Green Kid Creator/bin/Debug/Green Kid Creator.exe
-Green Kid Creator/Green Kid Creator/bin/Debug/GalaSoft.MvvmLight.Platform.xml
-Green Kid Creator/Green Kid Creator/bin/Debug/System.Windows.Interactivity.dll
-Green Kid Creator/Green Kid Creator/bin/Debug/Green Kid Creator.exe.config
-Green Kid Creator/.vs/Green Kid Creator/v14/.suo
-Green Kid Creator/Green Kid Creator/bin/Debug/GalaSoft.MvvmLight.Extras.dll
-Green Kid Creator/Green Kid Creator/bin/Debug/GalaSoft.MvvmLight.Extras.xml
-Green Kid Creator/Green Kid Creator/bin/Debug/Microsoft.Practices.ServiceLocation.dll
-Green Kid Creator/Green Kid Creator/obj/Debug/build.force
-Green Kid Creator/Green Kid Creator/bin/Debug/GalaSoft.MvvmLight.Platform.dll
-Green Kid Creator/Green Kid Creator/bin/Debug/GalaSoft.MvvmLight.xml
-Green Kid Creator/Green Kid Creator/obj/Debug/App.g.cs
-Green Kid Creator/Green Kid Creator/obj/Debug/Green Kid Creator.csproj.GenerateResource.Cache
-Green Kid Creator/Green Kid Creator/bin/Debug/Green Kid Creator.vshost.exe.config
-Green Kid Creator/Green Kid Creator/obj/Debug/App.g.i.cs
-*.lref
-*.cache
-*.txt
-*.manifest
-*.exe
-*.cs
-*.dll
-*.XML
-*.pri
-Green Kid Creator/Green Kid Creator/obj/Debug/MainWindow.baml
+Project Green Kid Creator/GreenKidCreator/bin/Debug/GreenKidCreator.vshost.exe.config
+Project Green Kid Creator/GreenKidCreator/bin/Debug/Green Kid Creator.exe.config
+Project Green Kid Creator/GreenKidCreator/bin/Debug/Green Kid Creator.vshost.exe.config
+Project Green Kid Creator/GreenKidCreator/obj/Debug/MainWindow.baml
+Project Green Kid Creator/GreenKidCreator/bin/Debug/GreenKidCreator.exe.config
+Project Green Kid Creator/.vs/GreenKidCreator/v14/.suo
+Project Green Kid Creator/.vs/Green Kid Creator/v14/.suo
 *.nupkg
-*.resources
+*.pdb
+*.dll
+Project Green Kid Creator/GreenKidCreator/bin/Debug/GalaSoft.MvvmLight.Extras.xml
+Project Green Kid Creator/GreenKidCreator/bin/Debug/GalaSoft.MvvmLight.Platform.xml
+Project Green Kid Creator/GreenKidCreator/bin/Debug/GalaSoft.MvvmLight.xml
+Project Green Kid Creator/GreenKidCreator/bin/Debug/Microsoft.Practices.ServiceLocation.xml
+Project Green Kid Creator/GreenKidCreator/bin/Debug/GreenKidCreator.vshost.exe.manifest
+Project Green Kid Creator/GreenKidCreator/bin/Debug/Green Kid Creator.vshost.exe.manifest
+Project Green Kid Creator/GreenKidCreator/bin/Debug/Green Kid Creator.exe
+Project Green Kid Creator/GreenKidCreator/bin/Debug/Green Kid Creator.vshost.exe
+Project Green Kid Creator/GreenKidCreator/bin/Debug/GreenKidCreator.exe
+Project Green Kid Creator/GreenKidCreator/bin/Debug/GreenKidCreator.vshost.exe
+Project Green Kid Creator/GreenKidCreator/obj/Debug/App.g.cs
+Project Green Kid Creator/GreenKidCreator/obj/Debug/App.g.i.cs
+Project Green Kid Creator/GreenKidCreator/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+Project Green Kid Creator/GreenKidCreator/obj/Debug/Green Kid Creator.csproj.FileListAbsolute.txt
+Project Green Kid Creator/GreenKidCreator/obj/Debug/Green Kid Creator.csproj.GenerateResource.Cache
+Project Green Kid Creator/GreenKidCreator/obj/Debug/Green Kid Creator.csprojResolveAssemblyReference.cache
+Project Green Kid Creator/GreenKidCreator/obj/Debug/Green Kid Creator.exe
+Project Green Kid Creator/GreenKidCreator/obj/Debug/Green Kid Creator_MarkupCompile.i.cache
+Project Green Kid Creator/GreenKidCreator/obj/Debug/Green Kid Creator_MarkupCompile.cache
+Project Green Kid Creator/GreenKidCreator/obj/Debug/Green Kid Creator.g.resources
+*.pri

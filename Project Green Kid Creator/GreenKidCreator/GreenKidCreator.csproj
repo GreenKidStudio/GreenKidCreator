@@ -7,8 +7,8 @@
     <ProjectGuid>{A032F8B7-8EF2-428F-A660-6F46E92865C8}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Green_Kid_Creator</RootNamespace>
-    <AssemblyName>Green Kid Creator</AssemblyName>
+    <RootNamespace>GreenKidCreator</RootNamespace>
+    <AssemblyName>GreenKidCreator</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
