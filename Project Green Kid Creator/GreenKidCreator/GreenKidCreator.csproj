@@ -75,20 +75,28 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="MainWindow\StatusBarView.xaml.cs">
+      <DependentUpon>StatusBarView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow\StatusBarViewModel.cs" />
     <Compile Include="Tabs\AssetsTab\AssetsTabView.xaml.cs">
       <DependentUpon>AssetsTabView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Tabs\AssetsTab\AssetsTabViewModel.cs" />
+    <Compile Include="Tabs\BasicDataTabViewModel.cs" />
+    <Compile Include="Tabs\BasicTabViewModel.cs" />
     <Compile Include="Tabs\EntitiesTab\EntitiesTabView.xaml.cs">
       <DependentUpon>EntitiesTabView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Tabs\EntitiesTab\EntitiesTabViewModel.cs" />
     <Compile Include="Tabs\NodesTab\NodesTabView.xaml.cs">
       <DependentUpon>NodesTabView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Tabs\NodesTab\NodeTabViewModel.cs" />
+    <Compile Include="Tabs\NodesTab\NodesTabViewModel.cs" />
     <Compile Include="Tabs\SceneTab\SceneTabView.xaml.cs">
       <DependentUpon>SceneTabView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Tabs\SceneTab\SceneTabViewModel.cs" />
     <Compile Include="Tabs\SettingsTab\SettingsTabView.xaml.cs">
       <DependentUpon>SettingsTabView.xaml</DependentUpon>
     </Compile>
@@ -106,6 +114,10 @@
       <DependentUpon>MainWindowView.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="MainWindow\StatusBarView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Styles\CustomStyles.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

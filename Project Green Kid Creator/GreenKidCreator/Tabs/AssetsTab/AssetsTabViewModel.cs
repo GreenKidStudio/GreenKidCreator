@@ -1,6 +1,6 @@
 ﻿namespace GreenKidCreator.Tabs.AssetsTab
 {
-    public class AssetsTabViewModel
+    public class AssetsTabViewModel : BasicDataTabViewModel
     {
     }
 }

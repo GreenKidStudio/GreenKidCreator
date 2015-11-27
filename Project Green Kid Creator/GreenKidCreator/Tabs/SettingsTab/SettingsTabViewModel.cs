@@ -1,6 +1,6 @@
 ﻿namespace GreenKidCreator.Tabs.SettingsTab
 {
-    public class SettingsTabViewModel
+    public class SettingsTabViewModel : BasicTabViewModel
     {
     }
 }
