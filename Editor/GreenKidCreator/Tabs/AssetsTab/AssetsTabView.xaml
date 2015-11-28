@@ -2,11 +2,18 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:GreenKidCreator.Tabs.AssetsTab"
-             mc:Ignorable="d" 
-             d:DesignHeight="300" d:DesignWidth="300">
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" mc:Ignorable="d"
+             xmlns:tree="clr-namespace:GreenKidCreator.Tabs.Tree"
+             xmlns:panels="clr-namespace:GreenKidCreator.Panels">
+
     <Grid>
-            
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <tree:BasicTreeView Grid.Row="0"/>
+        
+        <panels:AssetPanelView Grid.Row="1"/>
     </Grid>
 </UserControl>

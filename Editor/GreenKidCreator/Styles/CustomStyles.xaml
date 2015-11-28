@@ -31,4 +31,13 @@
             </Setter.Value>
         </Setter>
     </Style>
+
+    <Style TargetType="TreeView">
+        <Setter Property="BorderBrush" Value="Gainsboro"/>
+    </Style>
+
+    <Style x:Key="BorderStyle" TargetType="Border">
+        <Setter Property="BorderBrush" Value="Gainsboro"/>
+        <Setter Property="BorderThickness" Value="1"/>
+    </Style>
 </ResourceDictionary>

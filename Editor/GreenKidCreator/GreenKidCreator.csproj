@@ -89,8 +89,20 @@
     <Compile Include="Panels\AssetPanelView.xaml.cs">
       <DependentUpon>AssetPanelView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Panels\BuildPanelView.xaml.cs">
+      <DependentUpon>BuildPanelView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\GraphicsPanelView.xaml.cs">
+      <DependentUpon>GraphicsPanelView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\InfoPanelView.xaml.cs">
+      <DependentUpon>InfoPanelView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Panels\NodePanelView.xaml.cs">
       <DependentUpon>NodePanelView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\ScenePanelView.xaml.cs">
+      <DependentUpon>ScenePanelView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Panels\TransformPanelView.xaml.cs">
       <DependentUpon>TransformPanelView.xaml</DependentUpon>
@@ -144,7 +156,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Panels\BuildPanelView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Panels\GraphicsPanelView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Panels\InfoPanelView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Panels\NodePanelView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Panels\ScenePanelView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -215,8 +243,10 @@
     <Resource Include="green-kid-studio.ico" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Panels\Light\" />
     <Folder Include="Panels\Mesh\" />
     <Folder Include="Panels\Model\" />
+    <Folder Include="Panels\Object\" />
     <Folder Include="Panels\Technique\" />
     <Folder Include="Panels\Texture\" />
   </ItemGroup>
