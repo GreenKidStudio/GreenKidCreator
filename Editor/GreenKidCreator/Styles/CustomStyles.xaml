@@ -12,19 +12,18 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="TabItem">
-                    <!-- content -->
+                    <!-- Content -->
                     <Border Name="Border" BorderThickness="1, 1, 1, 0" BorderBrush="Gainsboro" CornerRadius="5, 5, 0, 0" Margin="1, 0">
-                        <ContentPresenter ContentSource="Header" Margin="18, 3"/>
+                        <ContentPresenter ContentSource="Header" Margin="20, 3"/>
                     </Border>
 
-                    <!-- triggers -->
+                    <!-- Triggers -->
                     <ControlTemplate.Triggers>
-                        <!-- is selected -->
+                        <!-- Is Selected -->
                         <Trigger Property="IsSelected" Value="True">
                             <Setter TargetName="Border" Property="Background" Value="#88CFFD"/>
                         </Trigger>
                         
-                        <!-- not selected -->
                         <Trigger Property="IsSelected" Value="False">
                             <Setter TargetName="Border" Property="Background" Value="GhostWhite"/>
                         </Trigger>
@@ -53,10 +52,55 @@
     <Style x:Key="ExpanderHeaderStyle" TargetType="Label" BasedOn="{ StaticResource {x:Type Label} }">
         <Setter Property="HorizontalAlignment" Value="Left"/>
     </Style>
+    
+    <Style x:Key="LabelHeaderStyle" TargetType="Label" BasedOn="{ StaticResource { x:Type Label } }">
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="Width" Value="60"/>
+        <Setter Property="Height" Value="22"></Setter>
+    </Style>
+
+    <Style x:Key="LabelValueStyle" TargetType="Label" BasedOn="{ StaticResource { x:Type Label } }">
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="Height" Value="22"></Setter>
+        
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Label">
+                    <!-- Content -->
+                    <Border Style="{ StaticResource BorderStyle }" Background="GhostWhite">
+                        <ContentPresenter ContentSource="Content" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    
+    <!-- Buton -->
+    <Style TargetType="Button">
+        <Setter Property="BorderBrush" Value="Gainsboro"/>
+        <Setter Property="Background" Value="GhostWhite"/>
+        <Setter Property="Height" Value="22"/>
+    </Style>
 
     <!-- Expander -->
     <Style TargetType="Expander">
-        <Setter Property="Margin" Value="2"/>
         <Setter Property="Background" Value="White"/>
+        <Setter Property="Margin" Value="2"/>
+    </Style>
+    
+    <!-- Combo Box -->
+    <Style TargetType="ComboBox">
+        <Setter Property="Height" Value="22"/>
+        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+    </Style>
+
+    <!-- Check Box -->
+    <Style TargetType="CheckBox">
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="Height" Value="22"/>
     </Style>
 </ResourceDictionary>
