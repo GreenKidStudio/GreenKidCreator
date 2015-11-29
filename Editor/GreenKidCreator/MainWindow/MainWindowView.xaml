@@ -20,7 +20,7 @@
         <i:Interaction.Triggers>
             <!-- Loaded -->
             <i:EventTrigger EventName="Loaded">
-                <command:EventToCommand Command="{ Binding Path=LoadedCommand, Mode=OneTime }"/>
+                <command:EventToCommand Command="{ Binding Path=LoadedCmd, Mode=OneTime }"/>
             </i:EventTrigger>
         </i:Interaction.Triggers>
         

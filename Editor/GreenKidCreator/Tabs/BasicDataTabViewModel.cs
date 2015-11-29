@@ -1,4 +1,5 @@
-﻿using GreenKidCreator.Menus;
+﻿using System.Collections.ObjectModel;
+using GreenKidCreator.Menus;
 using GreenKidCreator.Tabs.Tree;
 
 namespace GreenKidCreator.Tabs
@@ -45,6 +46,13 @@ namespace GreenKidCreator.Tabs
 
         public virtual void LoadDataTab()
         {
+            ItemsTree = new BasicTreeViewModel
+            {
+                Items = new ObservableCollection<BasicTreeItemViewModel>()
+            };
+
+            ItemsTree.Items.Add(new BasicTreeItemViewModel());
+            ItemsTree.Items.Add(new BasicTreeItemViewModel());
         }
     }
 }

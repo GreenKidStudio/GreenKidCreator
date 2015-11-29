@@ -5,8 +5,9 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:tree="clr-namespace:GreenKidCreator.Tabs.Tree"
              xmlns:panels="clr-namespace:GreenKidCreator.Panels"
-             xmlns:menus="clr-namespace:GreenKidCreator.Menus"
-             mc:Ignorable="d">
+             xmlns:menus="clr-namespace:GreenKidCreator.Menus" mc:Ignorable="d"
+             
+             DataContext="{ Binding Source={ StaticResource ViewModelLocator }, Path=MainWindow.NodesTab, Mode=OneTime }">
     
     <Grid>
         <Grid.RowDefinitions>
@@ -17,7 +18,7 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
         
-        <tree:BasicTreeView Grid.Row="0"/>
+        <tree:BasicTreeView Grid.Row="0" DataContext="{ Binding Path=ItemsTree, Mode=OneWay }"/>
         
         <panels:NodePanelView Grid.Row="2"/>
         <panels:TransformPanelView Grid.Row="3"/>

@@ -10,7 +10,7 @@ namespace GreenKidCreator.MainWindow
 {
     public class MainWindowViewModel : ViewModelBase
     {
-        private RelayCommand mLoadedCommand;
+        private RelayCommand mLoadedCmd;
 
         private SceneTabViewModel mSceneTab;
         private EntitiesTabViewModel mEntitiesTab;
@@ -21,7 +21,7 @@ namespace GreenKidCreator.MainWindow
 
         private StatusBarViewModel mStatusBar;
 
-        public RelayCommand LoadedCommand => mLoadedCommand ?? (mLoadedCommand = new RelayCommand(ExecuteLoadCommand));
+        public RelayCommand LoadedCmd => mLoadedCmd ?? (mLoadedCmd = new RelayCommand(ExecuteLoad));
 
         public SceneTabViewModel SceneTab => mSceneTab ?? (mSceneTab = new SceneTabViewModel());
         public EntitiesTabViewModel EntitiesTab => mEntitiesTab ?? (mEntitiesTab = new EntitiesTabViewModel());
@@ -32,7 +32,7 @@ namespace GreenKidCreator.MainWindow
 
         public StatusBarViewModel StatusBar => mStatusBar ?? (mStatusBar = new StatusBarViewModel());
 
-        private void ExecuteLoadCommand()
+        private void ExecuteLoad()
         {
             mAssetsTab.LoadDataTab();
             mNodesTab.LoadDataTab();

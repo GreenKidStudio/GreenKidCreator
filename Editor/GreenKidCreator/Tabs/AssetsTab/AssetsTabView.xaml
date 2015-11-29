@@ -5,7 +5,9 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" mc:Ignorable="d"
              xmlns:tree="clr-namespace:GreenKidCreator.Tabs.Tree"
              xmlns:panels="clr-namespace:GreenKidCreator.Panels"
-             xmlns:menus="clr-namespace:GreenKidCreator.Menus">
+             xmlns:menus="clr-namespace:GreenKidCreator.Menus"
+             
+             DataContext="{ Binding Source={ StaticResource ViewModelLocator }, Path=MainWindow.AssetsTab, Mode=OneTime }">
 
     <Grid>
         <Grid.RowDefinitions>
@@ -15,7 +17,7 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <tree:BasicTreeView Grid.Row="0"/>
+        <tree:BasicTreeView Grid.Row="0" DataContext="{ Binding Path=ItemsTree, Mode=OneWay }"/>
         
         <panels:AssetPanelView Grid.Row="2"/>
 
