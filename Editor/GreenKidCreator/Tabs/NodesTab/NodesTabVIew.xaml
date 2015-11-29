@@ -10,20 +10,19 @@
     
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
         
-        <menus:AddItemBarView Grid.Row="0"/>
+        <tree:BasicTreeView Grid.Row="0"/>
         
-        <tree:BasicTreeView Grid.Row="1"/>
-        
-        <menus:SearchBarView Grid.Row="2"/>
-        
-        <panels:NodePanelView Grid.Row="3"/>
-        <panels:TransformPanelView Grid.Row="4"/>
+        <panels:NodePanelView Grid.Row="2"/>
+        <panels:TransformPanelView Grid.Row="3"/>
+
+        <menus:SearchBarView Grid.Row="1"/>
+        <menus:AddItemBarView Grid.Row="4"/>
     </Grid>
 </UserControl>

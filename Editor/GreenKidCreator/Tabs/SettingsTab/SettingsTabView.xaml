@@ -20,6 +20,7 @@
         <panels:ScenePanelView Grid.Row="2"/>
         <panels:InfoPanelView Grid.Row="3"/>
         
+        <!-- Free Space -->
         <Border Grid.Row="4" Style="{ StaticResource BorderStyle }" Margin="0, 2, 0, 0"/>
     </Grid>
 </UserControl>

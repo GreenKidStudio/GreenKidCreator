@@ -1,26 +1,49 @@
-﻿using GalaSoft.MvvmLight.Command;
+﻿using GreenKidCreator.Menus;
+using GreenKidCreator.Tabs.Tree;
 
 namespace GreenKidCreator.Tabs
 {
     public class BasicDataTabViewModel : BasicTabViewModel
     {
-        private RelayCommand mAddItemCommand;
-        private RelayCommand mRemoveItemCommand;
-        private RelayCommand mSaveItemsCommand;
+        private BasicTreeViewModel mItemsTree;
 
-        public RelayCommand AddItemCommand => mAddItemCommand ?? (mAddItemCommand = new RelayCommand(ExecuteAddItemCommand)); 
-        public RelayCommand RemoveItemCommand => mRemoveItemCommand ?? (mRemoveItemCommand = new RelayCommand(ExecuteRemoveItemCommand));
-        public RelayCommand SaveItemsCommand => mSaveItemsCommand ?? (mSaveItemsCommand = new RelayCommand(ExecuteSaveItemsCommand));
+        private AddItemBarViewModel mAddItemBar;
+        private SearchBarViewModel mSearchBar;
 
-        protected virtual void ExecuteAddItemCommand()
+        public BasicTreeViewModel ItemsTree
         {
+            get { return mItemsTree; }
+            set
+            {
+                mItemsTree = value;
+                
+                RaisePropertyChanged(() => ItemsTree);
+            }
         }
 
-        protected virtual void ExecuteRemoveItemCommand()
-        {  
+        public AddItemBarViewModel AddItemBar
+        {
+            get { return mAddItemBar; }
+            set
+            {
+                mAddItemBar = value;
+                
+                RaisePropertyChanged(() => AddItemBar);
+            }
         }
 
-        protected virtual void ExecuteSaveItemsCommand()
+        public SearchBarViewModel SearchBar
+        {
+            get { return mSearchBar; }
+            set
+            {
+                mSearchBar = value;
+                
+                RaisePropertyChanged(() => SearchBar);
+            }
+        }
+
+        public virtual void LoadDataTab()
         {
         }
     }

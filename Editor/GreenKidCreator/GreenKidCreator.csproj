@@ -89,9 +89,11 @@
     <Compile Include="Menus\AddItemBarView.xaml.cs">
       <DependentUpon>AddItemBarView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Menus\AddItemBarViewModel.cs" />
     <Compile Include="Menus\SearchBarView.xaml.cs">
       <DependentUpon>SearchBarView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Menus\SearchBarViewModel.cs" />
     <Compile Include="Panels\AssetPanelView.xaml.cs">
       <DependentUpon>AssetPanelView.xaml</DependentUpon>
     </Compile>

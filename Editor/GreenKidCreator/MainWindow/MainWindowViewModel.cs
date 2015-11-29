@@ -1,4 +1,5 @@
 ﻿using GalaSoft.MvvmLight;
+using GalaSoft.MvvmLight.Command;
 using GreenKidCreator.Tabs.AssetsTab;
 using GreenKidCreator.Tabs.EntitiesTab;
 using GreenKidCreator.Tabs.NodesTab;
@@ -9,6 +10,8 @@ namespace GreenKidCreator.MainWindow
 {
     public class MainWindowViewModel : ViewModelBase
     {
+        private RelayCommand mLoadedCommand;
+
         private SceneTabViewModel mSceneTab;
         private EntitiesTabViewModel mEntitiesTab;
 
@@ -18,6 +21,8 @@ namespace GreenKidCreator.MainWindow
 
         private StatusBarViewModel mStatusBar;
 
+        public RelayCommand LoadedCommand => mLoadedCommand ?? (mLoadedCommand = new RelayCommand(ExecuteLoadCommand));
+
         public SceneTabViewModel SceneTab => mSceneTab ?? (mSceneTab = new SceneTabViewModel());
         public EntitiesTabViewModel EntitiesTab => mEntitiesTab ?? (mEntitiesTab = new EntitiesTabViewModel());
 
@@ -26,6 +31,12 @@ namespace GreenKidCreator.MainWindow
         public SettingsTabViewModel SettingsTab => mSettingsTab ?? (mSettingsTab = new SettingsTabViewModel());
 
         public StatusBarViewModel StatusBar => mStatusBar ?? (mStatusBar = new StatusBarViewModel());
+
+        private void ExecuteLoadCommand()
+        {
+            mAssetsTab.LoadDataTab();
+            mNodesTab.LoadDataTab();
+        }
 
         public override void Cleanup()
         {

@@ -9,12 +9,21 @@
         xmlns:assetsTab="clr-namespace:GreenKidCreator.Tabs.AssetsTab"
         xmlns:settingsTab="clr-namespace:GreenKidCreator.Tabs.SettingsTab"
         xmlns:mainWindow="clr-namespace:GreenKidCreator.MainWindow"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        xmlns:command="http://www.galasoft.ch/mvvmlight"
         Title="Green Kid Creator" MinWidth="1000" MinHeight="700"
         WindowStartupLocation="CenterScreen" mc:Ignorable="d"
         
         DataContext="{ Binding Source={ StaticResource ViewModelLocator }, Path=MainWindow, Mode=OneTime }">
     
     <DockPanel>
+        <i:Interaction.Triggers>
+            <!-- Loaded -->
+            <i:EventTrigger EventName="Loaded">
+                <command:EventToCommand Command="{ Binding Path=LoadedCommand, Mode=OneTime }"/>
+            </i:EventTrigger>
+        </i:Interaction.Triggers>
+        
         <mainWindow:StatusBarView DockPanel.Dock="Bottom"/>
 
         <Grid>
