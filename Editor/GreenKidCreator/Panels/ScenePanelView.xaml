@@ -5,6 +5,10 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" mc:Ignorable="d">
 
     <Border Style="{ StaticResource BorderStyle }" Margin="0, 2, 0, 0">
-
+        <Expander IsExpanded="True">
+            <Expander.Header>
+                <Label Style="{ StaticResource ExpanderHeaderStyle }" Content="Scene"/>
+            </Expander.Header>
+        </Expander>
     </Border>
 </UserControl>

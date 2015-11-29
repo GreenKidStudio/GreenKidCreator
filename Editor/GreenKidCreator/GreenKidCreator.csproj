@@ -86,6 +86,12 @@
       <DependentUpon>StatusBarView.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow\StatusBarViewModel.cs" />
+    <Compile Include="Menus\AddItemBarView.xaml.cs">
+      <DependentUpon>AddItemBarView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Menus\SearchBarView.xaml.cs">
+      <DependentUpon>SearchBarView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Panels\AssetPanelView.xaml.cs">
       <DependentUpon>AssetPanelView.xaml</DependentUpon>
     </Compile>
@@ -98,11 +104,29 @@
     <Compile Include="Panels\InfoPanelView.xaml.cs">
       <DependentUpon>InfoPanelView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Panels\Light\LightPanelView.xaml.cs">
+      <DependentUpon>LightPanelView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\Mesh\MeshPanelView.xaml.cs">
+      <DependentUpon>MeshPanelView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\Model\ModelPanelView.xaml.cs">
+      <DependentUpon>ModelPanelView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Panels\NodePanelView.xaml.cs">
       <DependentUpon>NodePanelView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Panels\Object\ObjectPanelView.xaml.cs">
+      <DependentUpon>ObjectPanelView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Panels\ScenePanelView.xaml.cs">
       <DependentUpon>ScenePanelView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\Technique\TechniquePanelView.xaml.cs">
+      <DependentUpon>TechniquePanelView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\Texture\TexturePanelView.xaml.cs">
+      <DependentUpon>TexturePanelView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Panels\TransformPanelView.xaml.cs">
       <DependentUpon>TransformPanelView.xaml</DependentUpon>
@@ -152,6 +176,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Menus\AddItemBarView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Menus\SearchBarView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Panels\AssetPanelView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -168,11 +200,35 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Panels\Light\LightPanelView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Panels\Mesh\MeshPanelView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Panels\Model\ModelPanelView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Panels\NodePanelView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Panels\Object\ObjectPanelView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Panels\ScenePanelView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Panels\Technique\TechniquePanelView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Panels\Texture\TexturePanelView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -242,14 +298,7 @@
     <SplashScreen Include="green-kid-studio-logo.png" />
     <Resource Include="green-kid-studio.ico" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Panels\Light\" />
-    <Folder Include="Panels\Mesh\" />
-    <Folder Include="Panels\Model\" />
-    <Folder Include="Panels\Object\" />
-    <Folder Include="Panels\Technique\" />
-    <Folder Include="Panels\Texture\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

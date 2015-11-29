@@ -5,18 +5,25 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:tree="clr-namespace:GreenKidCreator.Tabs.Tree"
              xmlns:panels="clr-namespace:GreenKidCreator.Panels"
+             xmlns:menus="clr-namespace:GreenKidCreator.Menus"
              mc:Ignorable="d">
     
     <Grid>
         <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
         
-        <tree:BasicTreeView Grid.Row="0"/>
+        <menus:AddItemBarView Grid.Row="0"/>
         
-        <panels:NodePanelView Grid.Row="1"/>
-        <panels:TransformPanelView Grid.Row="2"/>
+        <tree:BasicTreeView Grid.Row="1"/>
+        
+        <menus:SearchBarView Grid.Row="2"/>
+        
+        <panels:NodePanelView Grid.Row="3"/>
+        <panels:TransformPanelView Grid.Row="4"/>
     </Grid>
 </UserControl>
