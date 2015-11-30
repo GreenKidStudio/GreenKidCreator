@@ -109,30 +109,41 @@
     <Compile Include="Panels\Light\LightPanelView.xaml.cs">
       <DependentUpon>LightPanelView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Panels\Light\LightPanelViewModel.cs" />
+    <Compile Include="Panels\Material\MaterialPanelView.xaml.cs">
+      <DependentUpon>MaterialPanelView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\Material\MaterialPanelViewModel.cs" />
     <Compile Include="Panels\Mesh\MeshPanelView.xaml.cs">
       <DependentUpon>MeshPanelView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Panels\Mesh\MeshPanelViewModel.cs" />
     <Compile Include="Panels\Model\ModelPanelView.xaml.cs">
       <DependentUpon>ModelPanelView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Panels\Model\ModelPanelViewModel.cs" />
     <Compile Include="Panels\NodePanelView.xaml.cs">
       <DependentUpon>NodePanelView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Panels\Object\ObjectPanelView.xaml.cs">
       <DependentUpon>ObjectPanelView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Panels\Object\ObjectPanelViewModel.cs" />
     <Compile Include="Panels\ScenePanelView.xaml.cs">
       <DependentUpon>ScenePanelView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Panels\Technique\TechniquePanelView.xaml.cs">
       <DependentUpon>TechniquePanelView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Panels\Technique\TechniquePanelViewModel.cs" />
     <Compile Include="Panels\Texture\TexturePanelView.xaml.cs">
       <DependentUpon>TexturePanelView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Panels\Texture\TexturePanelViewModel.cs" />
     <Compile Include="Panels\TransformPanelView.xaml.cs">
       <DependentUpon>TransformPanelView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Panels\TransformPanelViewModel.cs" />
     <Compile Include="Tabs\AssetsTab\AssetsTabView.xaml.cs">
       <DependentUpon>AssetsTabView.xaml</DependentUpon>
     </Compile>
@@ -203,6 +214,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Panels\Light\LightPanelView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Panels\Material\MaterialPanelView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -56,7 +56,7 @@
                         </Grid.ColumnDefinitions>
 
                         <!-- Header -->
-                        <Label Grid.Row="0" Grid.Column="0" Style="{ StaticResource LabelHeaderStyle }" Content="GLSL"/>
+                        <Label Grid.Row="0" Grid.Column="0" Style="{ StaticResource LabelHeaderStyle }" Content="GLSL" Margin="0"/>
 
                         <!-- Value -->
                         <Label Grid.Row="0" Grid.Column="1" Style="{ StaticResource LabelValueStyle }" Content="Test"/>

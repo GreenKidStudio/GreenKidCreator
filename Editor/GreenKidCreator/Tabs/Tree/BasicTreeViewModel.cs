@@ -10,7 +10,7 @@ namespace GreenKidCreator.Tabs.Tree
         private BasicTreeItemViewModel mSelectedItem;
         private RelayCommand<RoutedEventArgs> mSelectedItemCmd;
 
-        public ObservableCollection<BasicTreeItemViewModel> Items { get; set; }
+        public ObservableCollection<BasicTreeItemViewModel> Items { get; private set; }
 
         public RelayCommand<RoutedEventArgs> SelectedItemCmd => mSelectedItemCmd ?? (mSelectedItemCmd = new RelayCommand<RoutedEventArgs>(ExecuteSelectedItem));
 
@@ -26,6 +26,16 @@ namespace GreenKidCreator.Tabs.Tree
                 RaisePropertyChanged(() => SelectedItem);
                 RaisePropertyChanged(() => SelectedItemIsNull);
             }
+        }
+
+        public void Init()
+        {
+            Items = new ObservableCollection<BasicTreeItemViewModel>();
+        }
+
+        public void AddItem(BasicTreeItemViewModel item)
+        {
+            Items.Add(item);
         }
 
         private void ExecuteSelectedItem(RoutedEventArgs eventArgs)

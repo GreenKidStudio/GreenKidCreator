@@ -57,7 +57,8 @@
         <Setter Property="HorizontalContentAlignment" Value="Center"/>
         <Setter Property="VerticalContentAlignment" Value="Center"/>
         <Setter Property="Width" Value="60"/>
-        <Setter Property="Height" Value="22"></Setter>
+        <Setter Property="Height" Value="22"/>
+        <Setter Property="Margin" Value="0, 0, 2, 0"/>
     </Style>
 
     <Style x:Key="LabelValueStyle" TargetType="Label" BasedOn="{ StaticResource { x:Type Label } }">
@@ -85,7 +86,7 @@
     </Style>
     
     <Style x:Key="SmallButtonStyle" TargetType="Button" BasedOn="{ StaticResource {x:Type Button} }">
-        <Setter Property="Width" Value="55"/>
+        <Setter Property="Width" Value="40"/>
     </Style>
 
     <!-- Expander -->
