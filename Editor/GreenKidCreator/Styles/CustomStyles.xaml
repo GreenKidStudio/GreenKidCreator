@@ -89,6 +89,10 @@
         <Setter Property="Width" Value="40"/>
     </Style>
 
+    <Style x:Key="MiniButtonStyle" TargetType="Button" BasedOn="{ StaticResource {x:Type Button} }">
+        <Setter Property="Width" Value="22"/>
+    </Style>
+
     <!-- Expander -->
     <Style TargetType="Expander">
         <Setter Property="Background" Value="White"/>
@@ -115,4 +119,7 @@
         <Setter Property="Background" Value="White"/>
         <Setter Property="Height" Value="22"/>
     </Style>
+
+    <!-- Colors -->
+    <Brush x:Key="PathColor">DimGray</Brush>
 </ResourceDictionary>

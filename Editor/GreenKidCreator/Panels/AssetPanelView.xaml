@@ -6,7 +6,9 @@
              xmlns:tree="clr-namespace:GreenKidCreator.Tabs.Tree"
              xmlns:texture="clr-namespace:GreenKidCreator.Panels.Texture"
              xmlns:technique="clr-namespace:GreenKidCreator.Panels.Technique"
-             xmlns:material="clr-namespace:GreenKidCreator.Panels.Material">
+             xmlns:material="clr-namespace:GreenKidCreator.Panels.Material"
+             xmlns:model="clr-namespace:GreenKidCreator.Panels.Model"
+             xmlns:mesh="clr-namespace:GreenKidCreator.Panels.Mesh">
 
     <UserControl.Resources>
         <!-- Texture -->
@@ -23,8 +25,16 @@
         <DataTemplate DataType="{ x:Type material:MaterialPanelViewModel }">
             <material:MaterialPanelView/>
         </DataTemplate>
-        
+
+        <!-- Mesh -->
+        <DataTemplate DataType="{ x:Type mesh:MeshPanelViewModel }">
+            <mesh:MeshPanelView/>
+        </DataTemplate>
+
         <!-- Model -->
+        <HierarchicalDataTemplate DataType="{ x:Type model:ModelPanelViewModel }">
+            <model:ModelPanelView></model:ModelPanelView>
+        </HierarchicalDataTemplate>
     </UserControl.Resources>
     
     <Border Style="{ StaticResource BorderStyle }" Margin="0, 2, 0, 0">

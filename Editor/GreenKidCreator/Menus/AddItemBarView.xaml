@@ -15,6 +15,9 @@
             <ComboBoxItem Content="Test 2"/>
         </ComboBox>
         
-        <Button Grid.Column="1" Style="{ StaticResource SmallButtonStyle }" Content="Add" Margin="2, 0, 0, 0"/>
+        <Button Grid.Column="1" Style="{ StaticResource MiniButtonStyle }" Margin="2, 0, 0, 0">
+            <Path Width="12" Height="12" UseLayoutRounding="False" Fill="{ StaticResource PathColor }" Stretch="Uniform"
+                  Data="F1 M 0,110L 47.6667,62L 102,117.333L 218.667,0L 266,48L 102,212.333L 0,110 Z "/>
+        </Button>
     </Grid>
 </UserControl>
