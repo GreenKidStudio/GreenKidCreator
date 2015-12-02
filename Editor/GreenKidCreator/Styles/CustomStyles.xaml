@@ -92,6 +92,13 @@
     <Style x:Key="MiniButtonStyle" TargetType="Button" BasedOn="{ StaticResource {x:Type Button} }">
         <Setter Property="Width" Value="22"/>
     </Style>
+    
+    <!-- Toggle Button -->
+    <Style TargetType="ToggleButton">
+        <Setter Property="BorderBrush" Value="Gainsboro"/>
+        <Setter Property="Background" Value="GhostWhite"/>
+        <Setter Property="Height" Value="22"/>
+    </Style>
 
     <!-- Expander -->
     <Style TargetType="Expander">
@@ -104,13 +111,14 @@
         <Setter Property="Height" Value="22"/>
         <Setter Property="HorizontalContentAlignment" Value="Center"/>
         <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="BorderBrush" Value="Gainsboro"/>
+        <Setter Property="Background" Value="GhostWhite"/>
     </Style>
 
     <!-- Check Box -->
     <Style TargetType="CheckBox">
-        <Setter Property="VerticalContentAlignment" Value="Center"/>
         <Setter Property="HorizontalAlignment" Value="Center"/>
-        <Setter Property="Height" Value="22"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
     </Style>
 
     <!-- Text Box -->

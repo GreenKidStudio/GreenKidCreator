@@ -94,6 +94,10 @@
       <DependentUpon>SearchBarView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Menus\SearchBarViewModel.cs" />
+    <Compile Include="Panels\Animation\AnimationPanelView.xaml.cs">
+      <DependentUpon>AnimationPanelView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Panels\Animation\AnimationPanelViewModel.cs" />
     <Compile Include="Panels\AssetPanelView.xaml.cs">
       <DependentUpon>AssetPanelView.xaml</DependentUpon>
     </Compile>
@@ -144,6 +148,18 @@
       <DependentUpon>TransformPanelView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Panels\TransformPanelViewModel.cs" />
+    <Compile Include="Styles\AddPathView.xaml.cs">
+      <DependentUpon>AddPathView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Styles\ConfirmPathView.xaml.cs">
+      <DependentUpon>ConfirmPathView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Styles\FindPathView.xaml.cs">
+      <DependentUpon>FindPathView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Styles\RemovePathView.xaml.cs">
+      <DependentUpon>RemovePathView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Tabs\AssetsTab\AssetsTabView.xaml.cs">
       <DependentUpon>AssetsTabView.xaml</DependentUpon>
     </Compile>
@@ -194,6 +210,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Menus\SearchBarView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Panels\Animation\AnimationPanelView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -253,7 +273,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Styles\AddPathView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\ConfirmPathView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Styles\CustomStyles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\FindPathView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\RemovePathView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -315,9 +351,7 @@
     <SplashScreen Include="green-kid-studio-logo.png" />
     <Resource Include="green-kid-studio.ico" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Panels\Animation\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

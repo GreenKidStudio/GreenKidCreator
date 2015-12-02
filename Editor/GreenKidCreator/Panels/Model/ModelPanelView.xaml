@@ -84,7 +84,7 @@
         </Grid>
         
         <!-- Fourth Row -->
-        <Button Grid.Row="3" Grid.Column="0" Content="View" Margin="0, 2, 2, 0"/>
+        <ToggleButton Grid.Row="3" Grid.Column="0" Content="View" Margin="0, 2, 2, 0"/>
 
         <Button Grid.Row="3" Grid.Column="1" Content="Create Scene Object" Margin="0, 2, 0 , 0"/>
     </Grid>
