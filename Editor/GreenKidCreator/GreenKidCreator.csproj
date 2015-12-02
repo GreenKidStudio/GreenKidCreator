@@ -94,6 +94,7 @@
       <DependentUpon>SearchBarView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Menus\SearchBarViewModel.cs" />
+    <Compile Include="Panels\Animation\AnimationData.cs" />
     <Compile Include="Panels\Animation\AnimationPanelView.xaml.cs">
       <DependentUpon>AnimationPanelView.xaml</DependentUpon>
     </Compile>
@@ -110,18 +111,22 @@
     <Compile Include="Panels\InfoPanelView.xaml.cs">
       <DependentUpon>InfoPanelView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Panels\Light\LightData.cs" />
     <Compile Include="Panels\Light\LightPanelView.xaml.cs">
       <DependentUpon>LightPanelView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Panels\Light\LightPanelViewModel.cs" />
+    <Compile Include="Panels\Material\MaterialData.cs" />
     <Compile Include="Panels\Material\MaterialPanelView.xaml.cs">
       <DependentUpon>MaterialPanelView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Panels\Material\MaterialPanelViewModel.cs" />
+    <Compile Include="Panels\Mesh\MeshData.cs" />
     <Compile Include="Panels\Mesh\MeshPanelView.xaml.cs">
       <DependentUpon>MeshPanelView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Panels\Mesh\MeshPanelViewModel.cs" />
+    <Compile Include="Panels\Model\ModelData.cs" />
     <Compile Include="Panels\Model\ModelPanelView.xaml.cs">
       <DependentUpon>ModelPanelView.xaml</DependentUpon>
     </Compile>
@@ -129,6 +134,7 @@
     <Compile Include="Panels\NodePanelView.xaml.cs">
       <DependentUpon>NodePanelView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Panels\Object\ObjectData.cs" />
     <Compile Include="Panels\Object\ObjectPanelView.xaml.cs">
       <DependentUpon>ObjectPanelView.xaml</DependentUpon>
     </Compile>
@@ -136,10 +142,12 @@
     <Compile Include="Panels\ScenePanelView.xaml.cs">
       <DependentUpon>ScenePanelView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Panels\Technique\TechniqueData.cs" />
     <Compile Include="Panels\Technique\TechniquePanelView.xaml.cs">
       <DependentUpon>TechniquePanelView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Panels\Technique\TechniquePanelViewModel.cs" />
+    <Compile Include="Panels\Texture\TextureData.cs" />
     <Compile Include="Panels\Texture\TexturePanelView.xaml.cs">
       <DependentUpon>TexturePanelView.xaml</DependentUpon>
     </Compile>
