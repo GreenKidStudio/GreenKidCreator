@@ -10,9 +10,9 @@ namespace GreenKidCreator.Tabs.NodesTab
         {
             base.LoadDataTab();
 
-            ItemsTree.AddItem(new BasicTreeItemCollectionViewModel());
-            ItemsTree.AddItem(new ObjectPanelViewModel());
-            ItemsTree.AddItem(new LightPanelViewModel());
+            ItemsTree.AddItem(new BasicTreeItemCollectionViewModel("Node"));
+            ItemsTree.AddItem(new ObjectPanelViewModel("Object"));
+            ItemsTree.AddItem(new LightPanelViewModel("Light"));
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using GreenKidCreator.Panels.Material;
+﻿using GreenKidCreator.Panels.Animation;
+using GreenKidCreator.Panels.Material;
 using GreenKidCreator.Panels.Mesh;
 using GreenKidCreator.Panels.Model;
 using GreenKidCreator.Panels.Technique;
@@ -12,11 +13,12 @@ namespace GreenKidCreator.Tabs.AssetsTab
         {
             base.LoadDataTab();
 
-            ItemsTree.AddItem(new ModelPanelViewModel());
-            ItemsTree.AddItem(new MeshPanelViewModel());
-            ItemsTree.AddItem(new TexturePanelViewModel());
-            ItemsTree.AddItem(new MaterialPanelViewModel());
-            ItemsTree.AddItem(new TechniquePanelViewModel());
+            ItemsTree.AddItem(new ModelPanelViewModel("Model"));
+            ItemsTree.AddItem(new MeshPanelViewModel("Mesh"));
+            ItemsTree.AddItem(new TexturePanelViewModel("Texture"));
+            ItemsTree.AddItem(new MaterialPanelViewModel("Material"));
+            ItemsTree.AddItem(new TechniquePanelViewModel("Technique"));
+            ItemsTree.AddItem(new AnimationPanelViewModel("Animation"));
         }
     }
 }

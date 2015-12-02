@@ -17,6 +17,7 @@
         DataContext="{ Binding Source={ StaticResource ViewModelLocator }, Path=MainWindow, Mode=OneTime }">
     
     <DockPanel>
+        <!-- Triggers -->
         <i:Interaction.Triggers>
             <!-- Loaded -->
             <i:EventTrigger EventName="Loaded">

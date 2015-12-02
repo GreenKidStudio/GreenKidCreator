@@ -8,6 +8,7 @@
              xmlns:tree="clr-namespace:GreenKidCreator.Tabs.Tree">
 
     <TreeView ItemsSource="{ Binding Path=(tree:BasicTreeViewModel.Items), Mode=OneWay, IsAsync=True }" Margin="0, 2, 0, 0">
+        <!-- Triggers -->
         <i:Interaction.Triggers>
             <i:EventTrigger EventName="SelectedItemChanged">
                 <command:EventToCommand Command="{ Binding Path=(tree:BasicTreeViewModel.SelectedItemCmd), Mode=OneTime }" PassEventArgsToCommand="True"/>
@@ -16,11 +17,11 @@
 
         <TreeView.Resources>
             <HierarchicalDataTemplate DataType="{ x:Type tree:BasicTreeItemCollectionViewModel }">
-                <TextBlock Text="Test" Padding="2, 0"/>
+                <TextBlock Text="{ Binding Path=Name, Mode=OneWay }" Padding="2, 0"/>
             </HierarchicalDataTemplate>
 
             <DataTemplate DataType="{ x:Type tree:BasicTreeItemViewModel }">
-                <TextBlock Text="Test" Padding="2, 0"/>
+                <TextBlock Text="{ Binding Path=Name, Mode=OneWay }" Padding="2, 0"/>
             </DataTemplate>
         </TreeView.Resources>
     </TreeView>

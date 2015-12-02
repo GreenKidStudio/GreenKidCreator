@@ -8,7 +8,8 @@
              xmlns:technique="clr-namespace:GreenKidCreator.Panels.Technique"
              xmlns:material="clr-namespace:GreenKidCreator.Panels.Material"
              xmlns:model="clr-namespace:GreenKidCreator.Panels.Model"
-             xmlns:mesh="clr-namespace:GreenKidCreator.Panels.Mesh">
+             xmlns:mesh="clr-namespace:GreenKidCreator.Panels.Mesh"
+             xmlns:animation="clr-namespace:GreenKidCreator.Panels.Animation">
 
     <UserControl.Resources>
         <!-- Texture -->
@@ -31,9 +32,14 @@
             <mesh:MeshPanelView/>
         </DataTemplate>
 
+        <!-- Animation -->
+        <DataTemplate DataType="{ x:Type animation:AnimationPanelViewModel }">
+            <animation:AnimationPanelView/>
+        </DataTemplate>
+        
         <!-- Model -->
         <HierarchicalDataTemplate DataType="{ x:Type model:ModelPanelViewModel }">
-            <model:ModelPanelView></model:ModelPanelView>
+            <model:ModelPanelView/>
         </HierarchicalDataTemplate>
     </UserControl.Resources>
     

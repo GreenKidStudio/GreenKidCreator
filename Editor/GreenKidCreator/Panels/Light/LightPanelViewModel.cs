@@ -4,5 +4,9 @@ namespace GreenKidCreator.Panels.Light
 {
     public class LightPanelViewModel : BasicTreeItemViewModel
     {
+        public LightPanelViewModel(string name)
+            : base(name)
+        {
+        }
     }
 }

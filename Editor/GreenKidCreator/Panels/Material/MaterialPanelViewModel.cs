@@ -4,5 +4,9 @@ namespace GreenKidCreator.Panels.Material
 {
     public class MaterialPanelViewModel : BasicTreeItemViewModel
     {
+        public MaterialPanelViewModel(string name)
+            : base(name)
+        {
+        }
     }
 }

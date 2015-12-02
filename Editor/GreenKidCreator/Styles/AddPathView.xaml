@@ -4,4 +4,6 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" mc:Ignorable="d">
 
+    <Path Data="M19.833,0L32.501,0 32.501,19.833999 52.334,19.833999 52.334,32.500999 32.501,32.500999 32.501,52.333 19.833,52.333 19.833,32.500999 0,32.500999 0,19.833999 19.833,19.833999z"
+          Style="{ StaticResource PathStyle }"/>
 </UserControl>
