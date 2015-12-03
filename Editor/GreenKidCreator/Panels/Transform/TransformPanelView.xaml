@@ -9,7 +9,53 @@
     <UserControl.Resources>
         <DataTemplate DataType="{ x:Type transform:TransformPanelViewModel }">
             <Grid Margin="0, 5, 0, 0">
-                <Label Content="Test"/>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                
+                <!-- First Row -->
+                <Label Grid.Row="0" Grid.Column="1" Content="Position" Style="{ StaticResource LabelHeaderStyle }" Margin="0"/>
+                <Label Grid.Row="0" Grid.Column="3" Content="Rotation" Style="{ StaticResource LabelHeaderStyle }" Margin="0"/>
+                <Label Grid.Row="0" Grid.Column="5" Content="Scale" Style="{ StaticResource LabelHeaderStyle }" Margin="0"/>
+
+                <!-- Second Row -->
+                <Label Grid.Row="1" Grid.Column="0" Content="X" Style="{ StaticResource LabelTransformHeaderStyle }"/>
+                <Label Grid.Row="1" Grid.Column="2" Content="X" Style="{ StaticResource LabelTransformHeaderStyle }"/>
+                <Label Grid.Row="1" Grid.Column="4" Content="X" Style="{ StaticResource LabelTransformHeaderStyle }"/>
+
+                <TextBox Grid.Row="1" Grid.Column="1" Style="{ StaticResource TransformTextBoxValue }"/>
+                <TextBox Grid.Row="1" Grid.Column="3" Style="{ StaticResource TransformTextBoxValue }"/>
+                <TextBox Grid.Row="1" Grid.Column="5" Style="{ StaticResource TransformTextBoxValue }"/>
+
+                <!-- Third Row -->
+                <Label Grid.Row="2" Grid.Column="0" Content="Y" Style="{ StaticResource LabelTransformHeaderStyle }"/>
+                <Label Grid.Row="2" Grid.Column="2" Content="Y" Style="{ StaticResource LabelTransformHeaderStyle }"/>
+                <Label Grid.Row="2" Grid.Column="4" Content="Y" Style="{ StaticResource LabelTransformHeaderStyle }"/>
+
+                <TextBox Grid.Row="2" Grid.Column="1" Style="{ StaticResource TransformTextBoxValue }"/>
+                <TextBox Grid.Row="2" Grid.Column="3" Style="{ StaticResource TransformTextBoxValue }"/>
+                <TextBox Grid.Row="2" Grid.Column="5" Style="{ StaticResource TransformTextBoxValue }"/>
+
+                <!-- Fourth Row -->
+                <Label Grid.Row="3" Grid.Column="0" Content="Z" Style="{ StaticResource LabelTransformHeaderStyle }"/>
+                <Label Grid.Row="3" Grid.Column="2" Content="Z" Style="{ StaticResource LabelTransformHeaderStyle }"/>
+                <Label Grid.Row="3" Grid.Column="4" Content="Z" Style="{ StaticResource LabelTransformHeaderStyle }"/>
+
+                <TextBox Grid.Row="3" Grid.Column="1" Style="{ StaticResource TransformTextBoxValue }"/>
+                <TextBox Grid.Row="3" Grid.Column="3" Style="{ StaticResource TransformTextBoxValue }"/>
+                <TextBox Grid.Row="3" Grid.Column="5" Style="{ StaticResource TransformTextBoxValue }"/>
             </Grid>
         </DataTemplate>
     </UserControl.Resources>
