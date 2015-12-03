@@ -5,7 +5,9 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:tree="clr-namespace:GreenKidCreator.Tabs.Tree"
              xmlns:panels="clr-namespace:GreenKidCreator.Panels"
-             xmlns:menus="clr-namespace:GreenKidCreator.Menus" mc:Ignorable="d"
+             xmlns:menus="clr-namespace:GreenKidCreator.Menus"
+             xmlns:transform="clr-namespace:GreenKidCreator.Panels.Transform"
+             mc:Ignorable="d"
              
              DataContext="{ Binding Source={ StaticResource ViewModelLocator }, Path=MainWindow.NodesTab, Mode=OneTime }">
     
@@ -25,6 +27,6 @@
         <tree:BasicTreeView Grid.Row="1" DataContext="{ Binding Path=ItemsTree, Mode=OneWay }"/>
         
         <panels:NodePanelView Grid.Row="3" DataContext="{ Binding Path=ItemsTree, Mode=OneWay }"/>
-        <panels:TransformPanelView Grid.Row="4" DataContext="{ Binding Path=ItemsTree, Mode=OneWay }"/>
+        <transform:TransformPanelView Grid.Row="4" DataContext="{ Binding Path=ItemsTree.SelectedItem, Mode=OneWay }"/>
     </Grid>
 </UserControl>

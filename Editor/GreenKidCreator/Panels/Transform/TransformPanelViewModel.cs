@@ -1,6 +1,6 @@
 ﻿using GalaSoft.MvvmLight;
 
-namespace GreenKidCreator.Panels
+namespace GreenKidCreator.Panels.Transform
 {
     public class TransformPanelViewModel : ViewModelBase
     {

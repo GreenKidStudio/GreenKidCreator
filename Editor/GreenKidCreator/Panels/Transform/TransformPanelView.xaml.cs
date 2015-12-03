@@ -1,4 +1,4 @@
-﻿namespace GreenKidCreator.Panels
+﻿namespace GreenKidCreator.Panels.Transform
 {
     public partial class TransformPanelView
     {

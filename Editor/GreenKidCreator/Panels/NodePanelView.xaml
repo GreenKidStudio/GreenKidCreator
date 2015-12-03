@@ -12,7 +12,7 @@
         <!-- Node Group -->
         <HierarchicalDataTemplate DataType="{ x:Type tree:BasicTreeItemCollectionViewModel }">
             <Grid Margin="0, 5, 0, 0">
-                <Label Style="{ StaticResource LabelValueStyle }" Content="Simple Node"/>
+                <Label Style="{ StaticResource LabelValueStyle }" Content="Node [ Empty ]"/>
             </Grid>
         </HierarchicalDataTemplate>
         
@@ -23,7 +23,7 @@
         
         <!-- Light -->
         <DataTemplate DataType="{ x:Type light:LightPanelViewModel }">
-            <light:LightPanelView></light:LightPanelView>
+            <light:LightPanelView/>
         </DataTemplate>
     </UserControl.Resources>
 

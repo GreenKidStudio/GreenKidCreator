@@ -152,10 +152,11 @@
       <DependentUpon>TexturePanelView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Panels\Texture\TexturePanelViewModel.cs" />
-    <Compile Include="Panels\TransformPanelView.xaml.cs">
+    <Compile Include="Panels\Transform\TransformPanelView.xaml.cs">
       <DependentUpon>TransformPanelView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Panels\TransformPanelViewModel.cs" />
+    <Compile Include="Panels\Transform\TransformPanelViewModel.cs" />
+    <Compile Include="Panels\Transform\MathVector.cs" />
     <Compile Include="Styles\AddPathView.xaml.cs">
       <DependentUpon>AddPathView.xaml</DependentUpon>
     </Compile>
@@ -277,7 +278,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Panels\TransformPanelView.xaml">
+    <Page Include="Panels\Transform\TransformPanelView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
