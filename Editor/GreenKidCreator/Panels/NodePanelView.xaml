@@ -12,7 +12,7 @@
         <!-- Node Group -->
         <HierarchicalDataTemplate DataType="{ x:Type tree:BasicTreeItemCollectionViewModel }">
             <Grid Margin="0, 5, 0, 0">
-                <Label Style="{ StaticResource LabelValueStyle }" Content="Group of nodes"/>
+                <Label Style="{ StaticResource LabelValueStyle }" Content="Simple Node"/>
             </Grid>
         </HierarchicalDataTemplate>
         

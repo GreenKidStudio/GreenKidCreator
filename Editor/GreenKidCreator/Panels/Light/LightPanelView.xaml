@@ -5,6 +5,25 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" mc:Ignorable="d">
 
     <Grid Margin="0, 5, 0, 0">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
 
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- First Row -->
+
+        <!-- Header -->
+        <Label Grid.Row="0" Grid.Column="0" Style="{ StaticResource LabelHeaderStyle }" Content="Type"/>
+
+        <!-- Value -->
+        <ComboBox Grid.Row="0"  Grid.Column="1">
+            <ComboBoxItem Content="Test" IsSelected="True"/>
+            <ComboBoxItem Content="Test 2"/>
+        </ComboBox>
     </Grid>
 </UserControl>

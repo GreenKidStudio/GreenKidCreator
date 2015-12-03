@@ -38,6 +38,11 @@
         <Setter Property="BorderBrush" Value="Gainsboro"/>
     </Style>
 
+    <!-- Tree View Item -->
+    <Style TargetType="TreeViewItem">
+
+    </Style>
+
     <!-- Border -->
     <Style x:Key="BorderStyle" TargetType="Border">
         <Setter Property="BorderBrush" Value="Gainsboro"/>
@@ -49,11 +54,15 @@
         <Setter Property="Padding" Value="0"/>
     </Style>
 
-    <Style x:Key="ExpanderHeaderStyle" TargetType="Label" BasedOn="{ StaticResource {x:Type Label} }">
+    <Style x:Key="ExpanderHeaderStyle" TargetType="Label" 
+           BasedOn="{ StaticResource {x:Type Label} }">
+        
         <Setter Property="HorizontalAlignment" Value="Left"/>
     </Style>
     
-    <Style x:Key="LabelHeaderStyle" TargetType="Label" BasedOn="{ StaticResource { x:Type Label } }">
+    <Style x:Key="LabelHeaderStyle" TargetType="Label" 
+           BasedOn="{ StaticResource { x:Type Label } }">
+        
         <Setter Property="HorizontalContentAlignment" Value="Center"/>
         <Setter Property="VerticalContentAlignment" Value="Center"/>
         <Setter Property="Width" Value="62"/>
@@ -61,7 +70,9 @@
         <Setter Property="Margin" Value="0, 0, 2, 0"/>
     </Style>
 
-    <Style x:Key="LabelValueStyle" TargetType="Label" BasedOn="{ StaticResource { x:Type Label } }">
+    <Style x:Key="LabelValueStyle" TargetType="Label" 
+           BasedOn="{ StaticResource { x:Type Label } }">
+        
         <Setter Property="HorizontalContentAlignment" Value="Center"/>
         <Setter Property="VerticalContentAlignment" Value="Center"/>
         <Setter Property="Height" Value="22"></Setter>
@@ -85,11 +96,15 @@
         <Setter Property="Height" Value="22"/>
     </Style>
     
-    <Style x:Key="SmallButtonStyle" TargetType="Button" BasedOn="{ StaticResource {x:Type Button} }">
+    <Style x:Key="SmallButtonStyle" TargetType="Button" 
+           BasedOn="{ StaticResource {x:Type Button} }">
+        
         <Setter Property="Width" Value="40"/>
     </Style>
 
-    <Style x:Key="MiniButtonStyle" TargetType="Button" BasedOn="{ StaticResource {x:Type Button} }">
+    <Style x:Key="MiniButtonStyle" TargetType="Button" 
+           BasedOn="{ StaticResource {x:Type Button} }">
+        
         <Setter Property="Width" Value="26"/>
     </Style>
     
@@ -98,6 +113,12 @@
         <Setter Property="BorderBrush" Value="Gainsboro"/>
         <Setter Property="Background" Value="GhostWhite"/>
         <Setter Property="Height" Value="22"/>
+    </Style>
+
+    <Style x:Key="MiniToggleButtonStyle" TargetType="ToggleButton" 
+           BasedOn="{ StaticResource {x:Type ToggleButton} }">
+        
+        <Setter Property="Width" Value="26"/>
     </Style>
 
     <!-- Expander -->
