@@ -75,7 +75,7 @@
                 </Grid.ColumnDefinitions>
 
                 <!-- Header -->
-                <Label Grid.Row="0" Grid.Column="0" Style="{ StaticResource LabelHeaderStyle }" Content="End" Margin="0"/>
+                <Label Grid.Row="0" Grid.Column="0" Style="{ StaticResource LabelHeaderStyle }" Content="Finish" Margin="0"/>
 
                 <!-- Value -->
                 <TextBox Grid.Row="0" Grid.Column="1"/>

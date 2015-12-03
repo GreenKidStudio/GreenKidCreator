@@ -13,7 +13,7 @@
             <ColumnDefinition Width="Auto"/>
         </Grid.ColumnDefinitions>
 
-        <ComboBox Grid.Column="0" HorizontalContentAlignment="Left">
+        <ComboBox Grid.Column="0" HorizontalContentAlignment="Left" Padding="4, 0, 0, 0">
             <ComboBoxItem Content="Test" IsSelected="True"/>
             <ComboBoxItem Content="Test 2"/>
         </ComboBox>

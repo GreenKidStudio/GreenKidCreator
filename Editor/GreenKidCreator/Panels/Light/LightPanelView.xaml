@@ -25,5 +25,14 @@
             <ComboBoxItem Content="Test" IsSelected="True"/>
             <ComboBoxItem Content="Test 2"/>
         </ComboBox>
+
+        <!-- Second Row -->
+
+        <!-- Header -->
+        <Label Grid.Row="1" Grid.Column="0" Style="{ StaticResource LabelHeaderStyle }" Content="Color" Margin="0, 2, 0, 0"/>
+
+        <Border Grid.Row="1" Grid.Column="1" Margin="0, 2, 0, 0" Style="{ StaticResource BorderStyle }">
+            <Rectangle Fill="Blue"/>
+        </Border>
     </Grid>
 </UserControl>

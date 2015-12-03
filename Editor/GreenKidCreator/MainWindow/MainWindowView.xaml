@@ -32,7 +32,7 @@
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="252"/>
             </Grid.ColumnDefinitions>
-            
+
             <TabControl Grid.Column="0" Margin="3, 1, 1, 0">
                 <TabItem Header="Scene" IsSelected="{ Binding Path=SceneTab.IsSelected, Mode=TwoWay }">
                     <sceneTab:SceneTabView/>
