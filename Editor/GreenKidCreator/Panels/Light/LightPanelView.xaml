@@ -29,10 +29,8 @@
         <!-- Second Row -->
 
         <!-- Header -->
-        <Label Grid.Row="1" Grid.Column="0" Style="{ StaticResource LabelHeaderStyle }" Content="Color" Margin="0, 2, 0, 0"/>
+        <Label Grid.Row="1" Grid.Column="0" Style="{ StaticResource LabelHeaderStyle }" Content="Color" Margin="0, 2, 2, 0"/>
 
-        <Border Grid.Row="1" Grid.Column="1" Margin="0, 2, 0, 0" Style="{ StaticResource BorderStyle }">
-            <Rectangle Fill="Blue"/>
-        </Border>
+        <Rectangle Grid.Row="1" Grid.Column="1" Margin="0, 2, 0, 0" Fill="Blue"/>
     </Grid>
 </UserControl>
