@@ -26,9 +26,9 @@
                 </Grid.RowDefinitions>
                 
                 <!-- First Row -->
-                <Label Grid.Row="0" Grid.Column="1" Content="Position" Style="{ StaticResource LabelHeaderStyle }" Margin="0"/>
-                <Label Grid.Row="0" Grid.Column="3" Content="Rotation" Style="{ StaticResource LabelHeaderStyle }" Margin="0"/>
-                <Label Grid.Row="0" Grid.Column="5" Content="Scale" Style="{ StaticResource LabelHeaderStyle }" Margin="0"/>
+                <Label Grid.Row="0" Grid.Column="1" Content="Position" HorizontalAlignment="Center"/>
+                <Label Grid.Row="0" Grid.Column="3" Content="Rotation" HorizontalAlignment="Center"/>
+                <Label Grid.Row="0" Grid.Column="5" Content="Scale" HorizontalAlignment="Center"/>
 
                 <!-- Second Row -->
                 <Label Grid.Row="1" Grid.Column="0" Content="X" Style="{ StaticResource LabelTransformHeaderStyle }"/>
