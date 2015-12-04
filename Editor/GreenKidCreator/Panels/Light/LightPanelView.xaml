@@ -31,6 +31,6 @@
         <!-- Header -->
         <Label Grid.Row="1" Grid.Column="0" Style="{ StaticResource LabelHeaderStyle }" Content="Color" Margin="0, 2, 2, 0"/>
 
-        <Rectangle Grid.Row="1" Grid.Column="1" Margin="0, 2, 0, 0" Fill="Blue"/>
+        <Rectangle Grid.Row="1" Grid.Column="1" Fill="Blue" Margin="0, 2, 0, 0"/>
     </Grid>
 </UserControl>

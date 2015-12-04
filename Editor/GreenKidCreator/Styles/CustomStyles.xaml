@@ -72,11 +72,11 @@
 
     <Style x:Key="LabelValueStyle" TargetType="Label" 
            BasedOn="{ StaticResource { x:Type Label } }">
-        
+
         <Setter Property="HorizontalContentAlignment" Value="Center"/>
         <Setter Property="VerticalContentAlignment" Value="Center"/>
         <Setter Property="Height" Value="22"></Setter>
-        
+
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="Label">
@@ -87,16 +87,6 @@
                 </ControlTemplate>
             </Setter.Value>
         </Setter>
-    </Style>
-
-    <Style x:Key="LabelTransformHeaderStyle" TargetType="Label" 
-           BasedOn="{ StaticResource { x:Type Label } }">
-
-        <Setter Property="Width" Value="25"/>
-        <Setter Property="Height" Value="22"/>
-        <Setter Property="Margin" Value="0, 2, 0, 0"/>
-        <Setter Property="HorizontalContentAlignment" Value="Center"/>
-        <Setter Property="VerticalContentAlignment" Value="Center"/>
     </Style>
 
     <!-- Buton -->
@@ -164,7 +154,6 @@
            BasedOn="{ StaticResource {x:Type TextBox} }">
         
         <Setter Property="HorizontalContentAlignment" Value="Center"/>
-        <Setter Property="Margin" Value="0, 2, 0, 0"/>
     </Style>
     
     <!-- Path -->
