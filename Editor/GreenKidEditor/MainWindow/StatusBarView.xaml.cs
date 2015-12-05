@@ -1,4 +1,4 @@
-﻿namespace GreenKidCreator.MainWindow
+﻿namespace GreenKidEditor.MainWindow
 {
     public partial class StatusBarView
     {

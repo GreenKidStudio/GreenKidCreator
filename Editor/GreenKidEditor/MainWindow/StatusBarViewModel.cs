@@ -1,6 +1,6 @@
 ﻿using GalaSoft.MvvmLight;
 
-namespace GreenKidCreator.MainWindow
+namespace GreenKidEditor.MainWindow
 {
     public class StatusBarViewModel : ViewModelBase
     {

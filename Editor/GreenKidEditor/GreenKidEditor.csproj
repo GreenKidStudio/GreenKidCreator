@@ -82,81 +82,82 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Application\Managers\BuildManager.cs" />
     <Compile Include="MainWindow\StatusBarView.xaml.cs">
       <DependentUpon>StatusBarView.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow\StatusBarViewModel.cs" />
-    <Compile Include="Menus\AddItemBarView.xaml.cs">
+    <Compile Include="MainWindow\Menus\AddItemBarView.xaml.cs">
       <DependentUpon>AddItemBarView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Menus\AddItemBarViewModel.cs" />
-    <Compile Include="Menus\SearchBarView.xaml.cs">
+    <Compile Include="MainWindow\Menus\AddItemBarViewModel.cs" />
+    <Compile Include="MainWindow\Menus\SearchBarView.xaml.cs">
       <DependentUpon>SearchBarView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Menus\SearchBarViewModel.cs" />
-    <Compile Include="Panels\Animation\AnimationData.cs" />
-    <Compile Include="Panels\Animation\AnimationPanelView.xaml.cs">
+    <Compile Include="MainWindow\Menus\SearchBarViewModel.cs" />
+    <Compile Include="MainWindow\Panels\Animation\AnimationData.cs" />
+    <Compile Include="MainWindow\Panels\Animation\AnimationPanelView.xaml.cs">
       <DependentUpon>AnimationPanelView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Panels\Animation\AnimationPanelViewModel.cs" />
-    <Compile Include="Panels\AssetPanelView.xaml.cs">
+    <Compile Include="MainWindow\Panels\Animation\AnimationPanelViewModel.cs" />
+    <Compile Include="MainWindow\Panels\AssetPanelView.xaml.cs">
       <DependentUpon>AssetPanelView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Panels\BuildPanelView.xaml.cs">
+    <Compile Include="MainWindow\Panels\BuildPanelView.xaml.cs">
       <DependentUpon>BuildPanelView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Panels\GraphicsPanelView.xaml.cs">
+    <Compile Include="MainWindow\Panels\GraphicsPanelView.xaml.cs">
       <DependentUpon>GraphicsPanelView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Panels\InfoPanelView.xaml.cs">
+    <Compile Include="MainWindow\Panels\InfoPanelView.xaml.cs">
       <DependentUpon>InfoPanelView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Panels\Light\LightData.cs" />
-    <Compile Include="Panels\Light\LightPanelView.xaml.cs">
+    <Compile Include="MainWindow\Panels\Light\LightData.cs" />
+    <Compile Include="MainWindow\Panels\Light\LightPanelView.xaml.cs">
       <DependentUpon>LightPanelView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Panels\Light\LightPanelViewModel.cs" />
-    <Compile Include="Panels\Material\MaterialData.cs" />
-    <Compile Include="Panels\Material\MaterialPanelView.xaml.cs">
+    <Compile Include="MainWindow\Panels\Light\LightPanelViewModel.cs" />
+    <Compile Include="MainWindow\Panels\Material\MaterialData.cs" />
+    <Compile Include="MainWindow\Panels\Material\MaterialPanelView.xaml.cs">
       <DependentUpon>MaterialPanelView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Panels\Material\MaterialPanelViewModel.cs" />
-    <Compile Include="Panels\Mesh\MeshData.cs" />
-    <Compile Include="Panels\Mesh\MeshPanelView.xaml.cs">
+    <Compile Include="MainWindow\Panels\Material\MaterialPanelViewModel.cs" />
+    <Compile Include="MainWindow\Panels\Mesh\MeshData.cs" />
+    <Compile Include="MainWindow\Panels\Mesh\MeshPanelView.xaml.cs">
       <DependentUpon>MeshPanelView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Panels\Mesh\MeshPanelViewModel.cs" />
-    <Compile Include="Panels\Model\ModelData.cs" />
-    <Compile Include="Panels\Model\ModelPanelView.xaml.cs">
+    <Compile Include="MainWindow\Panels\Mesh\MeshPanelViewModel.cs" />
+    <Compile Include="MainWindow\Panels\Model\ModelData.cs" />
+    <Compile Include="MainWindow\Panels\Model\ModelPanelView.xaml.cs">
       <DependentUpon>ModelPanelView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Panels\Model\ModelPanelViewModel.cs" />
-    <Compile Include="Panels\NodePanelView.xaml.cs">
+    <Compile Include="MainWindow\Panels\Model\ModelPanelViewModel.cs" />
+    <Compile Include="MainWindow\Panels\NodePanelView.xaml.cs">
       <DependentUpon>NodePanelView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Panels\Object\ObjectData.cs" />
-    <Compile Include="Panels\Object\ObjectPanelView.xaml.cs">
+    <Compile Include="MainWindow\Panels\Object\ObjectData.cs" />
+    <Compile Include="MainWindow\Panels\Object\ObjectPanelView.xaml.cs">
       <DependentUpon>ObjectPanelView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Panels\Object\ObjectPanelViewModel.cs" />
-    <Compile Include="Panels\ScenePanelView.xaml.cs">
+    <Compile Include="MainWindow\Panels\Object\ObjectPanelViewModel.cs" />
+    <Compile Include="MainWindow\Panels\ScenePanelView.xaml.cs">
       <DependentUpon>ScenePanelView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Panels\Technique\TechniqueData.cs" />
-    <Compile Include="Panels\Technique\TechniquePanelView.xaml.cs">
+    <Compile Include="MainWindow\Panels\Technique\TechniqueData.cs" />
+    <Compile Include="MainWindow\Panels\Technique\TechniquePanelView.xaml.cs">
       <DependentUpon>TechniquePanelView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Panels\Technique\TechniquePanelViewModel.cs" />
-    <Compile Include="Panels\Texture\TextureData.cs" />
-    <Compile Include="Panels\Texture\TexturePanelView.xaml.cs">
+    <Compile Include="MainWindow\Panels\Technique\TechniquePanelViewModel.cs" />
+    <Compile Include="MainWindow\Panels\Texture\TextureData.cs" />
+    <Compile Include="MainWindow\Panels\Texture\TexturePanelView.xaml.cs">
       <DependentUpon>TexturePanelView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Panels\Texture\TexturePanelViewModel.cs" />
-    <Compile Include="Panels\Transform\TransformPanelView.xaml.cs">
+    <Compile Include="MainWindow\Panels\Texture\TexturePanelViewModel.cs" />
+    <Compile Include="MainWindow\Panels\Transform\TransformPanelView.xaml.cs">
       <DependentUpon>TransformPanelView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Panels\Transform\TransformPanelViewModel.cs" />
-    <Compile Include="Panels\Transform\MathVector.cs" />
+    <Compile Include="MainWindow\Panels\Transform\TransformPanelViewModel.cs" />
+    <Compile Include="MainWindow\Panels\Transform\MathVector.cs" />
     <Compile Include="Styles\AddPathView.xaml.cs">
       <DependentUpon>AddPathView.xaml</DependentUpon>
     </Compile>
@@ -169,34 +170,34 @@
     <Compile Include="Styles\RemovePathView.xaml.cs">
       <DependentUpon>RemovePathView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Tabs\AssetsTab\AssetsTabView.xaml.cs">
+    <Compile Include="MainWindow\Tabs\AssetsTab\AssetsTabView.xaml.cs">
       <DependentUpon>AssetsTabView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Tabs\AssetsTab\AssetsTabViewModel.cs" />
-    <Compile Include="Tabs\BasicDataTabViewModel.cs" />
-    <Compile Include="Tabs\BasicTabViewModel.cs" />
-    <Compile Include="Tabs\Tree\BasicTreeItemCollectionViewModel.cs" />
-    <Compile Include="Tabs\Tree\BasicTreeItemViewModel.cs" />
-    <Compile Include="Tabs\Tree\BasicTreeView.xaml.cs">
+    <Compile Include="MainWindow\Tabs\AssetsTab\AssetsTabViewModel.cs" />
+    <Compile Include="MainWindow\Tabs\BasicDataTabViewModel.cs" />
+    <Compile Include="MainWindow\Tabs\BasicTabViewModel.cs" />
+    <Compile Include="MainWindow\Tabs\Tree\BasicTreeItemCollectionViewModel.cs" />
+    <Compile Include="MainWindow\Tabs\Tree\BasicTreeItemViewModel.cs" />
+    <Compile Include="MainWindow\Tabs\Tree\BasicTreeView.xaml.cs">
       <DependentUpon>BasicTreeView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Tabs\Tree\BasicTreeViewModel.cs" />
-    <Compile Include="Tabs\EntitiesTab\EntitiesTabView.xaml.cs">
+    <Compile Include="MainWindow\Tabs\Tree\BasicTreeViewModel.cs" />
+    <Compile Include="MainWindow\Tabs\EntitiesTab\EntitiesTabView.xaml.cs">
       <DependentUpon>EntitiesTabView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Tabs\EntitiesTab\EntitiesTabViewModel.cs" />
-    <Compile Include="Tabs\NodesTab\NodesTabView.xaml.cs">
+    <Compile Include="MainWindow\Tabs\EntitiesTab\EntitiesTabViewModel.cs" />
+    <Compile Include="MainWindow\Tabs\NodesTab\NodesTabView.xaml.cs">
       <DependentUpon>NodesTabView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Tabs\NodesTab\NodesTabViewModel.cs" />
-    <Compile Include="Tabs\SceneTab\SceneTabView.xaml.cs">
+    <Compile Include="MainWindow\Tabs\NodesTab\NodesTabViewModel.cs" />
+    <Compile Include="MainWindow\Tabs\SceneTab\SceneTabView.xaml.cs">
       <DependentUpon>SceneTabView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Tabs\SceneTab\SceneTabViewModel.cs" />
-    <Compile Include="Tabs\SettingsTab\SettingsTabView.xaml.cs">
+    <Compile Include="MainWindow\Tabs\SceneTab\SceneTabViewModel.cs" />
+    <Compile Include="MainWindow\Tabs\SettingsTab\SettingsTabView.xaml.cs">
       <DependentUpon>SettingsTabView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Tabs\SettingsTab\SettingsTabViewModel.cs" />
+    <Compile Include="MainWindow\Tabs\SettingsTab\SettingsTabViewModel.cs" />
     <Page Include="MainWindow\MainWindowView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -214,71 +215,71 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Menus\AddItemBarView.xaml">
+    <Page Include="MainWindow\Menus\AddItemBarView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Menus\SearchBarView.xaml">
+    <Page Include="MainWindow\Menus\SearchBarView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Panels\Animation\AnimationPanelView.xaml">
+    <Page Include="MainWindow\Panels\Animation\AnimationPanelView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Panels\AssetPanelView.xaml">
+    <Page Include="MainWindow\Panels\AssetPanelView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Panels\BuildPanelView.xaml">
+    <Page Include="MainWindow\Panels\BuildPanelView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Panels\GraphicsPanelView.xaml">
+    <Page Include="MainWindow\Panels\GraphicsPanelView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Panels\InfoPanelView.xaml">
+    <Page Include="MainWindow\Panels\InfoPanelView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Panels\Light\LightPanelView.xaml">
+    <Page Include="MainWindow\Panels\Light\LightPanelView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Panels\Material\MaterialPanelView.xaml">
+    <Page Include="MainWindow\Panels\Material\MaterialPanelView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Panels\Mesh\MeshPanelView.xaml">
+    <Page Include="MainWindow\Panels\Mesh\MeshPanelView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Panels\Model\ModelPanelView.xaml">
+    <Page Include="MainWindow\Panels\Model\ModelPanelView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Panels\NodePanelView.xaml">
+    <Page Include="MainWindow\Panels\NodePanelView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Panels\Object\ObjectPanelView.xaml">
+    <Page Include="MainWindow\Panels\Object\ObjectPanelView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Panels\ScenePanelView.xaml">
+    <Page Include="MainWindow\Panels\ScenePanelView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Panels\Technique\TechniquePanelView.xaml">
+    <Page Include="MainWindow\Panels\Technique\TechniquePanelView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Panels\Texture\TexturePanelView.xaml">
+    <Page Include="MainWindow\Panels\Texture\TexturePanelView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Panels\Transform\TransformPanelView.xaml">
+    <Page Include="MainWindow\Panels\Transform\TransformPanelView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -302,27 +303,27 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Tabs\AssetsTab\AssetsTabView.xaml">
+    <Page Include="MainWindow\Tabs\AssetsTab\AssetsTabView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Tabs\EntitiesTab\EntitiesTabView.xaml">
+    <Page Include="MainWindow\Tabs\EntitiesTab\EntitiesTabView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Tabs\NodesTab\NodesTabView.xaml">
+    <Page Include="MainWindow\Tabs\NodesTab\NodesTabView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Tabs\SceneTab\SceneTabView.xaml">
+    <Page Include="MainWindow\Tabs\SceneTab\SceneTabView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Tabs\SettingsTab\SettingsTabView.xaml">
+    <Page Include="MainWindow\Tabs\SettingsTab\SettingsTabView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Tabs\Tree\BasicTreeView.xaml">
+    <Page Include="MainWindow\Tabs\Tree\BasicTreeView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

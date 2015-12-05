@@ -1,12 +1,12 @@
 ﻿using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
-using GreenKidCreator.Tabs.AssetsTab;
-using GreenKidCreator.Tabs.EntitiesTab;
-using GreenKidCreator.Tabs.NodesTab;
-using GreenKidCreator.Tabs.SceneTab;
-using GreenKidCreator.Tabs.SettingsTab;
+using GreenKidEditor.MainWindow.Tabs.AssetsTab;
+using GreenKidEditor.MainWindow.Tabs.EntitiesTab;
+using GreenKidEditor.MainWindow.Tabs.NodesTab;
+using GreenKidEditor.MainWindow.Tabs.SceneTab;
+using GreenKidEditor.MainWindow.Tabs.SettingsTab;
 
-namespace GreenKidCreator.MainWindow
+namespace GreenKidEditor.MainWindow
 {
     public class MainWindowViewModel : ViewModelBase
     {

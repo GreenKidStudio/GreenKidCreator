@@ -1,6 +1,6 @@
-﻿using GreenKidCreator.Application;
+﻿using GreenKidEditor.Application;
 
-namespace GreenKidCreator.MainWindow
+namespace GreenKidEditor.MainWindow
 {
     public partial class MainWindowView
     {

@@ -1,6 +1,6 @@
-﻿using GreenKidCreator.MainWindow;
+﻿using GreenKidEditor.MainWindow;
 
-namespace GreenKidCreator.Application
+namespace GreenKidEditor.Application
 {
     public class ViewModelLocator
     {

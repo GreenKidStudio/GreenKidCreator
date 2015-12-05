@@ -1,4 +1,4 @@
-﻿namespace GreenKidCreator.Styles
+﻿namespace GreenKidEditor.Styles
 {
     public partial class ConfirmPathView
     {

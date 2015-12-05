@@ -1,6 +1,6 @@
 ﻿using GalaSoft.MvvmLight.Threading;
 
-namespace GreenKidCreator.Application
+namespace GreenKidEditor.Application
 {
     public partial class App
     {
