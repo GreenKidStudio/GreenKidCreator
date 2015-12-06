@@ -5,11 +5,11 @@ namespace GreenKidEditor.Application.Managers
     public static class BuildManager
     {
         public static string CurrentPlatform { get; set; }
-        public static List<string> Platforms { get; }
+        public static IEnumerable<string> Platforms { get; }
 
         static BuildManager()
         {
-            Platforms = new List<string>
+            Platforms = new []
             {
                 "Windows", "Android", "iOS"
             };

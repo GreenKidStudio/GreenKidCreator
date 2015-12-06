@@ -83,6 +83,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Application\Managers\BuildManager.cs" />
+    <Compile Include="Application\Managers\GraphicsManager.cs" />
     <Compile Include="MainWindow\Panels\Settings\BuildPanelViewModel.cs" />
     <Compile Include="MainWindow\Panels\Settings\GraphicsPanelViewModel.cs" />
     <Compile Include="MainWindow\Panels\Settings\InfoPanelViewModel.cs" />

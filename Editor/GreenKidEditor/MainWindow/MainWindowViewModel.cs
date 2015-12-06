@@ -1,5 +1,6 @@
 ﻿using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
+using GreenKidEditor.Application.Managers;
 using GreenKidEditor.MainWindow.Tabs.AssetsTab;
 using GreenKidEditor.MainWindow.Tabs.EntitiesTab;
 using GreenKidEditor.MainWindow.Tabs.NodesTab;
