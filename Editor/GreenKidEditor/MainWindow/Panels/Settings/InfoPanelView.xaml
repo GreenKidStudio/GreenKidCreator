@@ -2,7 +2,8 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" mc:Ignorable="d">
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" mc:Ignorable="d"
+             xmlns:settings="clr-namespace:GreenKidEditor.MainWindow.Panels.Settings">
 
     <Border Style="{ StaticResource BorderStyle }" Margin="0, 2, 0, 0">
         <Expander IsExpanded="True">
@@ -27,7 +28,8 @@
                 <Label Grid.Row="0" Grid.Column="0" Style="{ StaticResource LabelHeaderStyle }" Content="Editor"/>
 
                 <!-- Value -->
-                <Label Grid.Row="0" Grid.Column="1" Style="{ StaticResource LabelValueStyle }" Content="Test"/>
+                <Label Grid.Row="0" Grid.Column="1" Style="{ StaticResource LabelValueStyle }" 
+                       Content="{ Binding Path=(settings:InfoPanelViewModel.EditorVersion), Mode=OneTime }"/>
                 
                 <!-- Second Row -->
                 <Grid Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Margin="0, 2, 0, 0">

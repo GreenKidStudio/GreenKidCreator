@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
 using GreenKidEditor.Application.Managers;
@@ -36,13 +35,10 @@ namespace GreenKidEditor.MainWindow.Panels.Settings
             }
         }
 
-        public GraphicsPanelViewModel()
-        {
-            Samples = SamplesList.First();
-        }
 
         private void ExecuteSave()
         {
+            GraphicsManager.SaveSettings();
         }
     }
 }

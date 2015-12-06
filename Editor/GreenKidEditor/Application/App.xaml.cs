@@ -1,4 +1,5 @@
 ﻿using GalaSoft.MvvmLight.Threading;
+using GreenKidEditor.Application.Managers;
 
 namespace GreenKidEditor.Application
 {
@@ -6,6 +7,8 @@ namespace GreenKidEditor.Application
     {
         static App()
         {
+            GraphicsManager.LoadSettings();
+
             DispatcherHelper.Initialize();
         }
     }
