@@ -4,6 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" mc:Ignorable="d">
     
+    <!-- Path for the Remove Button -->
     <Path Data="F1 M 4.70432,0L 0.0480347,4.77802L 7.00842,11.6812L 0,18.7292L 4.70432,23.46L 11.6647,16.412L 18.6252,23.46L 23.3774,18.7774L 16.369,11.6812L 23.3294,4.77802L 18.6252,0L 11.6647,6.9986L 4.70432,0 Z "
           Style="{ StaticResource PathStyle }"/>
 </UserControl>

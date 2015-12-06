@@ -4,6 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" mc:Ignorable="d">
 
+    <!-- Path for the Confirm Button -->
     <Path Data="F1 M 0,110L 47.6667,62L 102,117.333L 218.667,0L 266,48L 102,212.333L 0,110 Z " 
           Style="{ StaticResource PathStyle }"/>
 </UserControl>

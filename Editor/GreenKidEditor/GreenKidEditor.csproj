@@ -83,6 +83,10 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Application\Managers\BuildManager.cs" />
+    <Compile Include="MainWindow\Panels\Settings\BuildPanelViewModel.cs" />
+    <Compile Include="MainWindow\Panels\Settings\GraphicsPanelViewModel.cs" />
+    <Compile Include="MainWindow\Panels\Settings\InfoPanelViewModel.cs" />
+    <Compile Include="MainWindow\Panels\Settings\ScenePanelViewModel.cs" />
     <Compile Include="MainWindow\StatusBarView.xaml.cs">
       <DependentUpon>StatusBarView.xaml</DependentUpon>
     </Compile>
@@ -103,13 +107,13 @@
     <Compile Include="MainWindow\Panels\AssetPanelView.xaml.cs">
       <DependentUpon>AssetPanelView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MainWindow\Panels\BuildPanelView.xaml.cs">
+    <Compile Include="MainWindow\Panels\Settings\BuildPanelView.xaml.cs">
       <DependentUpon>BuildPanelView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MainWindow\Panels\GraphicsPanelView.xaml.cs">
+    <Compile Include="MainWindow\Panels\Settings\GraphicsPanelView.xaml.cs">
       <DependentUpon>GraphicsPanelView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MainWindow\Panels\InfoPanelView.xaml.cs">
+    <Compile Include="MainWindow\Panels\Settings\InfoPanelView.xaml.cs">
       <DependentUpon>InfoPanelView.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow\Panels\Light\LightData.cs" />
@@ -140,7 +144,7 @@
       <DependentUpon>ObjectPanelView.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow\Panels\Object\ObjectPanelViewModel.cs" />
-    <Compile Include="MainWindow\Panels\ScenePanelView.xaml.cs">
+    <Compile Include="MainWindow\Panels\Settings\ScenePanelView.xaml.cs">
       <DependentUpon>ScenePanelView.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow\Panels\Technique\TechniqueData.cs" />
@@ -231,15 +235,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="MainWindow\Panels\BuildPanelView.xaml">
+    <Page Include="MainWindow\Panels\Settings\BuildPanelView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="MainWindow\Panels\GraphicsPanelView.xaml">
+    <Page Include="MainWindow\Panels\Settings\GraphicsPanelView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="MainWindow\Panels\InfoPanelView.xaml">
+    <Page Include="MainWindow\Panels\Settings\InfoPanelView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -267,7 +271,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="MainWindow\Panels\ScenePanelView.xaml">
+    <Page Include="MainWindow\Panels\Settings\ScenePanelView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

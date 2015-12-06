@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-             xmlns:panels="clr-namespace:GreenKidEditor.MainWindow.Panels" mc:Ignorable="d"
+             xmlns:settings="clr-namespace:GreenKidEditor.MainWindow.Panels.Settings"
+             mc:Ignorable="d"
              
              DataContext="{ Binding Source={ StaticResource ViewModelLocator }, Path=MainWindow.SettingsTab, Mode=OneTime }">
     
@@ -16,10 +17,10 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         
-        <panels:GraphicsPanelView Grid.Row="0"/>
-        <panels:BuildPanelView Grid.Row="1"/>
-        <panels:ScenePanelView Grid.Row="2"/>
-        <panels:InfoPanelView Grid.Row="3"/>
+        <settings:GraphicsPanelView Grid.Row="0" DataContext="{ Binding Path=GraphicsPanel, Mode=OneTime }"/>
+        <settings:BuildPanelView Grid.Row="1" DataContext="{ Binding Path=BuildPanel, Mode=OneTime }"/>
+        <settings:ScenePanelView Grid.Row="2" DataContext="{ Binding Path=ScenePane, Mode=OneTime }"/>
+        <settings:InfoPanelView Grid.Row="3" DataContext="{ Binding Path=InfoPanel, Mode=OneTime }"/>
         
         <!-- Free Space -->
         <Border Grid.Row="4" Style="{ StaticResource BorderStyle }" Margin="0, 2, 0, 0"/>
