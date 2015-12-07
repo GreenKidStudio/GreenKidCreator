@@ -30,10 +30,7 @@
 
         <!-- Second Row -->
 
-        <!-- Header -->
-        <Label Grid.Row="1" Grid.Column="0" Style="{ StaticResource LabelHeaderStyle }" Content="Color" Margin="0, 2, 2, 0"/>
-
         <!-- Color Control -->
-        <menus:ColorControlView Grid.Row="1" Grid.Column="1" Margin="0, 2, 0, 0"/>
+        <menus:ColorControlView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Margin="0, 2, 0, 0"/>
     </Grid>
 </UserControl>

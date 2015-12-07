@@ -2,13 +2,29 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" mc:Ignorable="d">
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:menus="clr-namespace:GreenKidEditor.MainWindow.Menus"
+             mc:Ignorable="d">
 
     <Border Style="{ StaticResource BorderStyle }" Margin="0, 2, 0, 0">
         <Expander IsExpanded="True">
             <Expander.Header>
                 <Label Style="{ StaticResource ExpanderHeaderStyle }" Content="Scene"/>
             </Expander.Header>
+
+            <Grid Margin="0, 5, 0, 0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                
+                <!-- Color Control -->
+                <menus:ColorControlView Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"/>
+            </Grid>
         </Expander>
     </Border>
 </UserControl>

@@ -12,6 +12,7 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
@@ -64,11 +65,23 @@
         </Grid>
 
         <!-- Third Row -->
-        
-        <!-- Header -->
-        <Label Grid.Row="2" Grid.Column="0" Style="{ StaticResource LabelHeaderStyle }" Content="Color" Margin="0, 2, 2, 0"/>
-
+       
         <!-- Color Control -->
-        <menus:ColorControlView Grid.Row="2" Grid.Column="1" Margin="0, 2, 0, 0"/>
+        <menus:ColorControlView Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Margin="0, 2, 0, 0"/>
+
+        <!-- Fourth Row -->
+        <Border Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Style="{ StaticResource BorderStyle }" Margin="0, 2, 0, 0">
+            <Expander IsExpanded="True">
+                <Expander.Header>
+                    <Label Style="{ StaticResource ExpanderHeaderStyle }" Content="Preview"/>
+                </Expander.Header>
+
+                <Grid Margin="0, 5, 0, 0" Height="190">
+                    <Border Style="{ StaticResource BorderStyle }">
+
+                    </Border>
+                </Grid>
+            </Expander>
+        </Border>
     </Grid>
 </UserControl>

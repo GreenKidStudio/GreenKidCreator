@@ -9,6 +9,7 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
@@ -69,5 +70,20 @@
 
             <CheckBox Grid.Row="0" Grid.Column="1" Content="Is Compressed" HorizontalAlignment="Left" Margin="10, 0, 0, 0"/>
         </Grid>
+
+        <!-- Fourth Row -->
+        <Border Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Style="{ StaticResource BorderStyle }" Margin="0, 2, 0, 0">
+            <Expander IsExpanded="True">
+                <Expander.Header>
+                    <Label Style="{ StaticResource ExpanderHeaderStyle }" Content="Preview"/>
+                </Expander.Header>
+
+                <Grid Margin="0, 5, 0, 0" Height="190">
+                    <Border Style="{ StaticResource BorderStyle }">
+
+                    </Border>
+                </Grid>
+            </Expander>
+        </Border>
     </Grid>
 </UserControl>

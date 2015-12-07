@@ -6,16 +6,24 @@
 
     <Grid>
         <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
         </Grid.ColumnDefinitions>
 
-        <TextBox Grid.Column="0" Style="{ StaticResource TextBoxCenterValue }" Text="255"/>
-        <TextBox Grid.Column="1" Style="{ StaticResource TextBoxCenterValue }" Text="255" Margin="2, 0, 0, 0"/>
+        <!-- Header -->
+        <Label Grid.Column="0" Style="{ StaticResource LabelHeaderStyle }" Content="Color"/>
+        
+        <!-- Color RGB -->
+        <TextBox Grid.Column="1" Style="{ StaticResource TextBoxCenterValue }" Text="255"/>
         <TextBox Grid.Column="2" Style="{ StaticResource TextBoxCenterValue }" Text="255" Margin="2, 0, 0, 0"/>
+        <TextBox Grid.Column="3" Style="{ StaticResource TextBoxCenterValue }" Text="255" Margin="2, 0, 0, 0"/>
 
-        <Rectangle Grid.Column="3" Fill="CornflowerBlue" Margin="2, 0, 0, 0"/>
+        <!-- Color -->
+        <Border Grid.Column="4" Style="{ StaticResource BorderStyle }" Width="26" Margin="2, 0, 0, 0" Padding="2" Background="GhostWhite">
+            <Rectangle  Fill="CornflowerBlue"/>
+        </Border>
     </Grid>
 </UserControl>
