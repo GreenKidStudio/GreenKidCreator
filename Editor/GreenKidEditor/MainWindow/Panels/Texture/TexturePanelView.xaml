@@ -73,12 +73,12 @@
 
         <!-- Fourth Row -->
         <Border Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Style="{ StaticResource BorderStyle }" Margin="0, 2, 0, 0">
-            <Expander IsExpanded="True">
+            <Expander IsExpanded="True" Background="GhostWhite">
                 <Expander.Header>
                     <Label Style="{ StaticResource ExpanderHeaderStyle }" Content="Preview"/>
                 </Expander.Header>
 
-                <Grid Margin="0, 5, 0, 0" Height="190">
+                <Grid Margin="0, 2, 0, 0" Height="190" Background="White">
                     <Border Style="{ StaticResource BorderStyle }">
 
                     </Border>

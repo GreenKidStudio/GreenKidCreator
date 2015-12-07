@@ -124,7 +124,7 @@
     <!-- Expander -->
     <Style TargetType="Expander">
         <Setter Property="Background" Value="White"/>
-        <Setter Property="Margin" Value="2"/>
+        <Setter Property="Margin" Value="1"/>
     </Style>
     
     <!-- Combo Box -->
