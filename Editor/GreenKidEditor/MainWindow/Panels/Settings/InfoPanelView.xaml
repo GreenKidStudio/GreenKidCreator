@@ -48,7 +48,8 @@
                         <Label Grid.Row="0" Grid.Column="0" Style="{ StaticResource LabelHeaderStyle }" Content="OpenGL"/>
 
                         <!-- Value -->
-                        <Label Grid.Row="0" Grid.Column="1" Style="{ StaticResource LabelValueStyle }" Content="Test"/>
+                        <Label Grid.Row="0" Grid.Column="1" Style="{ StaticResource LabelValueStyle }" 
+                               Content="{ Binding Path=(settings:InfoPanelViewModel.OpenGLVersion), Mode=OneWay, TargetNullValue='-' }"/>
                     </Grid>
 
                     <Grid Grid.Row="0" Grid.Column="1">
@@ -61,7 +62,8 @@
                         <Label Grid.Row="0" Grid.Column="0" Style="{ StaticResource LabelHeaderStyle }" Content="GLSL" Margin="0"/>
 
                         <!-- Value -->
-                        <Label Grid.Row="0" Grid.Column="1" Style="{ StaticResource LabelValueStyle }" Content="Test"/>
+                        <Label Grid.Row="0" Grid.Column="1" Style="{ StaticResource LabelValueStyle }"
+                               Content="{ Binding Path=(settings:InfoPanelViewModel.GLSLVersion), Mode=OneWay, TargetNullValue='-' }"/>
                     </Grid>
                 </Grid>
             </Grid>

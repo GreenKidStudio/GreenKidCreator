@@ -13,8 +13,8 @@ namespace GreenKidEditor.Application.Managers
 
         public static bool UseSamplesInBuild { get; set; }
 
-        public static string OpenGLVersion { get; set; }
-        public static string GLSLVersion { get; set; }
+        public static string OpenGL { get; set; }
+        public static string GLSL { get; set; }
 
         static GraphicsManager()
         {

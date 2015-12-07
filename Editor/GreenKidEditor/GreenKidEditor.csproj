@@ -83,7 +83,12 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Application\Managers\BuildManager.cs" />
+    <Compile Include="Application\Managers\EditorManager.cs" />
     <Compile Include="Application\Managers\GraphicsManager.cs" />
+    <Compile Include="MainWindow\Menus\ColorControlView.xaml.cs">
+      <DependentUpon>ColorControlView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow\Menus\ColorControlViewModel.cs" />
     <Compile Include="MainWindow\Panels\Settings\BuildPanelViewModel.cs" />
     <Compile Include="MainWindow\Panels\Settings\GraphicsPanelViewModel.cs" />
     <Compile Include="MainWindow\Panels\Settings\InfoPanelViewModel.cs" />
@@ -216,6 +221,10 @@
       <DependentUpon>MainWindowView.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="MainWindow\Menus\ColorControlView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow\StatusBarView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
