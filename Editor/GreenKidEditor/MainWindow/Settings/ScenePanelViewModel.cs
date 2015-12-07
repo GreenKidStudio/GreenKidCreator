@@ -1,6 +1,6 @@
 ﻿using GalaSoft.MvvmLight;
 
-namespace GreenKidEditor.MainWindow.Panels.Settings
+namespace GreenKidEditor.MainWindow.Settings
 {
     public class ScenePanelViewModel : ViewModelBase
     {

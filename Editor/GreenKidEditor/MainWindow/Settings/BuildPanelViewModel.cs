@@ -4,7 +4,7 @@ using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
 using GreenKidEditor.Application.Managers;
 
-namespace GreenKidEditor.MainWindow.Panels.Settings
+namespace GreenKidEditor.MainWindow.Settings
 {
     public class BuildPanelViewModel : ViewModelBase
     {

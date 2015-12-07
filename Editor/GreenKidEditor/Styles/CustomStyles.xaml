@@ -1,6 +1,9 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
+    <!-- Converter -->
+    <BooleanToVisibilityConverter x:Key="ToVisibilityConverter"/>
+    
     <!-- Tab Control -->
     <Style TargetType="TabControl">
         <Setter Property="BorderBrush" Value="Gainsboro"/>

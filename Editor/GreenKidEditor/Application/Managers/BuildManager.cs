@@ -11,7 +11,7 @@ namespace GreenKidEditor.Application.Managers
         {
             Platforms = new []
             {
-                "Windows", "Android", "iOS"
+                "Windows", "Android", "iOS", "Web"
             };
         }
     }

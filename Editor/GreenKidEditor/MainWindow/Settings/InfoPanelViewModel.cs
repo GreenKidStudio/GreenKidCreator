@@ -1,7 +1,7 @@
 ﻿using GalaSoft.MvvmLight;
 using GreenKidEditor.Application.Managers;
 
-namespace GreenKidEditor.MainWindow.Panels.Settings
+namespace GreenKidEditor.MainWindow.Settings
 {
     public class InfoPanelViewModel : ViewModelBase
     {
@@ -19,7 +19,7 @@ namespace GreenKidEditor.MainWindow.Panels.Settings
 
         public InfoPanelViewModel()
         {
-            EditorVersion = "Alpha 1 v.0.0.3";
+            EditorVersion = "Alpha 1 v.0.0.4";
         }
     }
 }

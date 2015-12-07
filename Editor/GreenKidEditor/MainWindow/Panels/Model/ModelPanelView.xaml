@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:model="clr-namespace:GreenKidEditor.MainWindow.Panels.Model"
              mc:Ignorable="d">
 
     <Grid Margin="0, 5, 0, 0">
@@ -86,21 +87,15 @@
         </Grid>
         
         <!-- Fourth Row -->
-        
-        
+        <ToggleButton Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Margin="0, 2, 0, 0" Content="Preview" 
+                      IsChecked="{ Binding Path=(model:ModelPanelViewModel.IsChecked), Mode=TwoWay }"/>
+         
         <!-- Fifth Row -->
-        <Border Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Style="{ StaticResource BorderStyle }" Margin="0, 2, 0, 0">
-            <Expander IsExpanded="True" Background="GhostWhite">
-                <Expander.Header>
-                    <Label Style="{ StaticResource ExpanderHeaderStyle }" Content="Preview"/>
-                </Expander.Header>
+        <Border Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Style="{ StaticResource BorderStyle }" Margin="0, 2, 0, 0"
+                Visibility="{ Binding Path=(model:ModelPanelViewModel.IsChecked), Converter={ StaticResource ToVisibilityConverter } }">
+            <Grid Height="190" Background="White">
 
-                <Grid Margin="0, 2, 0, 0" Height="190" Background="White">
-                    <Border Style="{ StaticResource BorderStyle }">
-
-                    </Border>
-                </Grid>
-            </Expander>
+            </Grid>
         </Border>
     </Grid>
 </UserControl>

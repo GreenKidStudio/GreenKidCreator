@@ -1,4 +1,4 @@
-﻿using GreenKidEditor.MainWindow.Panels.Settings;
+﻿using GreenKidEditor.MainWindow.Settings;
 
 namespace GreenKidEditor.MainWindow.Tabs.SettingsTab
 {

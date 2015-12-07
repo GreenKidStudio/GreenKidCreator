@@ -2,10 +2,13 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" mc:Ignorable="d">
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:texture="clr-namespace:GreenKidEditor.MainWindow.Panels.Texture"
+             mc:Ignorable="d">
 
     <Grid Margin="0, 5, 0, 0">
         <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
@@ -72,18 +75,15 @@
         </Grid>
 
         <!-- Fourth Row -->
-        <Border Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Style="{ StaticResource BorderStyle }" Margin="0, 2, 0, 0">
-            <Expander IsExpanded="True" Background="GhostWhite">
-                <Expander.Header>
-                    <Label Style="{ StaticResource ExpanderHeaderStyle }" Content="Preview"/>
-                </Expander.Header>
+        <ToggleButton Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Margin="0, 2, 0, 0" Content="Preview"
+                      IsChecked="{ Binding Path=(texture:TexturePanelViewModel.IsChecked), Mode=TwoWay }"/>
 
-                <Grid Margin="0, 2, 0, 0" Height="190" Background="White">
-                    <Border Style="{ StaticResource BorderStyle }">
+        <!-- Fifth Row -->
+        <Border Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Style="{ StaticResource BorderStyle }" Margin="0, 2, 0, 0"
+                Visibility="{ Binding Path=(texture:TexturePanelViewModel.IsChecked), Converter={ StaticResource ToVisibilityConverter } }">
+            <Grid Height="190" Background="White">
 
-                    </Border>
-                </Grid>
-            </Expander>
+            </Grid>
         </Border>
     </Grid>
 </UserControl>

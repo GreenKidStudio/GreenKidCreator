@@ -89,10 +89,10 @@
       <DependentUpon>ColorControlView.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow\Menus\ColorControlViewModel.cs" />
-    <Compile Include="MainWindow\Panels\Settings\BuildPanelViewModel.cs" />
-    <Compile Include="MainWindow\Panels\Settings\GraphicsPanelViewModel.cs" />
-    <Compile Include="MainWindow\Panels\Settings\InfoPanelViewModel.cs" />
-    <Compile Include="MainWindow\Panels\Settings\ScenePanelViewModel.cs" />
+    <Compile Include="MainWindow\Settings\BuildPanelViewModel.cs" />
+    <Compile Include="MainWindow\Settings\GraphicsPanelViewModel.cs" />
+    <Compile Include="MainWindow\Settings\InfoPanelViewModel.cs" />
+    <Compile Include="MainWindow\Settings\ScenePanelViewModel.cs" />
     <Compile Include="MainWindow\StatusBarView.xaml.cs">
       <DependentUpon>StatusBarView.xaml</DependentUpon>
     </Compile>
@@ -113,13 +113,13 @@
     <Compile Include="MainWindow\Panels\AssetPanelView.xaml.cs">
       <DependentUpon>AssetPanelView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MainWindow\Panels\Settings\BuildPanelView.xaml.cs">
+    <Compile Include="MainWindow\Settings\BuildPanelView.xaml.cs">
       <DependentUpon>BuildPanelView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MainWindow\Panels\Settings\GraphicsPanelView.xaml.cs">
+    <Compile Include="MainWindow\Settings\GraphicsPanelView.xaml.cs">
       <DependentUpon>GraphicsPanelView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MainWindow\Panels\Settings\InfoPanelView.xaml.cs">
+    <Compile Include="MainWindow\Settings\InfoPanelView.xaml.cs">
       <DependentUpon>InfoPanelView.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow\Panels\Light\LightData.cs" />
@@ -150,7 +150,7 @@
       <DependentUpon>ObjectPanelView.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow\Panels\Object\ObjectPanelViewModel.cs" />
-    <Compile Include="MainWindow\Panels\Settings\ScenePanelView.xaml.cs">
+    <Compile Include="MainWindow\Settings\ScenePanelView.xaml.cs">
       <DependentUpon>ScenePanelView.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow\Panels\Technique\TechniqueData.cs" />
@@ -245,15 +245,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="MainWindow\Panels\Settings\BuildPanelView.xaml">
+    <Page Include="MainWindow\Settings\BuildPanelView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="MainWindow\Panels\Settings\GraphicsPanelView.xaml">
+    <Page Include="MainWindow\Settings\GraphicsPanelView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="MainWindow\Panels\Settings\InfoPanelView.xaml">
+    <Page Include="MainWindow\Settings\InfoPanelView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -281,7 +281,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="MainWindow\Panels\Settings\ScenePanelView.xaml">
+    <Page Include="MainWindow\Settings\ScenePanelView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

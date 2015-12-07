@@ -5,10 +5,12 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:styles="clr-namespace:GreenKidEditor.Styles"
              xmlns:menus="clr-namespace:GreenKidEditor.MainWindow.Menus"
+             xmlns:material="clr-namespace:GreenKidEditor.MainWindow.Panels.Material"
              mc:Ignorable="d">
 
     <Grid Margin="0, 5, 0, 0">
         <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
@@ -70,18 +72,15 @@
         <menus:ColorControlView Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Margin="0, 2, 0, 0"/>
 
         <!-- Fourth Row -->
-        <Border Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Style="{ StaticResource BorderStyle }" Margin="0, 2, 0, 0">
-            <Expander IsExpanded="True" Background="GhostWhite">
-                <Expander.Header>
-                    <Label Style="{ StaticResource ExpanderHeaderStyle }" Content="Preview"/>
-                </Expander.Header>
+        <ToggleButton Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Margin="0, 2, 0, 0" Content="Preview"
+                      IsChecked="{ Binding Path=(material:MaterialPanelViewModel.IsChecked), Mode=TwoWay }"/>
 
-                <Grid Margin="0, 2, 0, 0" Height="190" Background="White">
-                    <Border Style="{ StaticResource BorderStyle }">
+        <!-- Fifth Row -->
+        <Border Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Style="{ StaticResource BorderStyle }" Margin="0, 2, 0, 0"
+                Visibility="{ Binding Path=(material:MaterialPanelViewModel.IsChecked), Converter={ StaticResource ToVisibilityConverter } }">
+            <Grid Height="190" Background="White">
 
-                    </Border>
-                </Grid>
-            </Expander>
+            </Grid>
         </Border>
     </Grid>
 </UserControl>
