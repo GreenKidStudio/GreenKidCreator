@@ -5,8 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:tree="clr-namespace:GreenKidEditor.MainWindow.Tabs.Tree"
              xmlns:light="clr-namespace:GreenKidEditor.MainWindow.Panels.Light"
-             xmlns:object="clr-namespace:GreenKidEditor.MainWindow.Panels.Object"
-             mc:Ignorable="d">
+             xmlns:object="clr-namespace:GreenKidEditor.MainWindow.Panels.Object" mc:Ignorable="d">
 
     <UserControl.Resources>
         <!-- Node Group -->
@@ -31,7 +30,7 @@
         <Expander IsExpanded="True">
 
 
-            <ContentPresenter Content="{ Binding Path=(tree:BasicTreeViewModel.SelectedItem), Mode=OneWay }"/>
+            <ContentPresenter Content="{ Binding Path=SelectedItem, Mode=OneWay }"/>
         </Expander>
     </Border>
 </UserControl>

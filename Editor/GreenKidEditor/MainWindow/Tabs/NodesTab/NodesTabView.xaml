@@ -6,8 +6,7 @@
              xmlns:tree="clr-namespace:GreenKidEditor.MainWindow.Tabs.Tree"
              xmlns:panels="clr-namespace:GreenKidEditor.MainWindow.Panels"
              xmlns:menus="clr-namespace:GreenKidEditor.MainWindow.Menus"
-             xmlns:transform="clr-namespace:GreenKidEditor.MainWindow.Panels.Transform"
-             mc:Ignorable="d"
+             xmlns:transform="clr-namespace:GreenKidEditor.MainWindow.Panels.Transform" mc:Ignorable="d"
              
              DataContext="{ Binding Source={ StaticResource ViewModelLocator }, Path=MainWindow.NodesTab, Mode=OneTime }">
     

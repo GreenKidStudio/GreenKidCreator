@@ -3,7 +3,6 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" mc:Ignorable="d"
-             xmlns:tree="clr-namespace:GreenKidEditor.MainWindow.Tabs.Tree"
              xmlns:transform="clr-namespace:GreenKidEditor.MainWindow.Panels.Transform">
 
     <UserControl.Resources>
@@ -48,7 +47,7 @@
             </Expander.Header>
             
             <!-- Content -->
-            <ContentPresenter Content="{ Binding Path=(tree:BasicTreeItemViewModel.Transform), Mode=OneWay }"/>
+            <ContentPresenter Content="{ Binding Path=Transform, Mode=OneWay }"/>
         </Expander>
     </Border>
 </UserControl>

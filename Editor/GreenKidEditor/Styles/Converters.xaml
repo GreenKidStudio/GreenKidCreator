@@ -1,0 +1,9 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:utils="clr-namespace:GreenKidEditor.Utils">
+
+    <!-- Converters -->
+    <BooleanToVisibilityConverter x:Key="ToVisibilityConverter"/>
+
+    <utils:ColorToSolidBrushConverter x:Key="ToSolidBrushConverter"/>
+</ResourceDictionary>

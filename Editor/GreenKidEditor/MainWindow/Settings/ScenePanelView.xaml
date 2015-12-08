@@ -3,8 +3,6 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-             xmlns:menus="clr-namespace:GreenKidEditor.MainWindow.Menus"
-             xmlns:settings="clr-namespace:GreenKidEditor.MainWindow.Settings"
              mc:Ignorable="d">
 
     <Border Style="{ StaticResource BorderStyle }" Margin="0, 2, 0, 0">
@@ -24,8 +22,7 @@
                 </Grid.ColumnDefinitions>
                 
                 <!-- Color Control -->
-                <menus:ColorControlView Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
-                                        DataContext="{ Binding Path=(settings:ScenePanelViewModel.ColorControl), Mode=OneTime }"/>
+                <ContentPresenter Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Content="{ Binding Path=ColorControl, Mode=OneTime }"/>
             </Grid>
         </Expander>
     </Border>

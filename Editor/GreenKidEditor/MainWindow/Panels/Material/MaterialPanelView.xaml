@@ -3,10 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-             xmlns:styles="clr-namespace:GreenKidEditor.Styles"
-             xmlns:menus="clr-namespace:GreenKidEditor.MainWindow.Menus"
-             xmlns:material="clr-namespace:GreenKidEditor.MainWindow.Panels.Material"
-             mc:Ignorable="d">
+             xmlns:styles="clr-namespace:GreenKidEditor.Styles" mc:Ignorable="d"
+             xmlns:material="clr-namespace:GreenKidEditor.MainWindow.Panels.Material">
 
     <Grid Margin="0, 5, 0, 0">
         <Grid.RowDefinitions>
@@ -69,16 +67,15 @@
         <!-- Third Row -->
        
         <!-- Color Control -->
-        <menus:ColorControlView Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Margin="0, 2, 0, 0"
-                                DataContext="{ Binding Path=(material:MaterialPanelViewModel.ColorControl), Mode=OneTime }"/>
+        <ContentPresenter Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Margin="0, 2, 0, 0" Content="{ Binding Path=(material:MaterialPanelViewModel.ColorControl), Mode=OneTime }"/>
 
         <!-- Fourth Row -->
         <ToggleButton Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Margin="0, 2, 0, 0" Content="Preview"
-                      IsChecked="{ Binding Path=(material:MaterialPanelViewModel.IsChecked), Mode=TwoWay }"/>
+                      IsChecked="{ Binding Path=IsChecked, Mode=TwoWay }"/>
 
         <!-- Fifth Row -->
         <Border Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Style="{ StaticResource BorderStyle }" Margin="0, 2, 0, 0"
-                Visibility="{ Binding Path=(material:MaterialPanelViewModel.IsChecked), Converter={ StaticResource ToVisibilityConverter } }">
+                Visibility="{ Binding Path=IsChecked, Converter={ StaticResource ToVisibilityConverter } }">
             <Grid Height="190" Background="White">
 
             </Grid>

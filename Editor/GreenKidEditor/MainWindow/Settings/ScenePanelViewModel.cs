@@ -10,7 +10,7 @@ namespace GreenKidEditor.MainWindow.Settings
 
         public void InitViewModels()
         {
-            ColorControl = new ColorControlViewModel("Clear", Colors.Black);
+            ColorControl = new ColorControlViewModel("Clear", Colors.LightGray);
         }
     }
 }

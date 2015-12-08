@@ -16,7 +16,13 @@ namespace GreenKidEditor.MainWindow.Menus
             {
                 mColor = value;
 
+                // Update the color
                 RaisePropertyChanged(() => Color);
+
+                // Update the RGB Fields
+                RaisePropertyChanged(() => R);
+                RaisePropertyChanged(() => G);
+                RaisePropertyChanged(() => B);
             }
         }
 
@@ -28,6 +34,7 @@ namespace GreenKidEditor.MainWindow.Menus
                 mColor.R = value;
 
                 RaisePropertyChanged(() => R);
+                RaisePropertyChanged(() => Color);
             }
         }
 
@@ -39,6 +46,7 @@ namespace GreenKidEditor.MainWindow.Menus
                 mColor.G = value;
 
                 RaisePropertyChanged(() => G);
+                RaisePropertyChanged(() => Color);
             }
         }
 
@@ -50,6 +58,7 @@ namespace GreenKidEditor.MainWindow.Menus
                 mColor.B = value;
 
                 RaisePropertyChanged(() => B);
+                RaisePropertyChanged(() => Color);
             }
         }
 

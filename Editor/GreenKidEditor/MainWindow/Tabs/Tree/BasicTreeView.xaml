@@ -11,7 +11,7 @@
         <!-- Triggers -->
         <i:Interaction.Triggers>
             <i:EventTrigger EventName="SelectedItemChanged">
-                <command:EventToCommand Command="{ Binding Path=(tree:BasicTreeViewModel.SelectedItemCmd), Mode=OneTime }" PassEventArgsToCommand="True"/>
+                <command:EventToCommand Command="{ Binding Path=SelectedItemCmd, Mode=OneTime }" PassEventArgsToCommand="True"/>
             </i:EventTrigger>
         </i:Interaction.Triggers>
 

@@ -3,7 +3,6 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" mc:Ignorable="d"
-             xmlns:tree="clr-namespace:GreenKidEditor.MainWindow.Tabs.Tree"
              xmlns:animation="clr-namespace:GreenKidEditor.MainWindow.Panels.Animation"
              xmlns:material="clr-namespace:GreenKidEditor.MainWindow.Panels.Material"
              xmlns:model="clr-namespace:GreenKidEditor.MainWindow.Panels.Model"
@@ -47,7 +46,7 @@
         <Expander IsExpanded="True">
 
 
-            <ContentPresenter Content="{ Binding Path=(tree:BasicTreeViewModel.SelectedItem), Mode=OneWay }"/>
+            <ContentPresenter Content="{ Binding Path=SelectedItem, Mode=OneWay }"/>
         </Expander>
     </Border>
 </UserControl>
