@@ -6,7 +6,22 @@ namespace GreenKidEditor.Application
     {
         private static MainWindowViewModel mMainWindow;
 
-        public static MainWindowViewModel MainWindow => mMainWindow ?? (mMainWindow = new MainWindowViewModel());
+        public static MainWindowViewModel MainWindow
+        {
+            get
+            {
+                if (mMainWindow != null)
+                {
+                    return mMainWindow;
+                }
+
+                mMainWindow = new MainWindowViewModel();
+                mMainWindow.InitViewModels();
+                mMainWindow.InitCommands();
+
+                return mMainWindow;
+            }
+        }
 
         public static void Cleanup()
         {

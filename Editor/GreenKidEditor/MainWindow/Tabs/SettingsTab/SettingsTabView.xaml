@@ -19,7 +19,7 @@
         
         <settings:GraphicsPanelView Grid.Row="0" DataContext="{ Binding Path=GraphicsPanel, Mode=OneTime }"/>
         <settings:BuildPanelView Grid.Row="1" DataContext="{ Binding Path=BuildPanel, Mode=OneTime }"/>
-        <settings:ScenePanelView Grid.Row="2" DataContext="{ Binding Path=ScenePane, Mode=OneTime }"/>
+        <settings:ScenePanelView Grid.Row="2" DataContext="{ Binding Path=ScenePanel, Mode=OneTime }"/>
         <settings:InfoPanelView Grid.Row="3" DataContext="{ Binding Path=InfoPanel, Mode=OneTime }"/>
         
         <!-- Free Space -->

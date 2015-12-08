@@ -7,11 +7,9 @@ namespace GreenKidEditor.MainWindow.Settings
 {
     public class GraphicsPanelViewModel : ViewModelBase
     {
-        private RelayCommand mSaveCmd;
+        public RelayCommand SaveCmd { get; private set; }
 
-        public IEnumerable<int> SamplesList => GraphicsManager.SamplesValues; 
-
-        public RelayCommand SaveCmd => mSaveCmd ?? (mSaveCmd = new RelayCommand(ExecuteSave));
+        public IEnumerable<int> SamplesList => GraphicsManager.SamplesValues;
 
         public int Samples
         {
@@ -35,6 +33,10 @@ namespace GreenKidEditor.MainWindow.Settings
             }
         }
 
+        public void InitCommands()
+        {
+            SaveCmd = new RelayCommand(ExecuteSave);
+        }
 
         private void ExecuteSave()
         {

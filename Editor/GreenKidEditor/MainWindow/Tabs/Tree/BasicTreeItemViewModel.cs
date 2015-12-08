@@ -6,7 +6,6 @@ namespace GreenKidEditor.MainWindow.Tabs.Tree
     public class BasicTreeItemViewModel : ViewModelBase
     {
         private string mName;
-        private TransformPanelViewModel mTransform;
 
         public string Name
         {
@@ -19,16 +18,7 @@ namespace GreenKidEditor.MainWindow.Tabs.Tree
             }
         }
 
-        public TransformPanelViewModel Transform
-        {
-            get { return mTransform; }
-            set
-            {
-                mTransform = value;
-                
-                RaisePropertyChanged(() => Transform);
-            }
-        }
+        public TransformPanelViewModel Transform { get; private set; }
 
         public BasicTreeItemViewModel(string name)
         {
@@ -37,7 +27,7 @@ namespace GreenKidEditor.MainWindow.Tabs.Tree
 
         public virtual void InitViewModels()
         { 
-            mTransform = new TransformPanelViewModel();
+            Transform = new TransformPanelViewModel();
         }
     }
 }

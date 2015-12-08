@@ -8,12 +8,10 @@ namespace GreenKidEditor.MainWindow.Settings
 {
     public class BuildPanelViewModel : ViewModelBase
     {
-        private RelayCommand mBuildCmd;
+        public RelayCommand BuildCmd { get; private set; }
 
         public IEnumerable<string> PlatformList => BuildManager.Platforms;
 
-        public RelayCommand BuildCmd => mBuildCmd ?? (mBuildCmd = new RelayCommand(ExecuteBuild));
-    
         public string Platform
         {
             get { return BuildManager.CurrentPlatform; }
@@ -28,6 +26,11 @@ namespace GreenKidEditor.MainWindow.Settings
         public BuildPanelViewModel()
         {
             Platform = PlatformList.First();
+        }
+
+        public void InitCommands()
+        {
+            BuildCmd = new RelayCommand(ExecuteBuild);
         }
 
         private void ExecuteBuild()

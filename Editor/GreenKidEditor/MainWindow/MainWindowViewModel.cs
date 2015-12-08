@@ -1,6 +1,5 @@
 ﻿using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
-using GreenKidEditor.Application.Managers;
 using GreenKidEditor.MainWindow.Tabs.AssetsTab;
 using GreenKidEditor.MainWindow.Tabs.EntitiesTab;
 using GreenKidEditor.MainWindow.Tabs.NodesTab;
@@ -11,37 +10,43 @@ namespace GreenKidEditor.MainWindow
 {
     public class MainWindowViewModel : ViewModelBase
     {
-        private RelayCommand mLoadedCmd;
+        public RelayCommand LoadedCmd { get; private set; }
 
-        private SceneTabViewModel mSceneTab;
-        private EntitiesTabViewModel mEntitiesTab;
+        public SceneTabViewModel SceneTab { get; private set; }
+        public EntitiesTabViewModel EntitiesTab { get; private set; }
 
-        private NodesTabViewModel mNodesTab;
-        private AssetsTabViewModel mAssetsTab;
-        private SettingsTabViewModel mSettingsTab;
+        public NodesTabViewModel NodesTab { get; private set; }
+        public AssetsTabViewModel AssetsTab { get; private set; }
+        public SettingsTabViewModel SettingsTab { get; private set; }
 
-        private StatusBarViewModel mStatusBar;
+        public StatusBarViewModel StatusBar { get; private set; }
 
-        public RelayCommand LoadedCmd => mLoadedCmd ?? (mLoadedCmd = new RelayCommand(ExecuteLoad));
+        public void InitViewModels()
+        {
+            SceneTab = new SceneTabViewModel();
+            EntitiesTab = new EntitiesTabViewModel();
 
-        public SceneTabViewModel SceneTab => mSceneTab ?? (mSceneTab = new SceneTabViewModel());
-        public EntitiesTabViewModel EntitiesTab => mEntitiesTab ?? (mEntitiesTab = new EntitiesTabViewModel());
+            NodesTab = new NodesTabViewModel();
+            NodesTab.InitViewModels();
 
-        public NodesTabViewModel NodesTab => mNodesTab ?? (mNodesTab = new NodesTabViewModel());
-        public AssetsTabViewModel AssetsTab => mAssetsTab ?? (mAssetsTab = new AssetsTabViewModel());
-        public SettingsTabViewModel SettingsTab => mSettingsTab ?? (mSettingsTab = new SettingsTabViewModel());
+            AssetsTab = new AssetsTabViewModel();
+            AssetsTab.InitViewModels();
 
-        public StatusBarViewModel StatusBar => mStatusBar ?? (mStatusBar = new StatusBarViewModel());
+            SettingsTab = new SettingsTabViewModel();
+            SettingsTab.InitViewModels();
+            
+            StatusBar = new StatusBarViewModel();
+        }
+
+        public void InitCommands()
+        {
+            LoadedCmd = new RelayCommand(ExecuteLoad);
+        }
 
         private void ExecuteLoad()
         {
-            mAssetsTab.LoadDataTab();
-            mNodesTab.LoadDataTab();
-        }
-
-        public override void Cleanup()
-        {
-            base.Cleanup();
+            AssetsTab.LoadData();
+            NodesTab.LoadData();
         }
     }
 }

@@ -8,11 +8,9 @@ namespace GreenKidEditor.MainWindow.Tabs.Tree
     public class BasicTreeViewModel : ViewModelBase
     {
         private BasicTreeItemViewModel mSelectedItem;
-        private RelayCommand<RoutedEventArgs> mSelectedItemCmd;
 
         public ObservableCollection<BasicTreeItemViewModel> Items { get; private set; }
-
-        public RelayCommand<RoutedEventArgs> SelectedItemCmd => mSelectedItemCmd ?? (mSelectedItemCmd = new RelayCommand<RoutedEventArgs>(ExecuteSelectedItem));
+        public RelayCommand<RoutedEventArgs> SelectedItemCmd { get; private set; }
 
         public bool SelectedItemIsNull => SelectedItem == null;
    
@@ -28,9 +26,14 @@ namespace GreenKidEditor.MainWindow.Tabs.Tree
             }
         }
 
-        public void Init()
+        public void InitViewModels()
         {
             Items = new ObservableCollection<BasicTreeItemViewModel>();
+        }
+
+        public void InitCommands()
+        {
+            SelectedItemCmd = new RelayCommand<RoutedEventArgs>(ExecuteSelectedItem);
         }
 
         public void AddItem(BasicTreeItemViewModel item)

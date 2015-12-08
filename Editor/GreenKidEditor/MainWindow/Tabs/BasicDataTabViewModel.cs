@@ -5,48 +5,23 @@ namespace GreenKidEditor.MainWindow.Tabs
 {
     public class BasicDataTabViewModel : BasicTabViewModel
     {
-        private BasicTreeViewModel mItemsTree;
-
         private AddItemBarViewModel mAddItemBar;
         private SearchBarViewModel mSearchBar;
 
-        public BasicTreeViewModel ItemsTree
-        {
-            get { return mItemsTree; }
-            private set
-            {
-                mItemsTree = value;
-                
-                RaisePropertyChanged(() => ItemsTree);
-            }
-        }
+        public BasicTreeViewModel ItemsTree { get; private set; }
 
-        public AddItemBarViewModel AddItemBar
-        {
-            get { return mAddItemBar; }
-            set
-            {
-                mAddItemBar = value;
-                
-                RaisePropertyChanged(() => AddItemBar);
-            }
-        }
+        public AddItemBarViewModel AddItemBar { get; private set; }
+        public SearchBarViewModel SearchBar { get; private set; }
 
-        public SearchBarViewModel SearchBar
-        {
-            get { return mSearchBar; }
-            set
-            {
-                mSearchBar = value;
-                
-                RaisePropertyChanged(() => SearchBar);
-            }
-        }
-
-        public virtual void LoadDataTab()
+        public void InitViewModels()
         {
             ItemsTree = new BasicTreeViewModel();
-            ItemsTree.Init();
+            ItemsTree.InitViewModels();
+            ItemsTree.InitCommands();
+        }
+
+        public virtual void LoadData()
+        {
         }
     }
 }

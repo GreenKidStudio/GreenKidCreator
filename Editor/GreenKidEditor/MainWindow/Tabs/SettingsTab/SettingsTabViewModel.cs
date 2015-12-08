@@ -4,14 +4,23 @@ namespace GreenKidEditor.MainWindow.Tabs.SettingsTab
 {
     public class SettingsTabViewModel : BasicTabViewModel
     {
-        private GraphicsPanelViewModel mGraphicsPanel;
-        private BuildPanelViewModel mBuildPanel;
-        private ScenePanelViewModel mScenePanel;
-        private InfoPanelViewModel mInfoPanel;
+        public GraphicsPanelViewModel GraphicsPanel { get; private set; }
+        public BuildPanelViewModel BuildPanel { get; private set; }
+        public ScenePanelViewModel ScenePanel { get; private set; }
+        public InfoPanelViewModel InfoPanel { get; private set; }
 
-        public GraphicsPanelViewModel GraphicsPanel => mGraphicsPanel ?? (mGraphicsPanel = new GraphicsPanelViewModel());
-        public BuildPanelViewModel BuildPanel => mBuildPanel ?? (mBuildPanel = new BuildPanelViewModel());
-        public ScenePanelViewModel ScenePane => mScenePanel ?? (mScenePanel = new ScenePanelViewModel());
-        public InfoPanelViewModel InfoPanel => mInfoPanel ?? (mInfoPanel = new InfoPanelViewModel());
+        public void InitViewModels()
+        {
+            GraphicsPanel = new GraphicsPanelViewModel();
+            GraphicsPanel.InitCommands();
+
+            ScenePanel = new ScenePanelViewModel();
+            ScenePanel.InitViewModels();
+
+            BuildPanel = new BuildPanelViewModel();
+            BuildPanel.InitCommands();
+
+            InfoPanel = new InfoPanelViewModel();
+        }
     }
 }

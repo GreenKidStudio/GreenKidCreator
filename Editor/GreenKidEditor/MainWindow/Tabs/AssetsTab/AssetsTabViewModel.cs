@@ -9,9 +9,9 @@ namespace GreenKidEditor.MainWindow.Tabs.AssetsTab
 {
     public class AssetsTabViewModel : BasicDataTabViewModel
     {
-        public override void LoadDataTab()
+        public override void LoadData()
         {
-            base.LoadDataTab();
+            base.LoadData();
 
             ItemsTree.AddItem(new ModelPanelViewModel("Model"));
             ItemsTree.AddItem(new MeshPanelViewModel("Mesh"));

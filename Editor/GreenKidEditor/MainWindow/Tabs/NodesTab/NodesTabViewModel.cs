@@ -6,9 +6,9 @@ namespace GreenKidEditor.MainWindow.Tabs.NodesTab
 {
     public class NodesTabViewModel : BasicDataTabViewModel
     {
-        public override void LoadDataTab()
+        public override void LoadData()
         {
-            base.LoadDataTab();
+            base.LoadData();
 
             ItemsTree.AddItem(new BasicTreeItemCollectionViewModel("Node"));
             ItemsTree.AddItem(new ObjectPanelViewModel("Object"));
