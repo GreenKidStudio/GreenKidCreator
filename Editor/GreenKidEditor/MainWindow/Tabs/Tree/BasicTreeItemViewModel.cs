@@ -35,7 +35,7 @@ namespace GreenKidEditor.MainWindow.Tabs.Tree
             mName = name;
         }
 
-        public void InitTransformation()
+        public virtual void InitViewModels()
         { 
             mTransform = new TransformPanelViewModel();
         }

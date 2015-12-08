@@ -21,5 +21,9 @@ namespace GreenKidEditor.MainWindow.Panels.Model
             : base(name)
         {
         }
+
+        public override void InitViewModels()
+        {
+        }
     }
 }

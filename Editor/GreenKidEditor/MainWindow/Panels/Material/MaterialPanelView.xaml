@@ -69,7 +69,8 @@
         <!-- Third Row -->
        
         <!-- Color Control -->
-        <menus:ColorControlView Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Margin="0, 2, 0, 0"/>
+        <menus:ColorControlView Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Margin="0, 2, 0, 0"
+                                DataContext="{ Binding Path=(material:MaterialPanelViewModel.ColorControl), Mode=OneTime }"/>
 
         <!-- Fourth Row -->
         <ToggleButton Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Margin="0, 2, 0, 0" Content="Preview"

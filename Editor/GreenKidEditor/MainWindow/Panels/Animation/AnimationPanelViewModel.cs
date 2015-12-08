@@ -8,5 +8,9 @@ namespace GreenKidEditor.MainWindow.Panels.Animation
             : base(name)
         {
         }
+
+        public override void InitViewModels()
+        {
+        }
     }
 }

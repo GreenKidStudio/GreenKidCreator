@@ -10,17 +10,14 @@ namespace GreenKidEditor.MainWindow.Tabs.NodesTab
         {
             base.LoadDataTab();
 
-            var node = new BasicTreeItemCollectionViewModel("Node");
-            var obj = new ObjectPanelViewModel("Object");
-            var light = new LightPanelViewModel("Light");
+            ItemsTree.AddItem(new BasicTreeItemCollectionViewModel("Node"));
+            ItemsTree.AddItem(new ObjectPanelViewModel("Object"));
+            ItemsTree.AddItem(new LightPanelViewModel("Light"));
 
-            node.InitTransformation();
-            obj.InitTransformation();
-            light.InitTransformation();
-
-            ItemsTree.AddItem(node);
-            ItemsTree.AddItem(obj);
-            ItemsTree.AddItem(light);
+            foreach (var item in ItemsTree.Items)
+            {
+                item.InitViewModels();
+            }
         }
     }
 }

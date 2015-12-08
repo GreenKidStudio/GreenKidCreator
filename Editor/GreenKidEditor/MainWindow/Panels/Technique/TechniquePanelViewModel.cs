@@ -8,5 +8,9 @@ namespace GreenKidEditor.MainWindow.Panels.Technique
             : base(name)
         {
         }
+
+        public override void InitViewModels()
+        {
+        }
     }
 }

@@ -4,6 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:menus="clr-namespace:GreenKidEditor.MainWindow.Menus"
+             xmlns:light="clr-namespace:GreenKidEditor.MainWindow.Panels.Light"
              mc:Ignorable="d">
 
     <Grid Margin="0, 5, 0, 0">
@@ -31,6 +32,7 @@
         <!-- Second Row -->
 
         <!-- Color Control -->
-        <menus:ColorControlView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Margin="0, 2, 0, 0"/>
+        <menus:ColorControlView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Margin="0, 2, 0, 0"
+                                DataContext="{ Binding Path=(light:LightPanelViewModel.ColorControl), Mode=OneTime }"/>
     </Grid>
 </UserControl>

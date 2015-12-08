@@ -19,6 +19,11 @@ namespace GreenKidEditor.MainWindow.Tabs.AssetsTab
             ItemsTree.AddItem(new MaterialPanelViewModel("Material"));
             ItemsTree.AddItem(new TechniquePanelViewModel("Technique"));
             ItemsTree.AddItem(new AnimationPanelViewModel("Animation"));
+
+            foreach (var item in ItemsTree.Items)
+            {
+                item.InitViewModels();
+            }
         }
     }
 }

@@ -21,5 +21,9 @@ namespace GreenKidEditor.MainWindow.Panels.Texture
             : base(name)
         {
         }
+
+        public override void InitViewModels()
+        {
+        }
     }
 }

@@ -167,7 +167,8 @@
       <DependentUpon>TransformPanelView.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow\Panels\Transform\TransformPanelViewModel.cs" />
-    <Compile Include="MainWindow\Panels\Transform\MathVector.cs" />
+    <Compile Include="Utils\Color.cs" />
+    <Compile Include="Utils\MathVector.cs" />
     <Compile Include="Styles\AddPathView.xaml.cs">
       <DependentUpon>AddPathView.xaml</DependentUpon>
     </Compile>
