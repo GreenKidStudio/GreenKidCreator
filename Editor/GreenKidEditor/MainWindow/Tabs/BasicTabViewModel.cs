@@ -5,6 +5,7 @@ namespace GreenKidEditor.MainWindow.Tabs
     public class BasicTabViewModel : ViewModelBase
     {
         private bool mIsSelected;
+        private bool mIsVisible;
 
         public bool IsSelected
         {
@@ -15,6 +16,22 @@ namespace GreenKidEditor.MainWindow.Tabs
                 
                 RaisePropertyChanged(() => IsSelected);
             }
+        }
+
+        public bool IsVisible
+        {
+            get { return mIsVisible; }
+            set
+            {
+                mIsVisible = value;
+                
+                RaisePropertyChanged(() => IsVisible);
+            }
+        }
+
+        public BasicTabViewModel()
+        {
+            mIsVisible = true;
         }
     }
 }

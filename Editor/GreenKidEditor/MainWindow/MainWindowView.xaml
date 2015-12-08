@@ -34,25 +34,30 @@
             </Grid.ColumnDefinitions>
 
             <TabControl Grid.Column="0" Margin="3, 1, 1, 0">
-                <TabItem Header="Scene" IsSelected="{ Binding Path=SceneTab.IsSelected, Mode=TwoWay }">
+                <TabItem Header="Scene" IsSelected="{ Binding Path=SceneTab.IsSelected, Mode=TwoWay }"
+                         Visibility="{ Binding Path=SceneTab.IsVisible, Mode=OneWay, Converter={ StaticResource ToVisibilityConverter } }">
                     <sceneTab:SceneTabView/>
                 </TabItem>
 
-                <TabItem Header="Entities" IsSelected="{ Binding Path=EntitiesTab.IsSelected, Mode=TwoWay }">
+                <TabItem Header="Entities" IsSelected="{ Binding Path=EntitiesTab.IsSelected, Mode=TwoWay }"
+                         Visibility="{ Binding Path=EntitiesTab.IsVisible, Mode=OneWay, Converter={ StaticResource ToVisibilityConverter } }">
                     <entitiesTab:EntitiesTabView/>
                 </TabItem>
             </TabControl>
 
             <TabControl Grid.Column="1" Margin="1, 1, 3, 0">
-                <TabItem Header="Nodes" IsSelected="{ Binding Path=NodesTab.IsSelected, Mode=TwoWay }">
+                <TabItem Header="Nodes" IsSelected="{ Binding Path=NodesTab.IsSelected, Mode=TwoWay }"
+                         Visibility="{ Binding Path=NodesTab.IsVisible, Mode=OneWay, Converter={ StaticResource ToVisibilityConverter } }">
                     <nodesTab:NodesTabView/>
                 </TabItem>
 
-                <TabItem Header="Assets" IsSelected="{ Binding Path=AssetsTab.IsSelected, Mode=TwoWay }">
+                <TabItem Header="Assets" IsSelected="{ Binding Path=AssetsTab.IsSelected, Mode=TwoWay }"
+                         Visibility="{ Binding Path=AssetsTab.IsVisible, Mode=OneWay, Converter={ StaticResource ToVisibilityConverter } }">
                     <assetsTab:AssetsTabView/>
                 </TabItem>
 
-                <TabItem Header="Settings" IsSelected="{ Binding Path=SettingsTab.IsSelected, Mode=TwoWay }">
+                <TabItem Header="Settings" IsSelected="{ Binding Path=SettingsTab.IsSelected, Mode=TwoWay }"
+                         Visibility="{ Binding Path=SettingsTab.IsVisible, Mode=OneWay, Converter={ StaticResource ToVisibilityConverter } }">
                     <settingsTab:SettingsTabView/>
                 </TabItem>
             </TabControl>
