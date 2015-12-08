@@ -1,6 +1,6 @@
-﻿using GalaSoft.MvvmLight;
+﻿using System.Windows.Media;
+using GalaSoft.MvvmLight;
 using GreenKidEditor.MainWindow.Menus;
-using GreenKidEditor.Utils;
 
 namespace GreenKidEditor.MainWindow.Settings
 {
@@ -10,7 +10,7 @@ namespace GreenKidEditor.MainWindow.Settings
 
         public void InitViewModels()
         {
-            ColorControl = new ColorControlViewModel("Clear", Color.Black);
+            ColorControl = new ColorControlViewModel("Clear", Colors.Black);
         }
     }
 }

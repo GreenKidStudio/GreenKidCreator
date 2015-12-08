@@ -1,41 +1,53 @@
-﻿using GalaSoft.MvvmLight;
-using GreenKidEditor.Utils;
+﻿using System.Windows.Media;
+using GalaSoft.MvvmLight;
 
 namespace GreenKidEditor.MainWindow.Menus
 {
     public class ColorControlViewModel : ViewModelBase
     {
-        public Color Color { get; set; }
+        private Color mColor;
+
         public string Header { get; set; }
 
-        public int R
+        public Color Color
         {
-            get { return Color.R; }
+            get { return mColor; }
             set
             {
-                Color.SetR(value);
+                mColor = value;
+
+                RaisePropertyChanged(() => Color);
+            }
+        }
+
+        public byte R
+        {
+            get { return mColor.R; }
+            set
+            {
+                mColor.R = value;
 
                 RaisePropertyChanged(() => R);
             }
         }
 
-        public int G
+        public byte G
         {
-            get { return Color.G; }
+            get { return mColor.G; }
             set
             {
-                Color.SetG(value);
+                mColor.G = value;
 
                 RaisePropertyChanged(() => G);
             }
         }
 
-        public int B
+        public byte B
         {
-            get { return Color.B; }
+            get { return mColor.B; }
             set
             {
-                Color.SetB(value);
+                mColor.B = value;
 
                 RaisePropertyChanged(() => B);
             }
@@ -49,7 +61,7 @@ namespace GreenKidEditor.MainWindow.Menus
         public ColorControlViewModel(string header, Color color)
             : this(header)
         {
-            Color = color;
+            mColor = color;
         }
     }
 }

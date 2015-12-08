@@ -167,8 +167,6 @@
       <DependentUpon>TransformPanelView.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow\Panels\Transform\TransformPanelViewModel.cs" />
-    <Compile Include="Utils\Color.cs" />
-    <Compile Include="Utils\MathVector.cs" />
     <Compile Include="Styles\AddPathView.xaml.cs">
       <DependentUpon>AddPathView.xaml</DependentUpon>
     </Compile>
@@ -209,6 +207,7 @@
       <DependentUpon>SettingsTabView.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow\Tabs\SettingsTab\SettingsTabViewModel.cs" />
+    <Compile Include="Utils\ColorToSolidBrushConverter.cs" />
     <Page Include="MainWindow\MainWindowView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

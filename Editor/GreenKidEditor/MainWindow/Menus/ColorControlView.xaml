@@ -26,7 +26,7 @@
 
         <!-- Color -->
         <Border Grid.Column="4" Style="{ StaticResource BorderStyle }" Width="26" Margin="2, 0, 0, 0" Padding="2" Background="GhostWhite">
-            <Rectangle Fill="CornflowerBlue"/>
+            <Rectangle Fill="{ Binding Path=(menus:ColorControlViewModel.Color), Mode=OneWay, Converter={ StaticResource ToSolidBrushConverter } }"/>
         </Border>
     </Grid>
 </UserControl>

@@ -1,6 +1,6 @@
-﻿using GreenKidEditor.MainWindow.Menus;
+﻿using System.Windows.Media;
+using GreenKidEditor.MainWindow.Menus;
 using GreenKidEditor.MainWindow.Tabs.Tree;
-using GreenKidEditor.Utils;
 
 namespace GreenKidEditor.MainWindow.Panels.Light
 {
@@ -17,7 +17,7 @@ namespace GreenKidEditor.MainWindow.Panels.Light
         {
             base.InitViewModels();
 
-            ColorControl = new ColorControlViewModel("Color", Color.Blue);
+            ColorControl = new ColorControlViewModel("Color", Colors.Blue);
         }
     }
 }

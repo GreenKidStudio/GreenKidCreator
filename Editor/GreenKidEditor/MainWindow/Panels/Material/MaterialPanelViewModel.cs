@@ -1,6 +1,6 @@
-﻿using GreenKidEditor.MainWindow.Menus;
+﻿using System.Windows.Media;
+using GreenKidEditor.MainWindow.Menus;
 using GreenKidEditor.MainWindow.Tabs.Tree;
-using GreenKidEditor.Utils;
 
 namespace GreenKidEditor.MainWindow.Panels.Material
 {
@@ -28,7 +28,7 @@ namespace GreenKidEditor.MainWindow.Panels.Material
 
         public override void InitViewModels()
         {
-            ColorControl = new ColorControlViewModel("Diffuse", Color.Red);
+            ColorControl = new ColorControlViewModel("Diffuse", Colors.Red);
         }
     }
 }
