@@ -8,34 +8,15 @@
     <UserControl.Resources>
         <DataTemplate DataType="{ x:Type transform:TransformPanelViewModel }">
             <Grid Margin="0, 5, 0, 0">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="Auto"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                    <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
-
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
                 
-                <Label Grid.Row="0" Grid.Column="0" Style="{ StaticResource LabelHeaderStyle }" Content="Position"/>
-                <Label Grid.Row="1" Grid.Column="0" Style="{ StaticResource LabelHeaderStyle }" Content="Rotation" Margin="0, 2, 0, 0"/>
-                <Label Grid.Row="2" Grid.Column="0" Style="{ StaticResource LabelHeaderStyle }" Content="Scale" Margin="0, 2, 0, 0"/>
-
-                <TextBox Grid.Row="0" Grid.Column="1" Style="{ StaticResource TextBoxCenterValue }" Margin="2, 0, 0, 0" Text="0.0"/>
-                <TextBox Grid.Row="0" Grid.Column="2" Style="{ StaticResource TextBoxCenterValue }" Margin="2, 0, 0, 0" Text="0.0"/>
-                <TextBox Grid.Row="0" Grid.Column="3" Style="{ StaticResource TextBoxCenterValue }" Margin="2, 0, 0, 0" Text="0.0"/>
-
-                <TextBox Grid.Row="1" Grid.Column="1" Style="{ StaticResource TextBoxCenterValue }" Margin="2, 2, 0, 0" Text="0.0"/>
-                <TextBox Grid.Row="1" Grid.Column="2" Style="{ StaticResource TextBoxCenterValue }" Margin="2, 2, 0, 0" Text="0.0"/>
-                <TextBox Grid.Row="1" Grid.Column="3" Style="{ StaticResource TextBoxCenterValue }" Margin="2, 2, 0, 0" Text="0.0"/>
-
-                <TextBox Grid.Row="2" Grid.Column="1" Style="{ StaticResource TextBoxCenterValue }" Margin="2, 2, 0, 0" Text="0.0"/>
-                <TextBox Grid.Row="2" Grid.Column="2" Style="{ StaticResource TextBoxCenterValue }" Margin="2, 2, 0, 0" Text="0.0"/>
-                <TextBox Grid.Row="2" Grid.Column="3" Style="{ StaticResource TextBoxCenterValue }" Margin="2, 2, 0, 0" Text="0.0"/>
+                <ContentPresenter Grid.Row="0" Content="{ Binding Path=PositionControl }"/>
+                <ContentPresenter Grid.Row="1" Content="{ Binding Path=RotationControl }" Margin="0, 2, 0, 0"/>
+                <ContentPresenter Grid.Row="2" Content="{ Binding Path=ScaleControl }" Margin="0, 2, 0, 0"/>
             </Grid>
         </DataTemplate>
     </UserControl.Resources>

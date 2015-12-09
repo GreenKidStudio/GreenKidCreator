@@ -28,6 +28,7 @@ namespace GreenKidEditor.MainWindow.Tabs.Tree
         public virtual void InitViewModels()
         { 
             Transform = new TransformPanelViewModel();
+            Transform.InitViewModels();
         }
     }
 }

@@ -14,15 +14,19 @@
             <Grid Margin="0, 5, 0, 0">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
 
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                
+
+                <!-- Gravity Control -->
+                <ContentPresenter Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Content="{ Binding Path=GravityControl, Mode=OneTime }"/>
+
                 <!-- Color Control -->
-                <ContentPresenter Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Content="{ Binding Path=ColorControl, Mode=OneTime }"/>
+                <ContentPresenter Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Content="{ Binding Path=ColorControl, Mode=OneTime }" Margin="0, 2, 0, 0"/>
             </Grid>
         </Expander>
     </Border>
