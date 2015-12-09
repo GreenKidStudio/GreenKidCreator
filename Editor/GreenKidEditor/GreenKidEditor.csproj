@@ -89,6 +89,14 @@
       <DependentUpon>ColorControlView.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow\Menus\ColorControlViewModel.cs" />
+    <Compile Include="MainWindow\Menus\PreviewControlView.xaml.cs">
+      <DependentUpon>PreviewControlView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow\Menus\PreviewControlViewModel.cs" />
+    <Compile Include="MainWindow\Menus\Vector3ControlView.xaml.cs">
+      <DependentUpon>Vector3ControlView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow\Menus\Vector3ControlViewModel.cs" />
     <Compile Include="MainWindow\Settings\BuildPanelViewModel.cs" />
     <Compile Include="MainWindow\Settings\GraphicsPanelViewModel.cs" />
     <Compile Include="MainWindow\Settings\InfoPanelViewModel.cs" />
@@ -222,6 +230,14 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="MainWindow\Menus\ColorControlView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow\Menus\PreviewControlView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow\Menus\Vector3ControlView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

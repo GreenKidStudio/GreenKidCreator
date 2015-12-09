@@ -1,21 +1,11 @@
-﻿using GreenKidEditor.MainWindow.Tabs.Tree;
+﻿using GreenKidEditor.MainWindow.Menus;
+using GreenKidEditor.MainWindow.Tabs.Tree;
 
 namespace GreenKidEditor.MainWindow.Panels.Model
 {
     public class ModelPanelViewModel : BasicTreeItemCollectionViewModel
     {
-        private bool mIsChecked;
-
-        public bool IsChecked
-        {
-            get { return mIsChecked; }
-            set
-            {
-                mIsChecked = value;
-                
-                RaisePropertyChanged(() => IsChecked);
-            }
-        }
+        public PreviewControlViewModel PreviewControl { get; private set; }
 
         public ModelPanelViewModel(string name)
             : base(name)
@@ -24,6 +14,8 @@ namespace GreenKidEditor.MainWindow.Panels.Model
 
         public override void InitViewModels()
         {
+
+            PreviewControl = new PreviewControlViewModel();
         }
     }
 }

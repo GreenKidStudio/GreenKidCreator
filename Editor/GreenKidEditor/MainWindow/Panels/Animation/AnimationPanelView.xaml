@@ -10,6 +10,7 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
@@ -40,7 +41,7 @@
             <Label Grid.Row="0" Grid.Column="0" Style="{ StaticResource LabelHeaderStyle }" Content="Name"/>
             
             <!-- Value -->
-            <TextBox Grid.Row="0" Grid.Column="1" Text="Test"/>
+            <TextBox Grid.Row="0" Grid.Column="1" Text="Test" Style="{ StaticResource TextBoxCenterValue }"/>
             
             <Button Grid.Row="0" Grid.Column="2" Style="{ StaticResource MiniButtonStyle }" Margin="2, 0, 0, 0">
                 <styles:AddPathView/>
@@ -80,5 +81,8 @@
                 <TextBox Grid.Row="0" Grid.Column="1" Style="{ StaticResource TextBoxCenterValue }" Text="250"/>
             </Grid>
         </Grid>
+
+        <!-- Fourth Row -->
+        <ContentPresenter Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Content="{ Binding Path=PreviewControl, Mode=OneTime }"/>
     </Grid>
 </UserControl>

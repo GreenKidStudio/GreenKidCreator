@@ -8,6 +8,10 @@
         <menus:ColorControlView/>
     </DataTemplate>
 
+    <DataTemplate DataType="{ x:Type menus:PreviewControlViewModel }">
+        <menus:PreviewControlView/>
+    </DataTemplate>
+    
     <DataTemplate DataType="{ x:Type settings:GraphicsPanelViewModel }">
         <settings:GraphicsPanelView/>
     </DataTemplate>

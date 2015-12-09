@@ -4,5 +4,8 @@ namespace GreenKidEditor.MainWindow.Panels.Transform
 {
     public class TransformPanelViewModel : ViewModelBase
     {
+        public void InitViewModels()
+        {
+        }
     }
 }

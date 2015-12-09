@@ -12,7 +12,6 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
@@ -75,15 +74,6 @@
         </Grid>
 
         <!-- Fourth Row -->
-        <ToggleButton Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Margin="0, 2, 0, 0" Content="Preview"
-                      IsChecked="{ Binding Path=IsChecked, Mode=TwoWay }"/>
-
-        <!-- Fifth Row -->
-        <Border Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Style="{ StaticResource BorderStyle }" Margin="0, 2, 0, 0"
-                Visibility="{ Binding Path=IsChecked, Converter={ StaticResource ToVisibilityConverter } }">
-            <Grid Height="190" Background="White">
-
-            </Grid>
-        </Border>
+        <ContentPresenter Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Content="{ Binding Path=PreviewControl, Mode=OneTime }"/>
     </Grid>
 </UserControl>

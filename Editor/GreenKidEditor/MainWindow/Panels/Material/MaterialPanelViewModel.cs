@@ -6,20 +6,8 @@ namespace GreenKidEditor.MainWindow.Panels.Material
 {
     public class MaterialPanelViewModel : BasicTreeItemViewModel
     {
-        private bool mIsChecked;
-
         public ColorControlViewModel ColorControl { get; private set; }
-
-        public bool IsChecked
-        {
-            get { return mIsChecked; }
-            set
-            {
-                mIsChecked = value;
-
-                RaisePropertyChanged(() => IsChecked);
-            }
-        }
+        public PreviewControlViewModel PreviewControl { get; private set; }
 
         public MaterialPanelViewModel(string name)
             : base(name)
@@ -29,6 +17,7 @@ namespace GreenKidEditor.MainWindow.Panels.Material
         public override void InitViewModels()
         {
             ColorControl = new ColorControlViewModel("Diffuse", Colors.Red);
+            PreviewControl = new PreviewControlViewModel();
         }
     }
 }

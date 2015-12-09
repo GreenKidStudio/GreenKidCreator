@@ -12,7 +12,6 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
@@ -67,18 +66,9 @@
         <!-- Third Row -->
        
         <!-- Color Control -->
-        <ContentPresenter Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Margin="0, 2, 0, 0" Content="{ Binding Path=(material:MaterialPanelViewModel.ColorControl), Mode=OneTime }"/>
+        <ContentPresenter Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Margin="0, 2, 0, 0" Content="{ Binding Path=ColorControl, Mode=OneTime }"/>
 
-        <!-- Fourth Row -->
-        <ToggleButton Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Margin="0, 2, 0, 0" Content="Preview"
-                      IsChecked="{ Binding Path=IsChecked, Mode=TwoWay }"/>
-
-        <!-- Fifth Row -->
-        <Border Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Style="{ StaticResource BorderStyle }" Margin="0, 2, 0, 0"
-                Visibility="{ Binding Path=IsChecked, Converter={ StaticResource ToVisibilityConverter } }">
-            <Grid Height="190" Background="White">
-
-            </Grid>
-        </Border>
+        <!-- Forth Row -->
+        <ContentPresenter Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Content="{ Binding Path=PreviewControl, Mode=OneTime }"/>
     </Grid>
 </UserControl>
