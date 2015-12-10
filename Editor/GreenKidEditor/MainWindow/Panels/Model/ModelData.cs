@@ -2,17 +2,12 @@
 {
     public class ModelData
     {
-        public int Meshes { get; private set; }
-        public int Materials { get; private set; }
-        public int Textures { get; private set; }
-
-        public bool UseAnimations { get; private set; }
-
         public string File { get; private set; }
+        public bool UseAnimations { get; set; }
 
-        public ModelData()
-        {
-        }
+        public int Meshes { get; set; }
+        public int Materials { get; set; }
+        public int Textures { get; set; }
 
         public ModelData(string file)
         {

@@ -11,6 +11,7 @@
         xmlns:nodesTab="clr-namespace:GreenKidEditor.MainWindow.Tabs.NodesTab"
         xmlns:assetsTab="clr-namespace:GreenKidEditor.MainWindow.Tabs.AssetsTab"
         xmlns:entitiesTab="clr-namespace:GreenKidEditor.MainWindow.Tabs.EntitiesTab"
+        xmlns:filesTab="clr-namespace:GreenKidEditor.MainWindow.Tabs.FilesTab"
         Title="Green Kid Creator" MinWidth="1000" MinHeight="700"
         WindowStartupLocation="CenterScreen" mc:Ignorable="d"
         
@@ -34,28 +35,39 @@
             </Grid.ColumnDefinitions>
 
             <TabControl Grid.Column="0" Margin="3, 1, 1, 0">
+                <!-- Scene -->
                 <TabItem Header="Scene" IsSelected="{ Binding Path=SceneTab.IsSelected, Mode=TwoWay }"
                          Visibility="{ Binding Path=SceneTab.IsVisible, Mode=OneWay, Converter={ StaticResource ToVisibilityConverter } }">
                     <sceneTab:SceneTabView/>
                 </TabItem>
 
+                <!-- Entities -->
                 <TabItem Header="Entities" IsSelected="{ Binding Path=EntitiesTab.IsSelected, Mode=TwoWay }"
                          Visibility="{ Binding Path=EntitiesTab.IsVisible, Mode=OneWay, Converter={ StaticResource ToVisibilityConverter } }">
                     <entitiesTab:EntitiesTabView/>
                 </TabItem>
+
+                <!-- Files -->
+                <TabItem Header="Files" IsSelected="{ Binding Path=FilesTab.IsSelected, Mode=TwoWay }"
+                         Visibility="{ Binding Path=FilesTab.IsVisible, Mode=OneWay, Converter={ StaticResource ToVisibilityConverter } }">
+                    <filesTab:FilesTabView/>
+                </TabItem>
             </TabControl>
 
             <TabControl Grid.Column="1" Margin="1, 1, 3, 0">
+                <!-- Nodes -->
                 <TabItem Header="Nodes" IsSelected="{ Binding Path=NodesTab.IsSelected, Mode=TwoWay }"
                          Visibility="{ Binding Path=NodesTab.IsVisible, Mode=OneWay, Converter={ StaticResource ToVisibilityConverter } }">
                     <nodesTab:NodesTabView/>
                 </TabItem>
 
+                <!-- Assets -->
                 <TabItem Header="Assets" IsSelected="{ Binding Path=AssetsTab.IsSelected, Mode=TwoWay }"
                          Visibility="{ Binding Path=AssetsTab.IsVisible, Mode=OneWay, Converter={ StaticResource ToVisibilityConverter } }">
                     <assetsTab:AssetsTabView/>
                 </TabItem>
 
+                <!-- Settings -->
                 <TabItem Header="Settings" IsSelected="{ Binding Path=SettingsTab.IsSelected, Mode=TwoWay }"
                          Visibility="{ Binding Path=SettingsTab.IsVisible, Mode=OneWay, Converter={ StaticResource ToVisibilityConverter } }">
                     <settingsTab:SettingsTabView/>
