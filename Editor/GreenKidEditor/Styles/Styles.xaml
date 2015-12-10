@@ -33,14 +33,20 @@
         </Setter>
     </Style>
 
+    <!-- List Box -->
+    <Style TargetType="ListBox">
+        <Setter Property="BorderBrush" Value="Gainsboro"/>
+    </Style>
+    
     <!-- Tree View -->
     <Style TargetType="TreeView">
         <Setter Property="BorderBrush" Value="Gainsboro"/>
+       
     </Style>
 
     <!-- Tree View Item -->
     <Style TargetType="TreeViewItem">
-
+        <Setter Property="Header" Value="{ Binding Path=Name, Mode=OneWay }"/>    
     </Style>
 
     <!-- Border -->

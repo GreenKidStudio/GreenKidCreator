@@ -4,25 +4,14 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
-             xmlns:command="http://www.galasoft.ch/mvvmlight" mc:Ignorable="d"
-             xmlns:tree="clr-namespace:GreenKidEditor.MainWindow.Tabs.Tree">
+             xmlns:command="http://www.galasoft.ch/mvvmlight" mc:Ignorable="d">
 
-    <TreeView ItemsSource="{ Binding Path=(tree:BasicTreeViewModel.Items), Mode=OneWay, IsAsync=True }" Margin="0, 2, 0, 0">
+    <TreeView ItemsSource="{ Binding Path=Items, Mode=OneWay, IsAsync=True }" Margin="0, 2, 0, 0">
         <!-- Triggers -->
         <i:Interaction.Triggers>
             <i:EventTrigger EventName="SelectedItemChanged">
                 <command:EventToCommand Command="{ Binding Path=SelectedItemCmd, Mode=OneTime }" PassEventArgsToCommand="True"/>
             </i:EventTrigger>
         </i:Interaction.Triggers>
-
-        <TreeView.Resources>
-            <HierarchicalDataTemplate DataType="{ x:Type tree:BasicDataTreeItemViewModel }">
-                <TextBlock Text="{ Binding Path=Name, Mode=OneWay }" Padding="2, 0"/>
-            </HierarchicalDataTemplate>
-
-            <DataTemplate DataType="{ x:Type tree:BasicTreeItemViewModel }">
-                <TextBlock Text="{ Binding Path=Name, Mode=OneWay }" Padding="2, 0"/>
-            </DataTemplate>
-        </TreeView.Resources>
     </TreeView>
 </UserControl>

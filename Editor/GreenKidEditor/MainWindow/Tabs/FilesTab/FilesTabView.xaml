@@ -12,7 +12,22 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         
-        <Border Grid.Column="0" Style="{ StaticResource BorderStyle }" Background="White"/>
+        <Grid Grid.Column="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <!-- Current Folder -->
+            <Label Grid.Row="0" Style="{ StaticResource LabelValueStyle }" Content="Test"/>
+
+            <!-- Folder List -->
+            <ListBox Grid.Row="1" Margin="0, 2, 0, 0">
+                <ListBoxItem Content="ListBox Item #1"/>
+                <ListBoxItem Content="ListBox Item #2"/>
+                <ListBoxItem Content="ListBox Item #3"/>
+            </ListBox>
+        </Grid>
 
         <Grid Grid.Column="1" Margin="2, 0, 0, 0">
             <Grid.RowDefinitions>
@@ -22,8 +37,13 @@
 
             <!-- Current Path -->
             <Label Grid.Row="0" Style="{ StaticResource LabelValueStyle }" Content="Test"/>
-
-            <Border Grid.Row="1" Style="{ StaticResource BorderStyle }" Background="White" Margin="0, 2, 0, 0"/>
+            
+            <!-- Files list -->
+            <ListBox Grid.Row="1" Margin="0, 2, 0, 0">
+                <ListBoxItem Content="ListBox Item #1"/>
+                <ListBoxItem Content="ListBox Item #2"/>
+                <ListBoxItem Content="ListBox Item #3"/>
+            </ListBox>
         </Grid>
     </Grid>
 </UserControl>
