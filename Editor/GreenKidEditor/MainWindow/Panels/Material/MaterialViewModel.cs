@@ -4,12 +4,12 @@ using GreenKidEditor.MainWindow.Tabs.Tree;
 
 namespace GreenKidEditor.MainWindow.Panels.Material
 {
-    public class MaterialPanelViewModel : BasicTreeItemViewModel
+    public class MaterialViewModel : BasicTreeItemViewModel
     {
         public ColorControlViewModel ColorControl { get; private set; }
         public PreviewControlViewModel PreviewControl { get; private set; }
 
-        public MaterialPanelViewModel(string name)
+        public MaterialViewModel(string name)
             : base(name)
         {
         }

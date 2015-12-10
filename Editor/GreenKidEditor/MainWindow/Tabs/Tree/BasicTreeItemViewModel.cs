@@ -1,9 +1,6 @@
-﻿using GalaSoft.MvvmLight;
-using GreenKidEditor.MainWindow.Panels.Transform;
-
-namespace GreenKidEditor.MainWindow.Tabs.Tree
+﻿namespace GreenKidEditor.MainWindow.Tabs.Tree
 {
-    public class BasicTreeItemViewModel : ViewModelBase
+    public abstract class BasicTreeItemViewModel : BasicViewModel
     {
         private string mName;
 
@@ -18,17 +15,9 @@ namespace GreenKidEditor.MainWindow.Tabs.Tree
             }
         }
 
-        public TransformPanelViewModel Transform { get; private set; }
-
-        public BasicTreeItemViewModel(string name)
+        protected BasicTreeItemViewModel(string name)
         {
             mName = name;
-        }
-
-        public virtual void InitViewModels()
-        { 
-            Transform = new TransformPanelViewModel();
-            Transform.InitViewModels();
         }
     }
 }

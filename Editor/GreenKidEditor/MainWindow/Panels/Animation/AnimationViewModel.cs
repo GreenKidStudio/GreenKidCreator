@@ -1,21 +1,19 @@
 ﻿using GreenKidEditor.MainWindow.Menus;
 using GreenKidEditor.MainWindow.Tabs.Tree;
 
-namespace GreenKidEditor.MainWindow.Panels.Mesh
+namespace GreenKidEditor.MainWindow.Panels.Animation
 {
-    public class MeshPanelViewModel : BasicTreeItemViewModel
+    public class AnimationViewModel : BasicTreeItemViewModel
     {
         public PreviewControlViewModel PreviewControl { get; private set; }
 
-        public MeshPanelViewModel(string name)
+        public AnimationViewModel(string name)
             : base(name)
         {
         }
 
         public override void InitViewModels()
         {
-            base.InitViewModels();
-
             PreviewControl = new PreviewControlViewModel();
         }
     }

@@ -1,8 +1,6 @@
-﻿using GalaSoft.MvvmLight;
-
-namespace GreenKidEditor.MainWindow.Tabs
+﻿namespace GreenKidEditor.MainWindow.Tabs
 {
-    public class BasicTabViewModel : ViewModelBase
+    public abstract class BasicTabViewModel : BasicViewModel
     {
         private bool mIsSelected;
         private bool mIsVisible;
@@ -29,7 +27,7 @@ namespace GreenKidEditor.MainWindow.Tabs
             }
         }
 
-        public BasicTabViewModel()
+        protected BasicTabViewModel()
         {
             mIsVisible = true;
         }

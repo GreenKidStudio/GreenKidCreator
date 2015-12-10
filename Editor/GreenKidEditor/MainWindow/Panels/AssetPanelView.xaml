@@ -12,33 +12,33 @@
 
     <UserControl.Resources>
         <!-- Texture -->
-        <DataTemplate DataType="{ x:Type texture:TexturePanelViewModel }">
-            <texture:TexturePanelView/>
+        <DataTemplate DataType="{ x:Type texture:TextureViewModel }">
+            <texture:TextureView/>
         </DataTemplate>
         
         <!-- Technique -->
-        <DataTemplate DataType="{ x:Type technique:TechniquePanelViewModel }">
-            <technique:TechniquePanelView/>
+        <DataTemplate DataType="{ x:Type technique:TechniqueViewModel }">
+            <technique:TechniqueView/>
         </DataTemplate>
         
         <!-- Material -->
-        <DataTemplate DataType="{ x:Type material:MaterialPanelViewModel }">
-            <material:MaterialPanelView/>
+        <DataTemplate DataType="{ x:Type material:MaterialViewModel }">
+            <material:MaterialView/>
         </DataTemplate>
 
         <!-- Mesh -->
-        <DataTemplate DataType="{ x:Type mesh:MeshPanelViewModel }">
-            <mesh:MeshPanelView/>
+        <DataTemplate DataType="{ x:Type mesh:MeshViewModel }">
+            <mesh:MeshView/>
         </DataTemplate>
 
         <!-- Animation -->
-        <DataTemplate DataType="{ x:Type animation:AnimationPanelViewModel }">
-            <animation:AnimationPanelView/>
+        <DataTemplate DataType="{ x:Type animation:AnimationViewModel }">
+            <animation:AnimationView/>
         </DataTemplate>
         
         <!-- Model -->
-        <HierarchicalDataTemplate DataType="{ x:Type model:ModelPanelViewModel }">
-            <model:ModelPanelView/>
+        <HierarchicalDataTemplate DataType="{ x:Type model:ModelViewModel }">
+            <model:ModelView/>
         </HierarchicalDataTemplate>
     </UserControl.Resources>
     

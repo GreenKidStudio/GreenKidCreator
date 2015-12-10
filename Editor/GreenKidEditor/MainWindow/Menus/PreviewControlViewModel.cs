@@ -1,8 +1,6 @@
-﻿using GalaSoft.MvvmLight;
-
-namespace GreenKidEditor.MainWindow.Menus
+﻿namespace GreenKidEditor.MainWindow.Menus
 {
-    public class PreviewControlViewModel : ViewModelBase
+    public class PreviewControlViewModel : BasicViewModel
     {
         private bool mIsChecked;
 
@@ -15,6 +13,10 @@ namespace GreenKidEditor.MainWindow.Menus
 
                 RaisePropertyChanged(() => IsChecked);
             }
+        }
+
+        public override void InitViewModels()
+        {
         }
     }
 }

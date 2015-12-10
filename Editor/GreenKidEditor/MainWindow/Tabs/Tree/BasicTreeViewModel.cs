@@ -1,11 +1,10 @@
 ﻿using System.Collections.ObjectModel;
 using System.Windows;
-using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
 
 namespace GreenKidEditor.MainWindow.Tabs.Tree
 {
-    public class BasicTreeViewModel : ViewModelBase
+    public class BasicTreeViewModel : BasicViewModel
     {
         private BasicTreeItemViewModel mSelectedItem;
 
@@ -26,12 +25,12 @@ namespace GreenKidEditor.MainWindow.Tabs.Tree
             }
         }
 
-        public void InitViewModels()
+        public override void InitViewModels()
         {
             Items = new ObservableCollection<BasicTreeItemViewModel>();
         }
 
-        public void InitCommands()
+        public override void InitCommands()
         {
             SelectedItemCmd = new RelayCommand<RoutedEventArgs>(ExecuteSelectedItem);
         }

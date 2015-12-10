@@ -1,12 +1,11 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
 using GreenKidEditor.Application.Managers;
 
 namespace GreenKidEditor.MainWindow.Settings
 {
-    public class BuildPanelViewModel : ViewModelBase
+    public class BuildPanelViewModel : BasicViewModel
     {
         public RelayCommand BuildCmd { get; private set; }
 
@@ -28,7 +27,11 @@ namespace GreenKidEditor.MainWindow.Settings
             Platform = PlatformList.First();
         }
 
-        public void InitCommands()
+        public override void InitViewModels()
+        {
+        }
+
+        public override void InitCommands()
         {
             BuildCmd = new RelayCommand(ExecuteBuild);
         }

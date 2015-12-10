@@ -1,8 +1,6 @@
-﻿using GalaSoft.MvvmLight;
-
-namespace GreenKidEditor.MainWindow.Menus
+﻿namespace GreenKidEditor.MainWindow.Menus
 {
-    public class Vector3ControlViewModel : ViewModelBase
+    public class Vector3ControlViewModel : BasicViewModel
     {
         private float mX;
         private float mY;
@@ -54,6 +52,10 @@ namespace GreenKidEditor.MainWindow.Menus
             mX = x;
             mY = y;
             mZ = z;
+        }
+
+        public override void InitViewModels()
+        {
         }
     }
 }

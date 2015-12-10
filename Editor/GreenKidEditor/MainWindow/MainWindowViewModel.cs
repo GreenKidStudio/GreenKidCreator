@@ -1,5 +1,4 @@
-﻿using GalaSoft.MvvmLight;
-using GalaSoft.MvvmLight.Command;
+﻿using GalaSoft.MvvmLight.Command;
 using GreenKidEditor.MainWindow.Tabs.AssetsTab;
 using GreenKidEditor.MainWindow.Tabs.EntitiesTab;
 using GreenKidEditor.MainWindow.Tabs.NodesTab;
@@ -8,7 +7,7 @@ using GreenKidEditor.MainWindow.Tabs.SettingsTab;
 
 namespace GreenKidEditor.MainWindow
 {
-    public class MainWindowViewModel : ViewModelBase
+    public class MainWindowViewModel : BasicViewModel
     {
         public RelayCommand LoadedCmd { get; private set; }
 
@@ -21,7 +20,7 @@ namespace GreenKidEditor.MainWindow
 
         public StatusBarViewModel StatusBar { get; private set; }
 
-        public void InitViewModels()
+        public override void InitViewModels()
         {
             SceneTab = new SceneTabViewModel();
             EntitiesTab = new EntitiesTabViewModel();
@@ -38,7 +37,7 @@ namespace GreenKidEditor.MainWindow
             StatusBar = new StatusBarViewModel();
         }
 
-        public void InitCommands()
+        public override void InitCommands()
         {
             LoadedCmd = new RelayCommand(ExecuteLoad);
         }

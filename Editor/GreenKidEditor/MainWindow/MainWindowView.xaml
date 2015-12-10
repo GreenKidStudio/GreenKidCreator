@@ -7,10 +7,10 @@
         xmlns:command="http://www.galasoft.ch/mvvmlight"
         xmlns:mainWindow="clr-namespace:GreenKidEditor.MainWindow"
         xmlns:settingsTab="clr-namespace:GreenKidEditor.MainWindow.Tabs.SettingsTab"
-        xmlns:entitiesTab="clr-namespace:GreenKidEditor.MainWindow.Tabs.EntitiesTab"
         xmlns:sceneTab="clr-namespace:GreenKidEditor.MainWindow.Tabs.SceneTab"
         xmlns:nodesTab="clr-namespace:GreenKidEditor.MainWindow.Tabs.NodesTab"
         xmlns:assetsTab="clr-namespace:GreenKidEditor.MainWindow.Tabs.AssetsTab"
+        xmlns:entitiesTab="clr-namespace:GreenKidEditor.MainWindow.Tabs.EntitiesTab"
         Title="Green Kid Creator" MinWidth="1000" MinHeight="700"
         WindowStartupLocation="CenterScreen" mc:Ignorable="d"
         

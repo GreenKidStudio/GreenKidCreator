@@ -16,7 +16,7 @@
         </i:Interaction.Triggers>
 
         <TreeView.Resources>
-            <HierarchicalDataTemplate DataType="{ x:Type tree:BasicTreeItemCollectionViewModel }">
+            <HierarchicalDataTemplate DataType="{ x:Type tree:BasicDataTreeItemViewModel }">
                 <TextBlock Text="{ Binding Path=Name, Mode=OneWay }" Padding="2, 0"/>
             </HierarchicalDataTemplate>
 

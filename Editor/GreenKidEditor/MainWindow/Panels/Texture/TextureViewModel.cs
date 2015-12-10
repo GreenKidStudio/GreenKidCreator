@@ -1,20 +1,19 @@
 ﻿using GreenKidEditor.MainWindow.Menus;
 using GreenKidEditor.MainWindow.Tabs.Tree;
 
-namespace GreenKidEditor.MainWindow.Panels.Model
+namespace GreenKidEditor.MainWindow.Panels.Texture
 {
-    public class ModelPanelViewModel : BasicTreeItemCollectionViewModel
+    public class TextureViewModel : BasicTreeItemViewModel
     {
         public PreviewControlViewModel PreviewControl { get; private set; }
 
-        public ModelPanelViewModel(string name)
+        public TextureViewModel(string name)
             : base(name)
         {
         }
 
         public override void InitViewModels()
         {
-
             PreviewControl = new PreviewControlViewModel();
         }
     }

@@ -1,8 +1,8 @@
 ﻿namespace GreenKidEditor.MainWindow.Panels.Animation
 {
-    public partial class AnimationPanelView
+    public partial class AnimationView
     {
-        public AnimationPanelView()
+        public AnimationView()
         {
             InitializeComponent();
         }

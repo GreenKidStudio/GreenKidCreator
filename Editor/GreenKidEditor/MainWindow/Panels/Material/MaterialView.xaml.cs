@@ -1,8 +1,8 @@
 ﻿namespace GreenKidEditor.MainWindow.Panels.Material
 {
-    public partial class MaterialPanelView
+    public partial class MaterialView
     {
-        public MaterialPanelView()
+        public MaterialView()
         {
             InitializeComponent();
         }

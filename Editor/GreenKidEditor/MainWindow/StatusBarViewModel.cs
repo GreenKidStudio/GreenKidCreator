@@ -1,8 +1,9 @@
-﻿using GalaSoft.MvvmLight;
-
-namespace GreenKidEditor.MainWindow
+﻿namespace GreenKidEditor.MainWindow
 {
-    public class StatusBarViewModel : ViewModelBase
+    public class StatusBarViewModel : BasicViewModel
     {
+        public override void InitViewModels()
+        {
+        }
     }
 }

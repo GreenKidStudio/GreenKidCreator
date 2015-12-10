@@ -1,8 +1,8 @@
 ﻿namespace GreenKidEditor.MainWindow.Panels.Mesh
 {
-    public partial class MeshPanelView
+    public partial class MeshView
     {
-        public MeshPanelView()
+        public MeshView()
         {
             InitializeComponent();
         }

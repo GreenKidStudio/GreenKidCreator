@@ -1,8 +1,8 @@
 ﻿namespace GreenKidEditor.MainWindow.Panels.Object
 {
-    public partial class ObjectPanelView
+    public partial class ObjectView
     {
-        public ObjectPanelView()
+        public ObjectView()
         {
             InitializeComponent();
         }

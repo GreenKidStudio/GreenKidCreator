@@ -1,8 +1,8 @@
 ﻿namespace GreenKidEditor.MainWindow.Panels.Texture
 {
-    public partial class TexturePanelView
+    public partial class TextureView
     {
-        public TexturePanelView()
+        public TextureView()
         {
             InitializeComponent();
         }

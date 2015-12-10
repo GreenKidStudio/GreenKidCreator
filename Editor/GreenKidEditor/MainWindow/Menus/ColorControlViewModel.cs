@@ -1,9 +1,8 @@
 ﻿using System.Windows.Media;
-using GalaSoft.MvvmLight;
 
 namespace GreenKidEditor.MainWindow.Menus
 {
-    public class ColorControlViewModel : ViewModelBase
+    public class ColorControlViewModel : BasicViewModel
     {
         private Color mColor;
 
@@ -71,6 +70,10 @@ namespace GreenKidEditor.MainWindow.Menus
             : this(header)
         {
             mColor = color;
+        }
+
+        public override void InitViewModels()
+        {
         }
     }
 }

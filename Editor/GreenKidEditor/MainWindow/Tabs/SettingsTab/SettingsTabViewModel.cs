@@ -9,7 +9,7 @@ namespace GreenKidEditor.MainWindow.Tabs.SettingsTab
         public ScenePanelViewModel ScenePanel { get; private set; }
         public InfoPanelViewModel InfoPanel { get; private set; }
 
-        public void InitViewModels()
+        public override void InitViewModels()
         {
             GraphicsPanel = new GraphicsPanelViewModel();
             GraphicsPanel.InitCommands();

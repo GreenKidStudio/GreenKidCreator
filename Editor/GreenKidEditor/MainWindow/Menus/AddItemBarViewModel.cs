@@ -1,8 +1,9 @@
-﻿using GalaSoft.MvvmLight;
-
-namespace GreenKidEditor.MainWindow.Menus
+﻿namespace GreenKidEditor.MainWindow.Menus
 {
-    public class AddItemBarViewModel : ViewModelBase
+    public class AddItemBarViewModel : BasicViewModel
     {
+        public override void InitViewModels()
+        {
+        }
     }
 }

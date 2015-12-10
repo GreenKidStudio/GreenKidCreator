@@ -1,6 +1,6 @@
 ﻿using GreenKidEditor.MainWindow.Panels.Light;
+using GreenKidEditor.MainWindow.Panels.Node;
 using GreenKidEditor.MainWindow.Panels.Object;
-using GreenKidEditor.MainWindow.Tabs.Tree;
 
 namespace GreenKidEditor.MainWindow.Tabs.NodesTab
 {
@@ -10,9 +10,9 @@ namespace GreenKidEditor.MainWindow.Tabs.NodesTab
         {
             base.LoadData();
 
-            ItemsTree.AddItem(new BasicTreeItemCollectionViewModel("Node"));
-            ItemsTree.AddItem(new ObjectPanelViewModel("Object"));
-            ItemsTree.AddItem(new LightPanelViewModel("Light"));
+            ItemsTree.AddItem(new NodeGroupViewModel("Node"));
+            ItemsTree.AddItem(new ObjectViewModel("Object"));
+            ItemsTree.AddItem(new LightViewModel("Light"));
 
             foreach (var item in ItemsTree.Items)
             {

@@ -1,8 +1,8 @@
 ﻿namespace GreenKidEditor.MainWindow.Panels.Technique
 {
-    public partial class TechniquePanelView
+    public partial class TechniqueView
     {
-        public TechniquePanelView()
+        public TechniqueView()
         {
             InitializeComponent();
         }

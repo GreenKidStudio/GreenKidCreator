@@ -1,8 +1,9 @@
-﻿using GalaSoft.MvvmLight;
-
-namespace GreenKidEditor.MainWindow.Menus
+﻿namespace GreenKidEditor.MainWindow.Menus
 {
-    public class SearchBarViewModel : ViewModelBase
+    public class SearchBarViewModel : BasicViewModel
     {
+        public override void InitViewModels()
+        {
+        }
     }
 }

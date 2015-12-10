@@ -2,5 +2,8 @@
 {
     public class EntitiesTabViewModel : BasicTabViewModel
     {
+        public override void InitViewModels()
+        {
+        }
     }
 }

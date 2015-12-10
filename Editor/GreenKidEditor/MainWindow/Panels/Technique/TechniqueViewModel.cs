@@ -2,9 +2,9 @@
 
 namespace GreenKidEditor.MainWindow.Panels.Technique
 {
-    public class TechniquePanelViewModel : BasicTreeItemViewModel
+    public class TechniqueViewModel : BasicTreeItemViewModel
     {
-        public TechniquePanelViewModel(string name)
+        public TechniqueViewModel(string name)
             : base(name)
         {
         }

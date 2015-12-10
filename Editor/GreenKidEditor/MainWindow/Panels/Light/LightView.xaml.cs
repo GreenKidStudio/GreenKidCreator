@@ -1,8 +1,8 @@
 ﻿namespace GreenKidEditor.MainWindow.Panels.Light
 {
-    public partial class LightPanelView
+    public partial class LightView
     {
-        public LightPanelView()
+        public LightView()
         {
             InitializeComponent();
         }

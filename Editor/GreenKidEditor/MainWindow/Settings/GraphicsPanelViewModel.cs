@@ -1,11 +1,11 @@
 ﻿using System.Collections.Generic;
-using GalaSoft.MvvmLight;
+using System.Threading;
 using GalaSoft.MvvmLight.Command;
 using GreenKidEditor.Application.Managers;
 
 namespace GreenKidEditor.MainWindow.Settings
 {
-    public class GraphicsPanelViewModel : ViewModelBase
+    public class GraphicsPanelViewModel : BasicViewModel
     {
         public RelayCommand SaveCmd { get; private set; }
 
@@ -33,14 +33,18 @@ namespace GreenKidEditor.MainWindow.Settings
             }
         }
 
-        public void InitCommands()
+        public override void InitViewModels()
+        {
+        }
+
+        public override void InitCommands()
         {
             SaveCmd = new RelayCommand(ExecuteSave);
         }
 
         private void ExecuteSave()
         {
-            GraphicsManager.SaveSettings();
+            new Thread(GraphicsManager.SaveSettings).Start();
         }
     }
 }

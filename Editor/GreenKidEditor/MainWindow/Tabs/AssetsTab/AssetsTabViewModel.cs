@@ -13,16 +13,17 @@ namespace GreenKidEditor.MainWindow.Tabs.AssetsTab
         {
             base.LoadData();
 
-            ItemsTree.AddItem(new ModelPanelViewModel("Model"));
-            ItemsTree.AddItem(new MeshPanelViewModel("Mesh"));
-            ItemsTree.AddItem(new TexturePanelViewModel("Texture"));
-            ItemsTree.AddItem(new MaterialPanelViewModel("Material"));
-            ItemsTree.AddItem(new TechniquePanelViewModel("Technique"));
-            ItemsTree.AddItem(new AnimationPanelViewModel("Animation"));
+            ItemsTree.AddItem(new ModelViewModel("Model"));
+            ItemsTree.AddItem(new MeshViewModel("Mesh"));
+            ItemsTree.AddItem(new TextureViewModel("Texture"));
+            ItemsTree.AddItem(new MaterialViewModel("Material"));
+            ItemsTree.AddItem(new TechniqueViewModel("Technique"));
+            ItemsTree.AddItem(new AnimationViewModel("Animation"));
 
             foreach (var item in ItemsTree.Items)
             {
                 item.InitViewModels();
+                item.InitModelData();
             }
         }
     }

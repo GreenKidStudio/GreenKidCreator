@@ -3,7 +3,7 @@ using GreenKidEditor.MainWindow.Tabs.Tree;
 
 namespace GreenKidEditor.MainWindow.Tabs
 {
-    public class BasicDataTabViewModel : BasicTabViewModel
+    public abstract class BasicDataTabViewModel : BasicTabViewModel
     {
         private AddItemBarViewModel mAddItemBar;
         private SearchBarViewModel mSearchBar;
@@ -13,15 +13,13 @@ namespace GreenKidEditor.MainWindow.Tabs
         public AddItemBarViewModel AddItemBar { get; private set; }
         public SearchBarViewModel SearchBar { get; private set; }
 
-        public void InitViewModels()
+        public override void InitViewModels()
         {
             ItemsTree = new BasicTreeViewModel();
             ItemsTree.InitViewModels();
             ItemsTree.InitCommands();
         }
 
-        public virtual void LoadData()
-        {
-        }
+        public virtual void LoadData() { }
     }
 }

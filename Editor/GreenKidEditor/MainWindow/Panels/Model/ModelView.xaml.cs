@@ -1,8 +1,8 @@
 ﻿namespace GreenKidEditor.MainWindow.Panels.Model
 {
-    public partial class ModelPanelView
+    public partial class ModelView
     {
-        public ModelPanelView()
+        public ModelView()
         {
             InitializeComponent();
         }
