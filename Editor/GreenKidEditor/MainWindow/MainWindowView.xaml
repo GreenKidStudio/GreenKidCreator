@@ -48,7 +48,7 @@
                 </TabItem>
 
                 <!-- Files -->
-                <TabItem Header="Open File" IsSelected="{ Binding Path=FilesTab.IsSelected, Mode=TwoWay }"
+                <TabItem Header="Open" IsSelected="{ Binding Path=FilesTab.IsSelected, Mode=TwoWay }"
                          Visibility="{ Binding Path=FilesTab.IsVisible, Mode=OneWay, Converter={ StaticResource ToVisibilityConverter } }">
                     <filesTab:FilesTabView/>
                 </TabItem>
