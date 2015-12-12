@@ -25,7 +25,7 @@
         <Label Grid.Row="0" Grid.Column="0" Style="{ StaticResource LabelHeaderStyle }" Content="File"/>
 
         <!-- Value -->
-        <Label Grid.Row="0" Grid.Column="1" Style="{ StaticResource LabelValueStyle }" Content="Test"/>
+        <Label Grid.Row="0" Grid.Column="1" Style="{ StaticResource LabelValueStyle }" Content="{ Binding Path=File, Mode=OneTime, TargetNullValue='None' }"/>
         
         <!-- Second Row -->
         <Grid Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Margin="0, 2, 0, 0">
@@ -44,10 +44,11 @@
                 <Label Grid.Row="0" Grid.Column="0" Style="{ StaticResource LabelHeaderStyle }" Content="Width"/>
 
                 <!-- Value -->
-                <Label Grid.Row="0" Grid.Column="1" Style="{ StaticResource LabelValueStyle }" Content="Test"/>
+                <Label Grid.Row="0" Grid.Column="1" Style="{ StaticResource LabelValueStyle }" Content="{ Binding Path=Width, Mode=OneTime }"/>
             </Grid>
 
-            <CheckBox Grid.Row="0" Grid.Column="1" Content="Has Mipmaps" HorizontalAlignment="Left" Margin="10, 0, 0, 0"/>
+            <CheckBox Grid.Row="0" Grid.Column="1" Content="Has Mipmaps" HorizontalAlignment="Left" Margin="10, 0, 0, 0"
+                      IsChecked="{ Binding Path=UseMipMaps, Mode=TwoWay }"/>
         </Grid>
         
         <!-- Third Row -->
@@ -67,10 +68,11 @@
                 <Label Grid.Row="0" Grid.Column="0" Style="{ StaticResource LabelHeaderStyle }" Content="Height"/>
 
                 <!-- Value -->
-                <Label Grid.Row="0" Grid.Column="1" Style="{ StaticResource LabelValueStyle }" Content="Test"/>
+                <Label Grid.Row="0" Grid.Column="1" Style="{ StaticResource LabelValueStyle }" Content="{ Binding Path=Height, Mode=OneTime }"/>
             </Grid>
 
-            <CheckBox Grid.Row="0" Grid.Column="1" Content="Is Compressed" HorizontalAlignment="Left" Margin="10, 0, 0, 0"/>
+            <CheckBox Grid.Row="0" Grid.Column="1" Content="Is Compressed" HorizontalAlignment="Left" Margin="10, 0, 0, 0"
+                      IsChecked="{ Binding Path=IsCompressed, Mode=TwoWay }"/>
         </Grid>
 
         <!-- Fourth Row -->

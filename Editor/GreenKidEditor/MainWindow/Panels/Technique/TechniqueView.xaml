@@ -29,7 +29,7 @@
             <Label Grid.Row="0" Grid.Column="0" Style="{ StaticResource LabelHeaderStyle }" Content="Vertex"/>
 
             <!-- Value -->
-            <Label Grid.Row="0" Grid.Column="1" Style="{ StaticResource LabelValueStyle }" Content="Test"/>
+            <Label Grid.Row="0" Grid.Column="1" Style="{ StaticResource LabelValueStyle }" Content="{ Binding Path=VertexFile, Mode=OneWay, TargetNullValue='None' }"/>
 
             <Button Grid.Row="0" Grid.Column="2" Style="{ StaticResource MiniButtonStyle }" Margin="2, 0, 0, 0">
                 <styles:AddPathView/>
@@ -48,7 +48,7 @@
             <Label Grid.Row="0" Grid.Column="0" Style="{ StaticResource LabelHeaderStyle }" Content="Fragment"/>
 
             <!-- Value -->
-            <Label Grid.Row="0" Grid.Column="1" Style="{ StaticResource LabelValueStyle }" Content="Test"/>
+            <Label Grid.Row="0" Grid.Column="1" Style="{ StaticResource LabelValueStyle }" Content="{ Binding Path=FragmentFile, Mode=OneWay, TargetNullValue='None' }"/>
 
             <Button Grid.Row="0" Grid.Column="2" Style="{ StaticResource MiniButtonStyle }" Margin="2, 0, 0, 0">
                 <styles:AddPathView/>
@@ -67,7 +67,7 @@
             <Label Grid.Row="0" Grid.Column="0" Style="{ StaticResource LabelHeaderStyle }" Content="Geometry"/>
 
             <!-- Value -->
-            <Label Grid.Row="0" Grid.Column="1" Style="{ StaticResource LabelValueStyle }" Content="Test"/>
+            <Label Grid.Row="0" Grid.Column="1" Style="{ StaticResource LabelValueStyle }" Content="{ Binding Path=GeometryShader, Mode=OneWay, TargetNullValue='None' }"/>
 
             <Button Grid.Row="0" Grid.Column="2" Style="{ StaticResource MiniButtonStyle }" Margin="2, 0, 0, 0">
                 <styles:AddPathView/>

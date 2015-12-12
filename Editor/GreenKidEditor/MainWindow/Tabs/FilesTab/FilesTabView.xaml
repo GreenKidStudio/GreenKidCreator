@@ -16,15 +16,26 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
-                <RowDefinition Height="*"/>
+                <RowDefinition Height="6*"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="4*"/>
             </Grid.RowDefinitions>
 
             <!-- Current Folder -->
             <Button Grid.Row="0" Content="Go back one Folder"/>
             <Label Grid.Row="1" Style="{ StaticResource LabelValueStyle }" Content="Folders" Margin="0, 2, 0, 0"/>
             
-            <!-- Folder List -->
+            <!-- Folders List -->
             <ListBox Grid.Row="2" Margin="0, 2, 0, 0">
+                <ListBoxItem Content="ListBox Item #1"/>
+                <ListBoxItem Content="ListBox Item #2"/>
+                <ListBoxItem Content="ListBox Item #3"/>
+            </ListBox>
+
+            <Label Grid.Row="3" Style="{ StaticResource LabelValueStyle }" Content="Drivers" Margin="0, 2, 0, 0"/>
+
+            <!-- Drivers List -->
+            <ListBox Grid.Row="4" Margin="0, 2, 0, 0">
                 <ListBoxItem Content="ListBox Item #1"/>
                 <ListBoxItem Content="ListBox Item #2"/>
                 <ListBoxItem Content="ListBox Item #3"/>

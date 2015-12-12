@@ -6,8 +6,13 @@ namespace GreenKidEditor.MainWindow.Panels.Mesh
 {
     public class MeshViewModel : BasicTreeItemViewModel
     {
+        private MeshData mMeshData;
+
         public TransformPanelViewModel Transform { get; private set; }
         public PreviewControlViewModel PreviewControl { get; private set; }
+
+        public int VerticesCount => mMeshData.Vertices;
+        public int TrianglesCount => mMeshData.Triangles;
 
         public MeshViewModel(string name)
             : base(name)
@@ -20,6 +25,11 @@ namespace GreenKidEditor.MainWindow.Panels.Mesh
             Transform.InitViewModels();
 
             PreviewControl = new PreviewControlViewModel();
+        }
+
+        public override void InitModelData()
+        {
+            mMeshData = new MeshData();
         }
     }
 }

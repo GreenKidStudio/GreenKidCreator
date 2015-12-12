@@ -9,13 +9,22 @@ namespace GreenKidEditor.MainWindow.Panels.Model
 
         public PreviewControlViewModel PreviewControl { get; private set; }
 
-        public bool UseAnimations { get; set; }
-
         public int MeshesCount => mModelData.Meshes;
         public int MaterialsCount => mModelData.Materials;
         public int TexturesCount => mModelData.Textures;
 
         public string File => mModelData.File;
+
+        public bool UseAnimations
+        {
+            get { return mModelData.UseAnimations; }
+            set
+            {
+                mModelData.UseAnimations = value;
+                
+                RaisePropertyChanged(() => UseAnimations);
+            }
+        }
 
         public ModelViewModel(string name)
             : base(name)
@@ -29,7 +38,7 @@ namespace GreenKidEditor.MainWindow.Panels.Model
 
         public override void InitModelData()
         {
-            mModelData = new ModelData("Test");
+            mModelData = new ModelData();
         }
     }
 }
