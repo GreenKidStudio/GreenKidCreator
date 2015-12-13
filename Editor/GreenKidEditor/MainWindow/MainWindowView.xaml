@@ -12,6 +12,7 @@
         xmlns:assetsTab="clr-namespace:GreenKidEditor.MainWindow.Tabs.AssetsTab"
         xmlns:entitiesTab="clr-namespace:GreenKidEditor.MainWindow.Tabs.EntitiesTab"
         xmlns:filesTab="clr-namespace:GreenKidEditor.MainWindow.Tabs.FilesTab"
+        xmlns:consoleTab="clr-namespace:GreenKidEditor.MainWindow.Tabs.ConsoleTab"
         Title="Green Kid Creator" MinWidth="1000" MinHeight="700"
         WindowStartupLocation="CenterScreen" mc:Ignorable="d"
         
@@ -51,6 +52,12 @@
                 <TabItem Header="Open" IsSelected="{ Binding Path=FilesTab.IsSelected, Mode=TwoWay }"
                          Visibility="{ Binding Path=FilesTab.IsVisible, Mode=OneWay, Converter={ StaticResource ToVisibilityConverter } }">
                     <filesTab:FilesTabView/>
+                </TabItem>
+                
+                <!-- Console -->
+                <TabItem Header="Console" IsSelected="{ Binding Path=ConsoleTab.IsSelected, Mode=TwoWay }"
+                         Visibility="{ Binding Path=ConsoleTab.IsVisible, Mode=OneWay, Converter={ StaticResource ToVisibilityConverter } }">
+                    <consoleTab:ConsoleTabView /> 
                 </TabItem>
             </TabControl>
 

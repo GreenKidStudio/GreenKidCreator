@@ -22,6 +22,9 @@ namespace GreenKidEditor.MainWindow.Menus
                 RaisePropertyChanged(() => R);
                 RaisePropertyChanged(() => G);
                 RaisePropertyChanged(() => B);
+
+                // Update the Hex Value
+                RaisePropertyChanged(() => HexValue);
             }
         }
 
@@ -34,6 +37,7 @@ namespace GreenKidEditor.MainWindow.Menus
 
                 RaisePropertyChanged(() => R);
                 RaisePropertyChanged(() => Color);
+                RaisePropertyChanged(() => HexValue);
             }
         }
 
@@ -46,6 +50,7 @@ namespace GreenKidEditor.MainWindow.Menus
 
                 RaisePropertyChanged(() => G);
                 RaisePropertyChanged(() => Color);
+                RaisePropertyChanged(() => HexValue);
             }
         }
 
@@ -58,8 +63,11 @@ namespace GreenKidEditor.MainWindow.Menus
 
                 RaisePropertyChanged(() => B);
                 RaisePropertyChanged(() => Color);
+                RaisePropertyChanged(() => HexValue);
             }
         }
+
+        public string HexValue => "Hex Value #" + mColor.R.ToString("X2") + mColor.G.ToString("X2") + mColor.B.ToString("X2");
 
         public ColorControlViewModel(string header)
         {
