@@ -7,6 +7,36 @@
              DataContext="{ Binding Source={ StaticResource ViewModelLocator }, Path=MainWindow.ConsoleTab, Mode=OneTime }">
 
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="6*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="4*"/>
+        </Grid.RowDefinitions>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
 
+        <Label Grid.Row="0" Grid.Column="0" Style="{ StaticResource LabelValueStyle }" Content="All Messages"/>
+        
+        <ComboBox Grid.Row="0" Grid.Column="1"  Margin="2, 0, 0, 0">
+            <ComboBoxItem Content="Test" IsSelected="True"/>
+            <ComboBoxItem Content="Test 2"/>
+        </ComboBox>
+
+        <ListBox Grid.Row="1" Margin="0, 2, 0, 0" Grid.Column="0" Grid.ColumnSpan="2">
+            <ListBoxItem Content="ListBox Item #1"/>
+            <ListBoxItem Content="ListBox Item #2"/>
+            <ListBoxItem Content="ListBox Item #3"/>
+        </ListBox>
+
+        <Label Grid.Row="2" Grid.Column="0" Style="{ StaticResource LabelValueStyle }" Content="Message" Margin="0, 2, 0, 0"/>
+        <Button Grid.Row="2" Grid.Column="1" Width="100" Content="Clear All" Margin="2, 2, 0, 0"/>
+
+        <Border Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Style="{ StaticResource BorderStyle }" Margin="0, 2, 0, 0">
+            <TextBlock Padding="2" Text="Test" Background="White"/>
+        </Border>
     </Grid>
 </UserControl>

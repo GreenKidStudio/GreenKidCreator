@@ -65,7 +65,7 @@
             <Label Grid.Row="1" Grid.Column="0" Style="{ StaticResource LabelValueStyle }" Content="File" Width="100" Margin="0, 2, 2, 0"/>
             <Label Grid.Row="1" Grid.Column="1" Style="{ StaticResource LabelValueStyle }" Content="Test" Margin="0, 2, 2, 0"/>          
 
-            <ComboBox Grid.Row="1"  Grid.Column="2"  Margin="0, 2, 0, 0">
+            <ComboBox Grid.Row="1" Grid.Column="2"  Margin="0, 2, 0, 0">
                 <ComboBoxItem Content="Test" IsSelected="True"/>
                 <ComboBoxItem Content="Test 2"/>
             </ComboBox>
