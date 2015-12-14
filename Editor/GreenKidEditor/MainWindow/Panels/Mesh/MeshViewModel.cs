@@ -8,7 +8,6 @@ namespace GreenKidEditor.MainWindow.Panels.Mesh
     {
         private MeshData mMeshData;
 
-        public TransformPanelViewModel Transform { get; private set; }
         public PreviewControlViewModel PreviewControl { get; private set; }
 
         public int VerticesCount => mMeshData.Vertices;

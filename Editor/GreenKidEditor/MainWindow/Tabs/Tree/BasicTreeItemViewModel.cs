@@ -1,8 +1,12 @@
-﻿namespace GreenKidEditor.MainWindow.Tabs.Tree
+﻿using GreenKidEditor.MainWindow.Panels.Transform;
+
+namespace GreenKidEditor.MainWindow.Tabs.Tree
 {
     public abstract class BasicTreeItemViewModel : BasicViewModel
     {
         private string mName;
+
+        public TransformPanelViewModel Transform { get; protected set; }
 
         public string Name
         {

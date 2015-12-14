@@ -5,8 +5,6 @@ namespace GreenKidEditor.MainWindow.Panels.Node
 {
     public class NodeGroupViewModel : BasicDataTreeItemViewModel
     {
-        public TransformPanelViewModel Transform { get; private set; }
-
         public NodeGroupViewModel(string name)
             : base(name)
         {

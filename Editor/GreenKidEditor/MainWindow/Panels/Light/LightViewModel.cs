@@ -7,7 +7,6 @@ namespace GreenKidEditor.MainWindow.Panels.Light
 {
     public class LightViewModel : BasicTreeItemViewModel
     {
-        public TransformPanelViewModel Transform { get; private set; }
         public ColorControlViewModel ColorControl { get; private set; }
 
         public LightViewModel(string name)

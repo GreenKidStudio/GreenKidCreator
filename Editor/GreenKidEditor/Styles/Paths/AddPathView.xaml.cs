@@ -1,4 +1,4 @@
-﻿namespace GreenKidEditor.Styles
+﻿namespace GreenKidEditor.Styles.Paths
 {
     public partial class AddPathView
     {

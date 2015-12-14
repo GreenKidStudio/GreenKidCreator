@@ -188,16 +188,19 @@
       <DependentUpon>FilesTabView.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow\Tabs\FilesTab\FilesTabViewModel.cs" />
-    <Compile Include="Styles\AddPathView.xaml.cs">
+    <Compile Include="Styles\Paths\AddPathView.xaml.cs">
       <DependentUpon>AddPathView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Styles\ConfirmPathView.xaml.cs">
+    <Compile Include="Styles\Paths\ConfirmPathView.xaml.cs">
       <DependentUpon>ConfirmPathView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Styles\FindPathView.xaml.cs">
+    <Compile Include="Styles\Paths\FindPathView.xaml.cs">
       <DependentUpon>FindPathView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Styles\RemovePathView.xaml.cs">
+    <Compile Include="Styles\Paths\RefreshPathView.xaml.cs">
+      <DependentUpon>RefreshPathView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Styles\Paths\RemovePathView.xaml.cs">
       <DependentUpon>RemovePathView.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow\Tabs\AssetsTab\AssetsTabView.xaml.cs">
@@ -339,11 +342,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Styles\AddPathView.xaml">
+    <Page Include="Styles\Paths\AddPathView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Styles\ConfirmPathView.xaml">
+    <Page Include="Styles\Paths\ConfirmPathView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -355,15 +358,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Styles\Paths\RefreshPathView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Styles\Styles.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Styles\FindPathView.xaml">
+    <Page Include="Styles\Paths\FindPathView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Styles\RemovePathView.xaml">
+    <Page Include="Styles\Paths\RemovePathView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
