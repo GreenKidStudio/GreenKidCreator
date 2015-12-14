@@ -3,27 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" mc:Ignorable="d"
-             xmlns:transform="clr-namespace:GreenKidEditor.MainWindow.Panels.Transform"
              xmlns:paths="clr-namespace:GreenKidEditor.Styles.Paths">
 
-    <UserControl.Resources>
-        <DataTemplate DataType="{ x:Type transform:TransformPanelViewModel }">
-            <Grid Margin="0, 5, 0, 0">
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="Auto"/>
-                </Grid.RowDefinitions>
-                
-                <ContentPresenter Grid.Row="0" Content="{ Binding Path=PositionControl }"/>
-                <ContentPresenter Grid.Row="1" Content="{ Binding Path=RotationControl }" Margin="0, 2, 0, 0"/>
-                <ContentPresenter Grid.Row="2" Content="{ Binding Path=ScaleControl }" Margin="0, 2, 0, 0"/>
-            </Grid>
-        </DataTemplate>
-    </UserControl.Resources>
-
     <Border Style="{ StaticResource BorderStyle }" Margin="0, 2, 0, 0">
-        <Expander IsExpanded="{ Binding Path=Transform.IsExpanded, Mode=TwoWay }">
+        <Expander IsExpanded="{ Binding Path=IsExpanded, Mode=TwoWay }">
             <Expander.Header>
                 <StackPanel Orientation="Horizontal">
                     <Label Style="{ StaticResource ExpanderHeaderStyle }" Content="Transform [ XYZ ]" VerticalAlignment="Center"/>
@@ -35,7 +18,17 @@
             </Expander.Header>
             
             <!-- Content -->
-            <ContentPresenter Content="{ Binding Path=Transform, Mode=OneWay }"/>
+            <Grid Margin="0, 5, 0, 0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <ContentPresenter Grid.Row="0" Content="{ Binding Path=PositionControl }"/>
+                <ContentPresenter Grid.Row="1" Content="{ Binding Path=RotationControl }" Margin="0, 2, 0, 0"/>
+                <ContentPresenter Grid.Row="2" Content="{ Binding Path=ScaleControl }" Margin="0, 2, 0, 0"/>
+            </Grid>
         </Expander>
     </Border>
 </UserControl>

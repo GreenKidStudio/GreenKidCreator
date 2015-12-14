@@ -3,8 +3,6 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" mc:Ignorable="d"
-             xmlns:tree="clr-namespace:GreenKidEditor.MainWindow.Tabs.Tree"
-             xmlns:menus="clr-namespace:GreenKidEditor.MainWindow.Menus"
              xmlns:panels="clr-namespace:GreenKidEditor.MainWindow.Panels"
 
              DataContext="{ Binding Source={ StaticResource ViewModelLocator }, Path=MainWindow.AssetsTab, Mode=OneTime }">
@@ -18,10 +16,9 @@
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
-        <menus:AddItemBarView Grid.Row="0"/>
-        <menus:SearchBarView Grid.Row="2"/>
-        
-        <tree:BasicTreeView Grid.Row="1" DataContext="{ Binding Path=ItemsTree, Mode=OneWay }"/>
+        <ContentPresenter Grid.Row="0" Content="{ Binding AddItemBar, Mode=OneTime }"/>
+        <ContentPresenter Grid.Row="1" Content="{ Binding ItemsTree, Mode=OneTime }"/>
+        <ContentPresenter Grid.Row="2" Content="{ Binding SearchBar, Mode=OneTime }"/>
 
         <panels:AssetPanelView Grid.Row="3" DataContext="{ Binding Path=ItemsTree, Mode=OneWay }"/>
     </Grid>

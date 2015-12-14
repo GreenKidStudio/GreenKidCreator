@@ -18,6 +18,10 @@ namespace GreenKidEditor.MainWindow.Tabs
             ItemsTree = new BasicTreeViewModel();
             ItemsTree.InitViewModels();
             ItemsTree.InitCommands();
+
+            AddItemBar = new AddItemBarViewModel();
+            SearchBar = new SearchBarViewModel();
+            SearchBar.InitViewModels();
         }
 
         public virtual void LoadData() { }
